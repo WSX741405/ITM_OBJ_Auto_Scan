@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="include\FernConservatory.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\PoseDatabase.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\RelocDatabase.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\FernConservatory.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PixelUtils.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PoseDatabase.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Relocaliser.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RelocDatabase.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{1baab5ec-7a39-4112-8e4e-f7434067760a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

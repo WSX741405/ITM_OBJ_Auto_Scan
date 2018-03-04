@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{776eacd6-7dc6-475d-8cb4-b52ca8861dec}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{5506feed-e16e-40f0-990c-0d2c4dbd3b5a}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{fb0c1aec-f1f6-4186-8ab1-82655ca52383}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\UI">
+      <UniqueIdentifier>{ac8d2af3-d1ba-4cda-84fd-35fb6180a624}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\ITM">
+      <UniqueIdentifier>{a1464b71-10ec-442c-949c-8fc028c94d7b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GeneratedFiles\qrc_ITM_OBJ_Auto_SCAN.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\main.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\ITM\UIEngine.cpp">
+      <Filter>include\ITM</Filter>
+    </ClCompile>
+    <ClCompile Include="include\UI\OBJMainWindow.cpp">
+      <Filter>include\UI</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="ITM_OBJ_Auto_SCAN.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ITM_OBJ_Auto_SCAN.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GeneratedFiles\ui_ITM_OBJ_Auto_SCAN.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ITM\UIEngine.h">
+      <Filter>include\ITM</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ITM\ITMEngine.h">
+      <Filter>include\ITM</Filter>
+    </ClInclude>
+    <ClInclude Include="include\UI\Viewer.h">
+      <Filter>include\UI</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="include\UI\OBJMainWindow.h">
+      <Filter>include\UI</Filter>
+    </QtMoc>
+  </ItemGroup>
+</Project>
