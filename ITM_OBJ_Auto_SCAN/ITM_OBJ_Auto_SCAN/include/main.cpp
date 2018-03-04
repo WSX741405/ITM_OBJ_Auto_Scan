@@ -1,4 +1,4 @@
-#include "UI/OBJMainWindow.h"
+#include "UI/MainWindow.h"
 #include <QtWidgets/QApplication>
 
 #include <cstdlib>

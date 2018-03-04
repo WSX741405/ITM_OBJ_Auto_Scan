@@ -15,6 +15,7 @@
 #include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QMainWindow>
+#include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QToolBar>
@@ -26,9 +27,12 @@ QT_BEGIN_NAMESPACE
 class Ui_OBJMainWindow
 {
 public:
+    QAction *action;
+    QAction *_processFrameAction;
     QWidget *centralWidget;
     QVTKWidget *_cloudQVTKWidget;
     QMenuBar *menuBar;
+    QMenu *menuITM;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
 
@@ -37,6 +41,10 @@ public:
         if (OBJMainWindow->objectName().isEmpty())
             OBJMainWindow->setObjectName(QStringLiteral("OBJMainWindow"));
         OBJMainWindow->resize(600, 400);
+        action = new QAction(OBJMainWindow);
+        action->setObjectName(QStringLiteral("action"));
+        _processFrameAction = new QAction(OBJMainWindow);
+        _processFrameAction->setObjectName(QStringLiteral("_processFrameAction"));
         centralWidget = new QWidget(OBJMainWindow);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         _cloudQVTKWidget = new QVTKWidget(centralWidget);
@@ -46,6 +54,8 @@ public:
         menuBar = new QMenuBar(OBJMainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
         menuBar->setGeometry(QRect(0, 0, 600, 21));
+        menuITM = new QMenu(menuBar);
+        menuITM->setObjectName(QStringLiteral("menuITM"));
         OBJMainWindow->setMenuBar(menuBar);
         mainToolBar = new QToolBar(OBJMainWindow);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
@@ -53,6 +63,9 @@ public:
         statusBar = new QStatusBar(OBJMainWindow);
         statusBar->setObjectName(QStringLiteral("statusBar"));
         OBJMainWindow->setStatusBar(statusBar);
+
+        menuBar->addAction(menuITM->menuAction());
+        menuITM->addAction(_processFrameAction);
 
         retranslateUi(OBJMainWindow);
 
@@ -62,6 +75,9 @@ public:
     void retranslateUi(QMainWindow *OBJMainWindow)
     {
         OBJMainWindow->setWindowTitle(QApplication::translate("OBJMainWindow", "ITM_OBJ_Auto_SCAN", Q_NULLPTR));
+        action->setText(QApplication::translate("OBJMainWindow", "SLAM", Q_NULLPTR));
+        _processFrameAction->setText(QApplication::translate("OBJMainWindow", "Process Frame", Q_NULLPTR));
+        menuITM->setTitle(QApplication::translate("OBJMainWindow", "ITM", Q_NULLPTR));
     } // retranslateUi
 
 };

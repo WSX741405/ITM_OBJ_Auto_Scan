@@ -2,8 +2,6 @@
 
 #include "PicoFlexxEngine.h"
 
-#ifdef COMPILE_WITH_LibRoyale
-
 #include <cstdio>
 #include <stdexcept>
 #include <algorithm>
@@ -31,8 +29,9 @@ public:
 	vector<Vector4u> rgbImage;
 	vector<short> depthImage;
 	mutex mtx;
+	ISubject* _subject;
 
-	explicit PrivateData(PicoFlexxEngine *pfe) : engine(pfe), depthImage(0) {}
+	explicit PrivateData(PicoFlexxEngine *pfe, ISubject* subject) : engine(pfe), depthImage(0), _subject(subject) {}
 	~PrivateData() {}
 
 	void onNewData(const DepthData *data);
@@ -74,16 +73,17 @@ void PicoFlexxEngine::PrivateData::onNewData(const DepthData *data)
 		const DepthPoint &dd = data->points[pointId];
 		this->depthImage.push_back(dd.depthConfidence > 128 ? (short)(dd.z * 1000.0) : 0);
 	}
+	_subject->NotifyObservers();
 }
 
-PicoFlexxEngine::PicoFlexxEngine(const char *calibFilename, const char *deviceURI, const bool useInternalCalibration,
+PicoFlexxEngine::PicoFlexxEngine(const char *calibFilename, ISubject* subject, const char *deviceURI, const bool useInternalCalibration,
 	Vector2i requested_imageSize_rgb, Vector2i requested_imageSize_d)
 	: BaseImageSourceEngine(calibFilename)
 {
 	this->imageSize_d = Vector2i(0, 0);
 	this->imageSize_rgb = Vector2i(0, 0);
 
-	data = new PrivateData(this);
+	data = new PrivateData(this, subject);
 
 	// the camera manager will query for a connected camera
 	{
@@ -199,20 +199,3 @@ void PicoFlexxEngine::getImages(ITMUChar4Image *rgbImage, ITMShortImage *rawDept
 bool PicoFlexxEngine::hasMoreImages(void) const { return data != NULL; }
 Vector2i PicoFlexxEngine::getDepthImageSize(void) const { return data != NULL ? imageSize_d : Vector2i(0, 0); }
 Vector2i PicoFlexxEngine::getRGBImageSize(void) const { return data != NULL ? imageSize_rgb : Vector2i(0, 0); }
-
-#else
-
-using namespace InputSource;
-
-PicoFlexxEngine::PicoFlexxEngine(const char *calibFilename, const char *deviceURI, const bool useInternalCalibration, Vector2i requested_imageSize_rgb, Vector2i requested_imageSize_d)
-	: BaseImageSourceEngine(calibFilename)
-{
-	printf("compiled without LibRoyale support\n");
-}
-PicoFlexxEngine::~PicoFlexxEngine() {}
-void PicoFlexxEngine::getImages(ITMUChar4Image *rgbImage, ITMShortImage *rawDepthImage) { }
-bool PicoFlexxEngine::hasMoreImages(void) const { return false; }
-Vector2i PicoFlexxEngine::getDepthImageSize(void) const { return Vector2i(0, 0); }
-Vector2i PicoFlexxEngine::getRGBImageSize(void) const { return Vector2i(0, 0); }
-
-#endif

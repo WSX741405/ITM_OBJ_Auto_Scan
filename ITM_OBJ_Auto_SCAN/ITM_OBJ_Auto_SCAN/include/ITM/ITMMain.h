@@ -18,10 +18,10 @@ using namespace InfiniTAM::Engine;
 using namespace InputSource;
 using namespace ITMLib;
 
-class ITMEngine
+class ITMMain
 {
 public:
-	ITMEngine(int argc, char** argv)
+	ITMMain(int argc, char** argv)
 	{
 		const char *arg1 = "";
 		const char *arg2 = NULL;

@@ -34,6 +34,13 @@
      <height>21</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuITM">
+    <property name="title">
+     <string>ITM</string>
+    </property>
+    <addaction name="_processFrameAction"/>
+   </widget>
+   <addaction name="menuITM"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
@@ -47,6 +54,11 @@
   <action name="action">
    <property name="text">
     <string>SLAM</string>
+   </property>
+  </action>
+  <action name="_processFrameAction">
+   <property name="text">
+    <string>Process Frame</string>
    </property>
   </action>
  </widget>
