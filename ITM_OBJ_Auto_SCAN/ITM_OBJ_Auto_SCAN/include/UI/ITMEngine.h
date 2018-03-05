@@ -33,23 +33,36 @@ class ISubject;
 class ITMEngine
 {
 public:
-	ITMEngine(char* calibFile = "", char* filename1 = NULL, char* filename2 = NULL, char* imuFile = NULL)
-		: _calibFile(calibFile), _filename1(filename1), _filename2(filename2), _imuFile(imuFile)
-	{
-	}
-
+	ITMEngine(char* calibFile = "", char* filename1 = NULL, char* filename2 = NULL, char* imuFile = NULL);
 	void SetGrabberSubject(ISubject* subject);
 	void StartProcessing();
 	void ProcessFrame();
+	void DisplayImage();
 
 private:
 	void CreateImageSource();
 
+
+	ITMLib::ITMMainEngine* _mainEngine;
 	ImageSourceEngine* _imageSource = NULL;
 	IMUSourceEngine* _imuSource = NULL;
+
+	static const int NUM_WIN = 1;
+	Vector2i _winSize;
+	Vector4f _winReg[NUM_WIN]; // (x1, y1, x2, y2)
+	ITMUChar4Image* _outImage[NUM_WIN];
+	ITMLib::ITMMainEngine::GetImageType _outImageType[NUM_WIN];
+	ITMUChar4Image* _inputRGBImage;
+	ITMShortImage* _inputRawDepthImage;
+	ITMLib::ITMIMUMeasurement* _inputIMUMeasurement;
+	StopWatchInterface* _timer_instant;
+	StopWatchInterface* _timer_average;
 	char* _calibFile;
 	char* _filename1;
 	char* _filename2;
 	char* _imuFile;
 	ISubject* _subject = NULL;
+
+	int _trackingResult;
+	float _processedTime;
 };
