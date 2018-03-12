@@ -5,7 +5,7 @@
 #ifndef __METALC__
 
 #include "../../Utils/ITMMath.h"
-#include "../../../../ORUtils/include/MemoryBlock.h"
+#include "../../ORUtils/include/MemoryBlock.h"
 
 namespace ITMLib
 {

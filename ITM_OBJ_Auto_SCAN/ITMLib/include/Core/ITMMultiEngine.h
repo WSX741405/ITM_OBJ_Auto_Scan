@@ -7,7 +7,7 @@
 #include "../Engines/LowLevel/Interface/ITMLowLevelEngine.h"
 #include "../Engines/ViewBuilding/Interface/ITMViewBuilder.h"
 #include "../Objects/Misc/ITMIMUCalibrator.h"
-#include "../../../FernRelocLib/include/Relocaliser.h"
+#include "../../FernRelocLib/include/Relocaliser.h"
 
 #include "../Engines/MultiScene/ITMActiveMapManager.h"
 #include "../Engines/MultiScene/ITMGlobalAdjustmentEngine.h"

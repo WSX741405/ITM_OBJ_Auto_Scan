@@ -3,7 +3,7 @@
 #pragma once
 
 #include "../Scene/ITMVoxelBlockHash.h"
-#include "../../../../ORUtils/include/Image.h"
+#include "../../ORUtils/include/Image.h"
 
 #include <stdlib.h>
 

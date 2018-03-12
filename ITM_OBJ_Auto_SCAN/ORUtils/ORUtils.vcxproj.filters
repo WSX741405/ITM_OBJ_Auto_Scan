@@ -1,80 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="include">
-      <UniqueIdentifier>{a04608ad-3c36-4e76-a1f8-5f7a8a90e0db}</UniqueIdentifier>
-    </Filter>
+    <ClInclude Include="include\HomkerMap.h" />
+    <ClInclude Include="include\Image.h" />
+    <ClInclude Include="include\KeyValueConfig.h" />
+    <ClInclude Include="include\LexicalCast.h" />
+    <ClInclude Include="include\MathUtils.h" />
+    <ClInclude Include="include\Matrix.h" />
+    <ClInclude Include="include\MemoryBlock.h" />
+    <ClInclude Include="include\MemoryBlockPersister.h" />
+    <ClInclude Include="include\MemoryDeviceType.h" />
+    <ClInclude Include="include\MetalContext.h" />
+    <ClInclude Include="include\NVTimer.h" />
+    <ClInclude Include="include\PlatformIndependence.h" />
+    <ClInclude Include="include\SE3Pose.h" />
+    <ClInclude Include="include\SVMClassifier.h" />
+    <ClInclude Include="include\Vector.h" />
+    <ClInclude Include="include\Cholesky.h" />
+    <ClInclude Include="include\CUDADefines.h" />
+    <ClInclude Include="include\FileUtils.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\Image.h">
-      <Filter>include</Filter>
-    </ClInclude>
-    <ClInclude Include="include\KeyValueConfig.h">
-      <Filter>include</Filter>
-    </ClInclude>
-    <ClInclude Include="include\LexicalCast.h">
-      <Filter>include</Filter>
-    </ClInclude>
-    <ClInclude Include="include\MathUtils.h">
-      <Filter>include</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Matrix.h">
-      <Filter>include</Filter>
-    </ClInclude>
-    <ClInclude Include="include\MemoryBlock.h">
-      <Filter>include</Filter>
-    </ClInclude>
-    <ClInclude Include="include\MemoryBlockPersister.h">
-      <Filter>include</Filter>
-    </ClInclude>
-    <ClInclude Include="include\MemoryDeviceType.h">
-      <Filter>include</Filter>
-    </ClInclude>
-    <ClInclude Include="include\MetalContext.h">
-      <Filter>include</Filter>
-    </ClInclude>
-    <ClInclude Include="include\NVTimer.h">
-      <Filter>include</Filter>
-    </ClInclude>
-    <ClInclude Include="include\PlatformIndependence.h">
-      <Filter>include</Filter>
-    </ClInclude>
-    <ClInclude Include="include\SE3Pose.h">
-      <Filter>include</Filter>
-    </ClInclude>
-    <ClInclude Include="include\SVMClassifier.h">
-      <Filter>include</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Vector.h">
-      <Filter>include</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Cholesky.h">
-      <Filter>include</Filter>
-    </ClInclude>
-    <ClInclude Include="include\CUDADefines.h">
-      <Filter>include</Filter>
-    </ClInclude>
-    <ClInclude Include="include\FileUtils.h">
-      <Filter>include</Filter>
-    </ClInclude>
-    <ClInclude Include="include\HomkerMap.h">
-      <Filter>include</Filter>
-    </ClInclude>
+    <ClCompile Include="include\KeyValueConfig.cpp" />
+    <ClCompile Include="include\SE3Pose.cpp" />
+    <ClCompile Include="include\FileUtils.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="include\KeyValueConfig.cpp">
-      <Filter>include</Filter>
-    </ClCompile>
-    <ClCompile Include="include\SE3Pose.cpp">
-      <Filter>include</Filter>
-    </ClCompile>
-    <ClCompile Include="include\FileUtils.cpp">
-      <Filter>include</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="include\MetalContext.mm">
-      <Filter>include</Filter>
-    </None>
+    <None Include="include\MetalContext.mm" />
   </ItemGroup>
 </Project>

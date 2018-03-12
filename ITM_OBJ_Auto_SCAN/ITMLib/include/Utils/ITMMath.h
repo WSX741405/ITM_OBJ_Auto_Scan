@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "../../../ORUtils/include/MathUtils.h"
+#include "../../ORUtils/include/MathUtils.h"
 
 #ifndef NULL
 #define NULL 0
@@ -15,8 +15,8 @@ typedef unsigned short ushort;
 typedef unsigned int uint;
 typedef unsigned long ulong;
 
-#include "../../../ORUtils/include/Vector.h"
-#include "../../../ORUtils/include/Matrix.h"
+#include "../../ORUtils/include/Vector.h"
+#include "../../ORUtils/include/Matrix.h"
 
 typedef class ORUtils::Matrix3<float> Matrix3f;
 typedef class ORUtils::Matrix4<float> Matrix4f;

@@ -11,7 +11,7 @@
 #include "../Engines/Visualisation/Interface/ITMVisualisationEngine.h"
 #include "../Objects/Misc/ITMIMUCalibrator.h"
 
-#include "../../../FernRelocLib/include/Relocaliser.h"
+#include "../../FernRelocLib/include/Relocaliser.h"
 
 namespace ITMLib
 {

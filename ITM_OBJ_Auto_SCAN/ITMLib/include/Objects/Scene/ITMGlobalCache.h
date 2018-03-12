@@ -6,7 +6,7 @@
 #include <stdio.h>
 
 #include "ITMVoxelBlockHash.h"
-#include "../../../../ORUtils/include/CUDADefines.h"
+#include "../../ORUtils/include/CUDADefines.h"
 
 namespace ITMLib
 {

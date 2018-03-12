@@ -9,8 +9,8 @@
 #endif
 
 #include "../../Utils/ITMMath.h"
-#include "../../../../ORUtils/include/MemoryBlock.h"
-#include "../../../../ORUtils/include/MemoryBlockPersister.h"
+#include "../../ORUtils/include/MemoryBlock.h"
+#include "../../ORUtils/include/MemoryBlockPersister.h"
 
 #define SDF_BLOCK_SIZE 8				// SDF block size
 #define SDF_BLOCK_SIZE3 512				// SDF_BLOCK_SIZE3 = SDF_BLOCK_SIZE * SDF_BLOCK_SIZE * SDF_BLOCK_SIZE

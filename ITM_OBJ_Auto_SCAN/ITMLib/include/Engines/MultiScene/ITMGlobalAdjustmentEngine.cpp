@@ -2,10 +2,10 @@
 
 #include "ITMGlobalAdjustmentEngine.h"
 
-#include "../../../../MiniSlamGraphLib/include/GraphNodeSE3.h"
-#include "../../../../MiniSlamGraphLib/include/GraphEdgeSE3.h"
-#include "../../../../MiniSlamGraphLib/include/SlamGraphErrorFunction.h"
-#include "../../../../MiniSlamGraphLib/include/LevenbergMarquardtMethod.h"
+#include "../../MiniSlamGraphLib/include/GraphNodeSE3.h"
+#include "../../MiniSlamGraphLib/include/GraphEdgeSE3.h"
+#include "../../MiniSlamGraphLib/include/SlamGraphErrorFunction.h"
+#include "../../MiniSlamGraphLib/include/LevenbergMarquardtMethod.h"
 
 #ifndef NO_CPP11
 #include <mutex>

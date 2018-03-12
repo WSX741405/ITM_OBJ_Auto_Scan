@@ -1,174 +1,150 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
-      <Extensions>qrc;*</Extensions>
-      <ParseFiles>false</ParseFiles>
+    <Filter Include="ITM">
+      <UniqueIdentifier>{1e5468c0-a050-41c3-8ab6-03366dacb492}</UniqueIdentifier>
     </Filter>
     <Filter Include="Form Files">
-      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
-      <Extensions>ui</Extensions>
-    </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
-      <Extensions>qrc;*</Extensions>
-      <ParseFiles>false</ParseFiles>
+      <UniqueIdentifier>{cbf772e7-c258-4ea1-8751-02795509769a}</UniqueIdentifier>
     </Filter>
     <Filter Include="Generated Files">
-      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
-      <Extensions>moc;h;cpp</Extensions>
-      <SourceControlFiles>False</SourceControlFiles>
+      <UniqueIdentifier>{f103fcae-19aa-442a-a2ce-25c72010345c}</UniqueIdentifier>
     </Filter>
     <Filter Include="Generated Files\Debug">
-      <UniqueIdentifier>{776eacd6-7dc6-475d-8cb4-b52ca8861dec}</UniqueIdentifier>
-      <Extensions>cpp;moc</Extensions>
-      <SourceControlFiles>False</SourceControlFiles>
+      <UniqueIdentifier>{f92048c8-c6d5-444a-a962-b66dc95b0da9}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Generated Files\Release">
-      <UniqueIdentifier>{5506feed-e16e-40f0-990c-0d2c4dbd3b5a}</UniqueIdentifier>
-      <Extensions>cpp;moc</Extensions>
-      <SourceControlFiles>False</SourceControlFiles>
+    <Filter Include="UI">
+      <UniqueIdentifier>{35beca77-0cfa-44bc-b23c-a806334382ad}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include">
-      <UniqueIdentifier>{fb0c1aec-f1f6-4186-8ab1-82655ca52383}</UniqueIdentifier>
+    <Filter Include="Observer">
+      <UniqueIdentifier>{4e6c3dca-cd15-4209-8eab-0b1439cfa51e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\UI">
-      <UniqueIdentifier>{ac8d2af3-d1ba-4cda-84fd-35fb6180a624}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="include\ITM">
-      <UniqueIdentifier>{a1464b71-10ec-442c-949c-8fc028c94d7b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="include\Observer">
-      <UniqueIdentifier>{cc06feff-0b0d-4c54-8075-d9a394f52162}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="include\InputSource">
-      <UniqueIdentifier>{5dd9755c-697c-4646-96bf-271e20bbb113}</UniqueIdentifier>
+    <Filter Include="InputSource">
+      <UniqueIdentifier>{355f752f-4a6f-4226-b1ee-764834f2fba4}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="include\main.cpp" />
+    <ClCompile Include="include\ITM\UIEngine.cpp">
+      <Filter>ITM</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Observer\ObserverFactory.cpp">
+      <Filter>Observer</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Observer\Observer.cpp">
+      <Filter>Observer</Filter>
+    </ClCompile>
+    <ClCompile Include="include\UI\MainWindow.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="include\ITM\ITMEngine.cpp">
+      <Filter>ITM</Filter>
+    </ClCompile>
     <ClCompile Include="GeneratedFiles\qrc_ITM_OBJ_Auto_SCAN.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
-    <ClCompile Include="include\main.cpp">
-      <Filter>include</Filter>
+    <ClCompile Include="GeneratedFiles\Debug\moc_Observer.cpp">
+      <Filter>Generated Files\Debug</Filter>
     </ClCompile>
-    <ClCompile Include="include\ITM\UIEngine.cpp">
-      <Filter>include\ITM</Filter>
+    <ClCompile Include="GeneratedFiles\Debug\moc_MainWindow.cpp">
+      <Filter>Generated Files\Debug</Filter>
     </ClCompile>
-    <ClCompile Include="ITMEngine.cpp">
-      <Filter>include\UI</Filter>
+    <ClCompile Include="..\InputSource\include\IdleImageSourceEngine.cpp">
+      <Filter>InputSource</Filter>
     </ClCompile>
-    <ClCompile Include="include\Observer\ObserverFactory.cpp">
-      <Filter>include\Observer</Filter>
+    <ClCompile Include="..\InputSource\include\ImageSourceEngine.cpp">
+      <Filter>InputSource</Filter>
     </ClCompile>
-    <ClCompile Include="include\Observer\Observer.cpp">
-      <Filter>include\Observer</Filter>
+    <ClCompile Include="..\InputSource\include\IMUSourceEngine.cpp">
+      <Filter>InputSource</Filter>
     </ClCompile>
-    <ClCompile Include="include\UI\MainWindow.cpp">
-      <Filter>include\UI</Filter>
+    <ClCompile Include="..\InputSource\include\Kinect2Engine.cpp">
+      <Filter>InputSource</Filter>
     </ClCompile>
-    <ClCompile Include="include\InputSource\CompositeImageSourceEngine.cpp">
-      <Filter>include\InputSource</Filter>
+    <ClCompile Include="..\InputSource\include\LibUVCEngine.cpp">
+      <Filter>InputSource</Filter>
     </ClCompile>
-    <ClCompile Include="include\InputSource\FFMPEGReader.cpp">
-      <Filter>include\InputSource</Filter>
+    <ClCompile Include="..\InputSource\include\OpenNIEngine.cpp">
+      <Filter>InputSource</Filter>
     </ClCompile>
-    <ClCompile Include="include\InputSource\FFMPEGWriter.cpp">
-      <Filter>include\InputSource</Filter>
+    <ClCompile Include="..\InputSource\include\PicoFlexxEngine.cpp">
+      <Filter>InputSource</Filter>
     </ClCompile>
-    <ClCompile Include="include\InputSource\IdleImageSourceEngine.cpp">
-      <Filter>include\InputSource</Filter>
+    <ClCompile Include="..\InputSource\include\RealSenseEngine.cpp">
+      <Filter>InputSource</Filter>
     </ClCompile>
-    <ClCompile Include="include\InputSource\ImageSourceEngine.cpp">
-      <Filter>include\InputSource</Filter>
+    <ClCompile Include="..\InputSource\include\CompositeImageSourceEngine.cpp">
+      <Filter>InputSource</Filter>
     </ClCompile>
-    <ClCompile Include="include\InputSource\IMUSourceEngine.cpp">
-      <Filter>include\InputSource</Filter>
+    <ClCompile Include="..\InputSource\include\FFMPEGReader.cpp">
+      <Filter>InputSource</Filter>
     </ClCompile>
-    <ClCompile Include="include\InputSource\Kinect2Engine.cpp">
-      <Filter>include\InputSource</Filter>
-    </ClCompile>
-    <ClCompile Include="include\InputSource\LibUVCEngine.cpp">
-      <Filter>include\InputSource</Filter>
-    </ClCompile>
-    <ClCompile Include="include\InputSource\OpenNIEngine.cpp">
-      <Filter>include\InputSource</Filter>
-    </ClCompile>
-    <ClCompile Include="include\InputSource\PicoFlexxEngine.cpp">
-      <Filter>include\InputSource</Filter>
-    </ClCompile>
-    <ClCompile Include="include\InputSource\RealSenseEngine.cpp">
-      <Filter>include\InputSource</Filter>
+    <ClCompile Include="..\InputSource\include\FFMPEGWriter.cpp">
+      <Filter>InputSource</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="ITM_OBJ_Auto_SCAN.ui">
-      <Filter>Form Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="ITM_OBJ_Auto_SCAN.qrc">
-      <Filter>Resource Files</Filter>
-    </CustomBuild>
-  </ItemGroup>
-  <ItemGroup>
+    <ClInclude Include="include\ITM\UIEngine.h">
+      <Filter>ITM</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ITM\ITMMain.h">
+      <Filter>ITM</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Observer\ObserverFactory.h">
+      <Filter>Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Observer\Observer.h">
+      <Filter>Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="include\UI\MainWindow.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="include\UI\Viewer.h">
+      <Filter>UI</Filter>
+    </ClInclude>
     <ClInclude Include="GeneratedFiles\ui_ITM_OBJ_Auto_SCAN.h">
       <Filter>Generated Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\ITM\UIEngine.h">
-      <Filter>include\ITM</Filter>
-    </ClInclude>
-    <ClInclude Include="include\UI\Viewer.h">
-      <Filter>include\UI</Filter>
-    </ClInclude>
-    <ClInclude Include="include\ITM\ITMMain.h">
-      <Filter>include\ITM</Filter>
-    </ClInclude>
     <ClInclude Include="include\UI\ITMEngine.h">
-      <Filter>include\UI</Filter>
+      <Filter>ITM</Filter>
     </ClInclude>
-    <ClInclude Include="include\Observer\ObserverFactory.h">
-      <Filter>include\Observer</Filter>
+    <ClInclude Include="..\InputSource\include\FFMPEGWriter.h">
+      <Filter>InputSource</Filter>
     </ClInclude>
-    <ClInclude Include="include\InputSource\CompositeImageSourceEngine.h">
-      <Filter>include\InputSource</Filter>
+    <ClInclude Include="..\InputSource\include\IdleImageSourceEngine.h">
+      <Filter>InputSource</Filter>
     </ClInclude>
-    <ClInclude Include="include\InputSource\FFMPEGReader.h">
-      <Filter>include\InputSource</Filter>
+    <ClInclude Include="..\InputSource\include\ImageSourceEngine.h">
+      <Filter>InputSource</Filter>
     </ClInclude>
-    <ClInclude Include="include\InputSource\FFMPEGWriter.h">
-      <Filter>include\InputSource</Filter>
+    <ClInclude Include="..\InputSource\include\IMUSourceEngine.h">
+      <Filter>InputSource</Filter>
     </ClInclude>
-    <ClInclude Include="include\InputSource\IdleImageSourceEngine.h">
-      <Filter>include\InputSource</Filter>
+    <ClInclude Include="..\InputSource\include\Kinect2Engine.h">
+      <Filter>InputSource</Filter>
     </ClInclude>
-    <ClInclude Include="include\InputSource\ImageSourceEngine.h">
-      <Filter>include\InputSource</Filter>
+    <ClInclude Include="..\InputSource\include\LibUVCEngine.h">
+      <Filter>InputSource</Filter>
     </ClInclude>
-    <ClInclude Include="include\InputSource\IMUSourceEngine.h">
-      <Filter>include\InputSource</Filter>
+    <ClInclude Include="..\InputSource\include\OpenNIEngine.h">
+      <Filter>InputSource</Filter>
     </ClInclude>
-    <ClInclude Include="include\InputSource\Kinect2Engine.h">
-      <Filter>include\InputSource</Filter>
+    <ClInclude Include="..\InputSource\include\PicoFlexxEngine.h">
+      <Filter>InputSource</Filter>
     </ClInclude>
-    <ClInclude Include="include\InputSource\LibUVCEngine.h">
-      <Filter>include\InputSource</Filter>
+    <ClInclude Include="..\InputSource\include\RealSenseEngine.h">
+      <Filter>InputSource</Filter>
     </ClInclude>
-    <ClInclude Include="include\InputSource\OpenNIEngine.h">
-      <Filter>include\InputSource</Filter>
+    <ClInclude Include="..\InputSource\include\CompositeImageSourceEngine.h">
+      <Filter>InputSource</Filter>
     </ClInclude>
-    <ClInclude Include="include\InputSource\PicoFlexxEngine.h">
-      <Filter>include\InputSource</Filter>
-    </ClInclude>
-    <ClInclude Include="include\InputSource\RealSenseEngine.h">
-      <Filter>include\InputSource</Filter>
+    <ClInclude Include="..\InputSource\include\FFMPEGReader.h">
+      <Filter>InputSource</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <QtMoc Include="include\Observer\Observer.h">
-      <Filter>include\Observer</Filter>
-    </QtMoc>
-    <QtMoc Include="include\UI\MainWindow.h">
-      <Filter>include\UI</Filter>
-    </QtMoc>
+    <None Include="ITM_OBJ_Auto_SCAN.ui">
+      <Filter>Form Files</Filter>
+    </None>
   </ItemGroup>
 </Project>

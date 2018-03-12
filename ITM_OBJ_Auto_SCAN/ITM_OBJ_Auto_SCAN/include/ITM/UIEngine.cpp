@@ -23,7 +23,7 @@
 #include "../../../ITMLib/include/Core/ITMMultiEngine.h"
 
 #include "../../../ORUtils/include/FileUtils.h"
-#include "InputSource/FFMPEGWriter.h"
+#include "../InputSource/include/FFMPEGWriter.h"
 
 using namespace InfiniTAM::Engine;
 using namespace InputSource;

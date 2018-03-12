@@ -5,9 +5,9 @@
 #endif 
 
 #include "ITMExtendedTracker.h"
-#include "../../../../ORUtils/include/Cholesky.h"
+#include "../../ORUtils/include/Cholesky.h"
 
-#include "../../../../ORUtils/include/FileUtils.h"
+#include "../../ORUtils/include/FileUtils.h"
 
 #include <math.h>
 #include <limits>

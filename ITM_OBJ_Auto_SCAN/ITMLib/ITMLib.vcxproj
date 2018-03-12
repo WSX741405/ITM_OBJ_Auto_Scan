@@ -18,197 +18,71 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <PropertyGroup Label="Globals">
-    <ProjectGuid>{C493779C-5390-348F-9529-8B414EEF1228}</ProjectGuid>
-    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
-    <Keyword>Win32Proj</Keyword>
-    <Platform>x64</Platform>
-    <ProjectName>ITMLib</ProjectName>
-    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
-  </PropertyGroup>
-  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
-    <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v140</PlatformToolset>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
-    <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v140</PlatformToolset>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
-    <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v140</PlatformToolset>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
-    <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v140</PlatformToolset>
-  </PropertyGroup>
-  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
-  <ImportGroup Label="ExtensionSettings">
-  </ImportGroup>
-  <ImportGroup Label="PropertySheets">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-  </ImportGroup>
-  <PropertyGroup Label="UserMacros" />
-  <PropertyGroup>
-    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Debug\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ITMLib.dir\Debug\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ITMLib</TargetName>
-    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Code\InfiniTAM-master\cmake_build\ITMLib\Release\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ITMLib.dir\Release\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ITMLib</TargetName>
-    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Code\InfiniTAM-master\cmake_build\ITMLib\MinSizeRel\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">ITMLib.dir\MinSizeRel\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">ITMLib</TargetName>
-    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Code\InfiniTAM-master\cmake_build\ITMLib\RelWithDebInfo\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">ITMLib.dir\RelWithDebInfo\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">ITMLib</TargetName>
-    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
-  </PropertyGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <ClCompile>
-      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
-      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
-      <CompileAs>CompileAsCpp</CompileAs>
-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <ExceptionHandling>Sync</ExceptionHandling>
-      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
-      <Optimization>Disabled</Optimization>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
-      <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;USING_CMAKE=1;_CRT_SECURE_NO_WARNINGS;NOMINMAX;_USE_MATH_DEFINES;_WIN32_WINNT=0x0501;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <ObjectFileName>$(IntDir)</ObjectFileName>
-    </ClCompile>
-    <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;USING_CMAKE=1;_CRT_SECURE_NO_WARNINGS;NOMINMAX;_USE_MATH_DEFINES;_WIN32_WINNT=0x0501;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-    </ResourceCompile>
-    <Midl>
-      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
-      <HeaderFileName>%(Filename).h</HeaderFileName>
-      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
-      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
-      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
-    </Midl>
-    <Lib>
-      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
-    </Lib>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <ClCompile>
-      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AssemblerListingLocation>Release/</AssemblerListingLocation>
-      <CompileAs>CompileAsCpp</CompileAs>
-      <ExceptionHandling>Sync</ExceptionHandling>
-      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
-      <Optimization>MaxSpeed</Optimization>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
-      <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;USING_CMAKE=1;_CRT_SECURE_NO_WARNINGS;NOMINMAX;_USE_MATH_DEFINES;_WIN32_WINNT=0x0501;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <ObjectFileName>$(IntDir)</ObjectFileName>
-      <DebugInformationFormat>
-      </DebugInformationFormat>
-    </ClCompile>
-    <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;USING_CMAKE=1;_CRT_SECURE_NO_WARNINGS;NOMINMAX;_USE_MATH_DEFINES;_WIN32_WINNT=0x0501;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-    </ResourceCompile>
-    <Midl>
-      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
-      <HeaderFileName>%(Filename).h</HeaderFileName>
-      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
-      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
-      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
-    </Midl>
-    <Lib>
-      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
-    </Lib>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
-    <ClCompile>
-      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
-      <CompileAs>CompileAsCpp</CompileAs>
-      <ExceptionHandling>Sync</ExceptionHandling>
-      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
-      <Optimization>MinSpace</Optimization>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
-      <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;USING_CMAKE=1;_CRT_SECURE_NO_WARNINGS;NOMINMAX;_USE_MATH_DEFINES;_WIN32_WINNT=0x0501;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <ObjectFileName>$(IntDir)</ObjectFileName>
-      <DebugInformationFormat>
-      </DebugInformationFormat>
-    </ClCompile>
-    <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;USING_CMAKE=1;_CRT_SECURE_NO_WARNINGS;NOMINMAX;_USE_MATH_DEFINES;_WIN32_WINNT=0x0501;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-    </ResourceCompile>
-    <Midl>
-      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
-      <HeaderFileName>%(Filename).h</HeaderFileName>
-      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
-      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
-      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
-    </Midl>
-    <Lib>
-      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
-    </Lib>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
-    <ClCompile>
-      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
-      <CompileAs>CompileAsCpp</CompileAs>
-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <ExceptionHandling>Sync</ExceptionHandling>
-      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
-      <Optimization>MaxSpeed</Optimization>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
-      <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;USING_CMAKE=1;_CRT_SECURE_NO_WARNINGS;NOMINMAX;_USE_MATH_DEFINES;_WIN32_WINNT=0x0501;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <ObjectFileName>$(IntDir)</ObjectFileName>
-    </ClCompile>
-    <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;USING_CMAKE=1;_CRT_SECURE_NO_WARNINGS;NOMINMAX;_USE_MATH_DEFINES;_WIN32_WINNT=0x0501;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-    </ResourceCompile>
-    <Midl>
-      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
-      <HeaderFileName>%(Filename).h</HeaderFileName>
-      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
-      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
-      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
-    </Midl>
-    <Lib>
-      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
-    </Lib>
-  </ItemDefinitionGroup>
   <ItemGroup>
-    <ProjectReference Include="D:\Code\InfiniTAM-master\cmake_build\ZERO_CHECK.vcxproj">
-      <Project>{08C5AE8B-4A08-33FB-97F7-0723C72D17E4}</Project>
-      <Name>ZERO_CHECK</Name>
-    </ProjectReference>
+    <ClCompile Include="include\CPUInstantiations.cpp" />
+    <ClCompile Include="include\Engines\LowLevel\CPU\ITMLowLevelEngine_CPU.cpp" />
+    <ClCompile Include="include\Engines\LowLevel\ITMLowLevelEngineFactory.cpp" />
+    <ClCompile Include="include\Engines\MultiScene\ITMActiveMapManager.cpp" />
+    <ClCompile Include="include\Engines\MultiScene\ITMGlobalAdjustmentEngine.cpp" />
+    <ClCompile Include="include\Engines\ViewBuilding\CPU\ITMViewBuilder_CPU.cpp" />
+    <ClCompile Include="include\Engines\ViewBuilding\ITMViewBuilderFactory.cpp" />
+    <ClCompile Include="include\Engines\Visualisation\Interface\ITMVisualisationEngine.cpp" />
+    <ClCompile Include="include\Objects\Camera\ITMCalibIO.cpp" />
+    <ClCompile Include="include\Objects\RenderStates\ITMSurfelRenderState.cpp" />
+    <ClCompile Include="include\Trackers\CPU\ITMColorTracker_CPU.cpp" />
+    <ClCompile Include="include\Trackers\CPU\ITMDepthTracker_CPU.cpp" />
+    <ClCompile Include="include\Trackers\CPU\ITMExtendedTracker_CPU.cpp" />
+    <ClCompile Include="include\Trackers\Interface\ITMColorTracker.cpp" />
+    <ClCompile Include="include\Trackers\Interface\ITMDepthTracker.cpp" />
+    <ClCompile Include="include\Trackers\Interface\ITMExtendedTracker.cpp" />
+    <ClCompile Include="include\Trackers\Interface\ITMFileBasedTracker.cpp" />
+    <ClCompile Include="include\Trackers\Interface\ITMForceFailTracker.cpp" />
+    <ClCompile Include="include\Trackers\Interface\ITMIMUTracker.cpp" />
+    <ClCompile Include="include\Utils\ITMLibSettings.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="include\Core\ITMBasicEngine.tpp" />
+    <None Include="include\Core\ITMBasicSurfelEngine.tpp" />
+    <None Include="include\Core\ITMDenseMapper.tpp" />
+    <None Include="include\Core\ITMDenseSurfelMapper.tpp" />
+    <None Include="include\Core\ITMMultiEngine.tpp" />
+    <None Include="include\CUDAInstantiations.cu" />
+    <None Include="include\Engines\LowLevel\CUDA\ITMLowLevelEngine_CUDA.cu" />
+    <None Include="include\Engines\Meshing\CPU\ITMMeshingEngine_CPU.tpp" />
+    <None Include="include\Engines\Meshing\CPU\ITMMultiMeshingEngine_CPU.tpp" />
+    <None Include="include\Engines\Meshing\CUDA\ITMMeshingEngine_CUDA.tcu" />
+    <None Include="include\Engines\Meshing\CUDA\ITMMultiMeshingEngine_CUDA.tcu" />
+    <None Include="include\Engines\MultiScene\ITMMapGraphManager.tpp" />
+    <None Include="include\Engines\Reconstruction\CPU\ITMSceneReconstructionEngine_CPU.tpp" />
+    <None Include="include\Engines\Reconstruction\CPU\ITMSurfelSceneReconstructionEngine_CPU.tpp" />
+    <None Include="include\Engines\Reconstruction\CUDA\ITMSceneReconstructionEngine_CUDA.tcu" />
+    <None Include="include\Engines\Reconstruction\CUDA\ITMSurfelSceneReconstructionEngine_CUDA.tcu" />
+    <None Include="include\Engines\Reconstruction\Interface\ITMSurfelSceneReconstructionEngine.tpp" />
+    <None Include="include\Engines\Reconstruction\ITMSurfelSceneReconstructionEngineFactory.tpp" />
+    <None Include="include\Engines\Reconstruction\Metal\ITMSceneReconstructionEngine.metal" />
+    <None Include="include\Engines\Reconstruction\Metal\ITMSceneReconstructionEngine_Metal.mm" />
+    <None Include="include\Engines\Swapping\CPU\ITMSwappingEngine_CPU.tpp" />
+    <None Include="include\Engines\Swapping\CUDA\ITMSwappingEngine_CUDA.tcu" />
+    <None Include="include\Engines\Swapping\Metal\ITMSwappingEngine.metal" />
+    <None Include="include\Engines\Swapping\Metal\ITMSwappingEngine_Metal.mm" />
+    <None Include="include\Engines\ViewBuilding\CUDA\ITMViewBuilder_CUDA.cu" />
+    <None Include="include\Engines\Visualisation\CPU\ITMMultiVisualisationEngine_CPU.tpp" />
+    <None Include="include\Engines\Visualisation\CPU\ITMSurfelVisualisationEngine_CPU.tpp" />
+    <None Include="include\Engines\Visualisation\CPU\ITMVisualisationEngine_CPU.tpp" />
+    <None Include="include\Engines\Visualisation\CUDA\ITMMultiVisualisationEngine_CUDA.tcu" />
+    <None Include="include\Engines\Visualisation\CUDA\ITMSurfelVisualisationEngine_CUDA.tcu" />
+    <None Include="include\Engines\Visualisation\CUDA\ITMVisualisationEngine_CUDA.tcu" />
+    <None Include="include\Engines\Visualisation\CUDA\ITMVisualisationHelpers_CUDA.cu" />
+    <None Include="include\Engines\Visualisation\Interface\ITMSurfelVisualisationEngine.tpp" />
+    <None Include="include\Engines\Visualisation\ITMSurfelVisualisationEngineFactory.tpp" />
+    <None Include="include\Engines\Visualisation\Metal\ITMVisualisationEngine.metal" />
+    <None Include="include\Engines\Visualisation\Metal\ITMVisualisationEngine_Metal.mm" />
+    <None Include="include\MetalInstantiations.mm" />
+    <None Include="include\Trackers\CUDA\ITMColorTracker_CUDA.cu" />
+    <None Include="include\Trackers\CUDA\ITMDepthTracker_CUDA.cu" />
+    <None Include="include\Trackers\CUDA\ITMExtendedTracker_CUDA.cu" />
+    <None Include="include\Trackers\Metal\ITMExtendedTracker.metal" />
+    <None Include="include\Trackers\Metal\ITMExtendedTracker_Metal.mm" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Core\ITMBasicEngine.h" />
@@ -342,72 +216,192 @@
     <ClInclude Include="include\Utils\ITMSceneParams.h" />
     <ClInclude Include="include\Utils\ITMSurfelSceneParams.h" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="include\Core\ITMBasicEngine.tpp" />
-    <None Include="include\Core\ITMBasicSurfelEngine.tpp" />
-    <None Include="include\Core\ITMDenseMapper.tpp" />
-    <None Include="include\Core\ITMDenseSurfelMapper.tpp" />
-    <None Include="include\Core\ITMMultiEngine.tpp" />
-    <None Include="include\CUDAInstantiations.cu" />
-    <None Include="include\Engines\LowLevel\CUDA\ITMLowLevelEngine_CUDA.cu" />
-    <None Include="include\Engines\Meshing\CPU\ITMMeshingEngine_CPU.tpp" />
-    <None Include="include\Engines\Meshing\CPU\ITMMultiMeshingEngine_CPU.tpp" />
-    <None Include="include\Engines\Meshing\CUDA\ITMMeshingEngine_CUDA.tcu" />
-    <None Include="include\Engines\Meshing\CUDA\ITMMultiMeshingEngine_CUDA.tcu" />
-    <None Include="include\Engines\MultiScene\ITMMapGraphManager.tpp" />
-    <None Include="include\Engines\Reconstruction\CPU\ITMSceneReconstructionEngine_CPU.tpp" />
-    <None Include="include\Engines\Reconstruction\CPU\ITMSurfelSceneReconstructionEngine_CPU.tpp" />
-    <None Include="include\Engines\Reconstruction\CUDA\ITMSceneReconstructionEngine_CUDA.tcu" />
-    <None Include="include\Engines\Reconstruction\CUDA\ITMSurfelSceneReconstructionEngine_CUDA.tcu" />
-    <None Include="include\Engines\Reconstruction\Interface\ITMSurfelSceneReconstructionEngine.tpp" />
-    <None Include="include\Engines\Reconstruction\ITMSurfelSceneReconstructionEngineFactory.tpp" />
-    <None Include="include\Engines\Reconstruction\Metal\ITMSceneReconstructionEngine.metal" />
-    <None Include="include\Engines\Reconstruction\Metal\ITMSceneReconstructionEngine_Metal.mm" />
-    <None Include="include\Engines\Swapping\CPU\ITMSwappingEngine_CPU.tpp" />
-    <None Include="include\Engines\Swapping\CUDA\ITMSwappingEngine_CUDA.tcu" />
-    <None Include="include\Engines\Swapping\Metal\ITMSwappingEngine.metal" />
-    <None Include="include\Engines\Swapping\Metal\ITMSwappingEngine_Metal.mm" />
-    <None Include="include\Engines\ViewBuilding\CUDA\ITMViewBuilder_CUDA.cu" />
-    <None Include="include\Engines\Visualisation\CPU\ITMMultiVisualisationEngine_CPU.tpp" />
-    <None Include="include\Engines\Visualisation\CPU\ITMSurfelVisualisationEngine_CPU.tpp" />
-    <None Include="include\Engines\Visualisation\CPU\ITMVisualisationEngine_CPU.tpp" />
-    <None Include="include\Engines\Visualisation\CUDA\ITMMultiVisualisationEngine_CUDA.tcu" />
-    <None Include="include\Engines\Visualisation\CUDA\ITMSurfelVisualisationEngine_CUDA.tcu" />
-    <None Include="include\Engines\Visualisation\CUDA\ITMVisualisationEngine_CUDA.tcu" />
-    <None Include="include\Engines\Visualisation\CUDA\ITMVisualisationHelpers_CUDA.cu" />
-    <None Include="include\Engines\Visualisation\Interface\ITMSurfelVisualisationEngine.tpp" />
-    <None Include="include\Engines\Visualisation\ITMSurfelVisualisationEngineFactory.tpp" />
-    <None Include="include\Engines\Visualisation\Metal\ITMVisualisationEngine.metal" />
-    <None Include="include\Engines\Visualisation\Metal\ITMVisualisationEngine_Metal.mm" />
-    <None Include="include\MetalInstantiations.mm" />
-    <None Include="include\Trackers\CUDA\ITMColorTracker_CUDA.cu" />
-    <None Include="include\Trackers\CUDA\ITMDepthTracker_CUDA.cu" />
-    <None Include="include\Trackers\CUDA\ITMExtendedTracker_CUDA.cu" />
-    <None Include="include\Trackers\Metal\ITMExtendedTracker.metal" />
-    <None Include="include\Trackers\Metal\ITMExtendedTracker_Metal.mm" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="include\CPUInstantiations.cpp" />
-    <ClCompile Include="include\Engines\LowLevel\CPU\ITMLowLevelEngine_CPU.cpp" />
-    <ClCompile Include="include\Engines\LowLevel\ITMLowLevelEngineFactory.cpp" />
-    <ClCompile Include="include\Engines\MultiScene\ITMActiveMapManager.cpp" />
-    <ClCompile Include="include\Engines\MultiScene\ITMGlobalAdjustmentEngine.cpp" />
-    <ClCompile Include="include\Engines\ViewBuilding\CPU\ITMViewBuilder_CPU.cpp" />
-    <ClCompile Include="include\Engines\ViewBuilding\ITMViewBuilderFactory.cpp" />
-    <ClCompile Include="include\Engines\Visualisation\Interface\ITMVisualisationEngine.cpp" />
-    <ClCompile Include="include\Objects\Camera\ITMCalibIO.cpp" />
-    <ClCompile Include="include\Objects\RenderStates\ITMSurfelRenderState.cpp" />
-    <ClCompile Include="include\Trackers\CPU\ITMColorTracker_CPU.cpp" />
-    <ClCompile Include="include\Trackers\CPU\ITMDepthTracker_CPU.cpp" />
-    <ClCompile Include="include\Trackers\CPU\ITMExtendedTracker_CPU.cpp" />
-    <ClCompile Include="include\Trackers\Interface\ITMColorTracker.cpp" />
-    <ClCompile Include="include\Trackers\Interface\ITMDepthTracker.cpp" />
-    <ClCompile Include="include\Trackers\Interface\ITMExtendedTracker.cpp" />
-    <ClCompile Include="include\Trackers\Interface\ITMFileBasedTracker.cpp" />
-    <ClCompile Include="include\Trackers\Interface\ITMForceFailTracker.cpp" />
-    <ClCompile Include="include\Trackers\Interface\ITMIMUTracker.cpp" />
-    <ClCompile Include="include\Utils\ITMLibSettings.cpp" />
-  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C493779C-5390-348F-9529-8B414EEF1228}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ITMLib</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Code\InfiniTAM-master\cmake_build\ITMLib\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ITMLib.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ITMLib</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Code\InfiniTAM-master\cmake_build\ITMLib\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ITMLib.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ITMLib</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Code\InfiniTAM-master\cmake_build\ITMLib\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">ITMLib.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">ITMLib</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Code\InfiniTAM-master\cmake_build\ITMLib\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">ITMLib.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">ITMLib</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;USING_CMAKE=1;_CRT_SECURE_NO_WARNINGS;NOMINMAX;_USE_MATH_DEFINES;_WIN32_WINNT=0x0501;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;USING_CMAKE=1;_CRT_SECURE_NO_WARNINGS;NOMINMAX;_USE_MATH_DEFINES;_WIN32_WINNT=0x0501;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;USING_CMAKE=1;_CRT_SECURE_NO_WARNINGS;NOMINMAX;_USE_MATH_DEFINES;_WIN32_WINNT=0x0501;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;USING_CMAKE=1;_CRT_SECURE_NO_WARNINGS;NOMINMAX;_USE_MATH_DEFINES;_WIN32_WINNT=0x0501;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;USING_CMAKE=1;_CRT_SECURE_NO_WARNINGS;NOMINMAX;_USE_MATH_DEFINES;_WIN32_WINNT=0x0501;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;USING_CMAKE=1;_CRT_SECURE_NO_WARNINGS;NOMINMAX;_USE_MATH_DEFINES;_WIN32_WINNT=0x0501;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;USING_CMAKE=1;_CRT_SECURE_NO_WARNINGS;NOMINMAX;_USE_MATH_DEFINES;_WIN32_WINNT=0x0501;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;USING_CMAKE=1;_CRT_SECURE_NO_WARNINGS;NOMINMAX;_USE_MATH_DEFINES;_WIN32_WINNT=0x0501;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

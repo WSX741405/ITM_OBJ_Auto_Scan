@@ -10,7 +10,7 @@
 #include "../Engines/Visualisation/Interface/ITMSurfelVisualisationEngine.h"
 #include "../Objects/Misc/ITMIMUCalibrator.h"
 
-#include "../../../FernRelocLib/include/Relocaliser.h"
+#include "../../FernRelocLib/include/Relocaliser.h"
 
 namespace ITMLib
 {

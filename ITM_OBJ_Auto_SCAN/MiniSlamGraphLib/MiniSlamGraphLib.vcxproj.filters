@@ -1,81 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="include">
-      <UniqueIdentifier>{f8ac64bf-132c-4d0e-8508-72d2ded3dfb5}</UniqueIdentifier>
-    </Filter>
+    <ClInclude Include="include\MatrixWrapper.h" />
+    <ClInclude Include="include\ParameterIndex.h" />
+    <ClInclude Include="include\PoseGraph.h" />
+    <ClInclude Include="include\QuaternionHelpers.h" />
+    <ClInclude Include="include\SlamGraph.h" />
+    <ClInclude Include="include\SlamGraphErrorFunction.h" />
+    <ClInclude Include="include\SparseBlockMatrix.h" />
+    <ClInclude Include="include\SparseRegularBlockMatrix.h" />
+    <ClInclude Include="include\VariableLengthVector.h" />
+    <ClInclude Include="include\GraphEdge.h" />
+    <ClInclude Include="include\GraphEdgeSE3.h" />
+    <ClInclude Include="include\GraphNode.h" />
+    <ClInclude Include="include\GraphNodeSE3.h" />
+    <ClInclude Include="include\LevenbergMarquardtMethod.h" />
+    <ClInclude Include="include\Matrix_CSparse.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="include\QuaternionHelpers.cpp">
-      <Filter>include</Filter>
-    </ClCompile>
-    <ClCompile Include="include\SlamGraph.cpp">
-      <Filter>include</Filter>
-    </ClCompile>
-    <ClCompile Include="include\SlamGraphErrorFunction.cpp">
-      <Filter>include</Filter>
-    </ClCompile>
-    <ClCompile Include="include\GraphEdge.cpp">
-      <Filter>include</Filter>
-    </ClCompile>
-    <ClCompile Include="include\GraphEdgeSE3.cpp">
-      <Filter>include</Filter>
-    </ClCompile>
-    <ClCompile Include="include\LevenbergMarquardtMethod.cpp">
-      <Filter>include</Filter>
-    </ClCompile>
-    <ClCompile Include="include\MatrixWrapper.cpp">
-      <Filter>include</Filter>
-    </ClCompile>
-    <ClCompile Include="include\PoseGraph.cpp">
-      <Filter>include</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="include\QuaternionHelpers.h">
-      <Filter>include</Filter>
-    </ClInclude>
-    <ClInclude Include="include\SlamGraph.h">
-      <Filter>include</Filter>
-    </ClInclude>
-    <ClInclude Include="include\SlamGraphErrorFunction.h">
-      <Filter>include</Filter>
-    </ClInclude>
-    <ClInclude Include="include\SparseBlockMatrix.h">
-      <Filter>include</Filter>
-    </ClInclude>
-    <ClInclude Include="include\SparseRegularBlockMatrix.h">
-      <Filter>include</Filter>
-    </ClInclude>
-    <ClInclude Include="include\VariableLengthVector.h">
-      <Filter>include</Filter>
-    </ClInclude>
-    <ClInclude Include="include\GraphEdge.h">
-      <Filter>include</Filter>
-    </ClInclude>
-    <ClInclude Include="include\GraphEdgeSE3.h">
-      <Filter>include</Filter>
-    </ClInclude>
-    <ClInclude Include="include\GraphNode.h">
-      <Filter>include</Filter>
-    </ClInclude>
-    <ClInclude Include="include\GraphNodeSE3.h">
-      <Filter>include</Filter>
-    </ClInclude>
-    <ClInclude Include="include\LevenbergMarquardtMethod.h">
-      <Filter>include</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Matrix_CSparse.h">
-      <Filter>include</Filter>
-    </ClInclude>
-    <ClInclude Include="include\MatrixWrapper.h">
-      <Filter>include</Filter>
-    </ClInclude>
-    <ClInclude Include="include\ParameterIndex.h">
-      <Filter>include</Filter>
-    </ClInclude>
-    <ClInclude Include="include\PoseGraph.h">
-      <Filter>include</Filter>
-    </ClInclude>
+    <ClCompile Include="include\PoseGraph.cpp" />
+    <ClCompile Include="include\QuaternionHelpers.cpp" />
+    <ClCompile Include="include\SlamGraph.cpp" />
+    <ClCompile Include="include\SlamGraphErrorFunction.cpp" />
+    <ClCompile Include="include\GraphEdge.cpp" />
+    <ClCompile Include="include\GraphEdgeSE3.cpp" />
+    <ClCompile Include="include\LevenbergMarquardtMethod.cpp" />
+    <ClCompile Include="include\MatrixWrapper.cpp" />
   </ItemGroup>
 </Project>

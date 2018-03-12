@@ -1,743 +1,732 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="include">
-      <UniqueIdentifier>{66ee5d6d-b320-4d8d-bd5b-f2903752cabb}</UniqueIdentifier>
+    <Filter Include="Core">
+      <UniqueIdentifier>{b2809e04-7741-4d00-86cd-f4f7277181d9}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\Core">
-      <UniqueIdentifier>{44624967-2d91-4908-a311-10b6c3894a8e}</UniqueIdentifier>
+    <Filter Include="Engines">
+      <UniqueIdentifier>{07575ea8-7a00-4325-afac-8cd3d6f826a8}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\Engines">
-      <UniqueIdentifier>{579dbdcf-1d61-4d06-9ad4-a073cd77bf0b}</UniqueIdentifier>
+    <Filter Include="Objects">
+      <UniqueIdentifier>{8ced61bc-2800-4005-b76f-7d0615d3016f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\Engines\LowLevel">
-      <UniqueIdentifier>{2da9dec6-943d-4663-b123-b4395266bba8}</UniqueIdentifier>
+    <Filter Include="Trackers">
+      <UniqueIdentifier>{86454899-9c62-4c1c-9256-10773bee8ec8}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\Engines\Meshing">
-      <UniqueIdentifier>{118143d7-ed85-482e-a166-8c422b7afcf1}</UniqueIdentifier>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{cff763bf-8af6-476c-8056-f8f3056f8fe5}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\Engines\MultiScene">
-      <UniqueIdentifier>{4d0439ec-1209-4509-8919-f82f9f62ea9c}</UniqueIdentifier>
+    <Filter Include="Engines\LowLevel">
+      <UniqueIdentifier>{dd39e95f-966e-4f4d-b1ea-56aafc35388d}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\Engines\Reconstruction">
-      <UniqueIdentifier>{5fd178d1-8a1d-4142-8363-1387f3b756ef}</UniqueIdentifier>
+    <Filter Include="Engines\Meshing">
+      <UniqueIdentifier>{930b6aa1-d492-4a85-b869-bd3bc44faf5d}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\Engines\Swapping">
-      <UniqueIdentifier>{222d7152-073e-4763-8b9e-a3e4aebc027a}</UniqueIdentifier>
+    <Filter Include="Engines\MultiScene">
+      <UniqueIdentifier>{1cf45f70-d037-44b0-9c72-589b6e99c6da}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\Engines\ViewBuilding">
-      <UniqueIdentifier>{6ad332bc-7661-4a90-a3e1-de0bbafd41a4}</UniqueIdentifier>
+    <Filter Include="Engines\Reconstruction">
+      <UniqueIdentifier>{e5b5b7bf-acc6-4c94-9da1-8d700b7cd45c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\Engines\Visualisation">
-      <UniqueIdentifier>{7bc3a458-841f-4f94-bd67-3e803253fcac}</UniqueIdentifier>
+    <Filter Include="Engines\Swapping">
+      <UniqueIdentifier>{2cd8a108-a03d-4857-957a-9694319d1369}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\Engines\LowLevel\CPU">
-      <UniqueIdentifier>{e1151ea2-c651-407a-918f-f88f2d47313a}</UniqueIdentifier>
+    <Filter Include="Engines\ViewBuilding">
+      <UniqueIdentifier>{0065ce34-3e99-43c2-a223-45755e323471}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\Engines\LowLevel\CUDA">
-      <UniqueIdentifier>{f113cdf0-724b-4bd0-b4de-4c98a064f94d}</UniqueIdentifier>
+    <Filter Include="Engines\Visualisation">
+      <UniqueIdentifier>{516dc479-57c2-4ae5-a892-c03ba9095d17}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\Engines\LowLevel\Interface">
-      <UniqueIdentifier>{d2aea3dd-7c8a-49f5-9ab6-89bf95c2d21d}</UniqueIdentifier>
+    <Filter Include="Engines\LowLevel\CPU">
+      <UniqueIdentifier>{02361015-c3fd-4131-96b1-84dfe93ec6aa}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\Engines\LowLevel\Shared">
-      <UniqueIdentifier>{b0416570-fbae-4e0b-877a-5172345f63d2}</UniqueIdentifier>
+    <Filter Include="Engines\LowLevel\CUDA">
+      <UniqueIdentifier>{d9b41d2d-4061-46bd-85a9-6a1d06b49136}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\Engines\Meshing\CPU">
-      <UniqueIdentifier>{cb729c96-ded2-4131-89d6-cb85b69bc215}</UniqueIdentifier>
+    <Filter Include="Engines\LowLevel\Interface">
+      <UniqueIdentifier>{31aab6c5-8b83-461d-ad87-2b075ddc4e4a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\Engines\Meshing\CUDA">
-      <UniqueIdentifier>{cf045b6e-f2ac-4ba3-a36b-1ff1248c9718}</UniqueIdentifier>
+    <Filter Include="Engines\LowLevel\Shared">
+      <UniqueIdentifier>{d855ace6-cfb9-4f97-8f9b-c4a923c8e958}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\Engines\Meshing\Interface">
-      <UniqueIdentifier>{1c6f4384-6e8e-4ed1-98bc-fb30897169ba}</UniqueIdentifier>
+    <Filter Include="Engines\Meshing\CPU">
+      <UniqueIdentifier>{206f0fe8-d0b5-4e2c-b29f-d90d6db35fa7}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\Engines\Meshing\Shared">
-      <UniqueIdentifier>{0a7847ba-09fd-49ce-a1fa-0ff476a3cf66}</UniqueIdentifier>
+    <Filter Include="Engines\Meshing\CUDA">
+      <UniqueIdentifier>{19b1f2cf-7bb1-4593-ab7a-9959bf2b9812}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\Engines\Visualisation\CPU">
-      <UniqueIdentifier>{0ba398a1-b308-4e07-a2e7-82198c285b8a}</UniqueIdentifier>
+    <Filter Include="Engines\Meshing\Interface">
+      <UniqueIdentifier>{d8632079-4382-44bf-bc1b-10451f3a3d05}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\Engines\Visualisation\CUDA">
-      <UniqueIdentifier>{5f62ced1-9a91-4d78-b0e7-ccb2fe435be3}</UniqueIdentifier>
+    <Filter Include="Engines\Meshing\Shared">
+      <UniqueIdentifier>{3fe7dc07-a522-47a4-86a6-7edd4dcc53c5}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\Engines\Visualisation\Interface">
-      <UniqueIdentifier>{0ab1e57f-3969-484e-9e97-b8bb80118e8a}</UniqueIdentifier>
+    <Filter Include="Engines\Visualisation\CPU">
+      <UniqueIdentifier>{2ba6e299-4c2d-4679-8cd0-e1dd8a305871}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\Engines\Visualisation\Metal">
-      <UniqueIdentifier>{39d7206f-50ef-414f-ac8f-16a6b40cd896}</UniqueIdentifier>
+    <Filter Include="Engines\Visualisation\CUDA">
+      <UniqueIdentifier>{c98efee2-0876-4b6a-8d72-c40cfc0ff936}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\Engines\Visualisation\Shared">
-      <UniqueIdentifier>{c95b27ce-48b7-4a4c-bcaf-12bbe2df6792}</UniqueIdentifier>
+    <Filter Include="Engines\Visualisation\Interface">
+      <UniqueIdentifier>{91939122-a062-44d9-8cbc-66f208439f24}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\Engines\ViewBuilding\CPU">
-      <UniqueIdentifier>{01f63dab-190d-4dd4-b78e-143dd3fba26e}</UniqueIdentifier>
+    <Filter Include="Engines\Visualisation\Metal">
+      <UniqueIdentifier>{c512af19-12b1-4bda-9a01-3ff067f62630}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\Engines\ViewBuilding\CUDA">
-      <UniqueIdentifier>{1d36e607-24a6-48a7-a520-9f43f789804b}</UniqueIdentifier>
+    <Filter Include="Engines\Visualisation\Shared">
+      <UniqueIdentifier>{1ca919bb-2c36-43e2-b5b1-2788422187d9}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\Engines\ViewBuilding\Interface">
-      <UniqueIdentifier>{46599ae0-4ef3-46c4-a42d-069bc670d9c8}</UniqueIdentifier>
+    <Filter Include="Engines\ViewBuilding\CPU">
+      <UniqueIdentifier>{b2e9c272-da15-43cb-a836-8df45bfc02d8}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\Engines\ViewBuilding\Shared">
-      <UniqueIdentifier>{8da595bd-4c10-4987-bcdd-0b5f2c27f6e6}</UniqueIdentifier>
+    <Filter Include="Engines\ViewBuilding\CUDA">
+      <UniqueIdentifier>{acede872-01a7-4bcd-a81f-4d2f7138cf7d}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\Engines\Swapping\CPU">
-      <UniqueIdentifier>{ce0684c6-c26d-4486-99d2-0ac3d62b53ef}</UniqueIdentifier>
+    <Filter Include="Engines\ViewBuilding\Interface">
+      <UniqueIdentifier>{b9c6464d-8372-4a2f-8b5a-fdda37b15159}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\Engines\Swapping\CUDA">
-      <UniqueIdentifier>{74518e94-44f2-4f32-b78b-9e0ef5981d97}</UniqueIdentifier>
+    <Filter Include="Engines\ViewBuilding\Shared">
+      <UniqueIdentifier>{6bb0a7bd-b0e0-4448-8944-33bd11a2a5f7}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\Engines\Swapping\Interface">
-      <UniqueIdentifier>{552d9347-2bd2-4cb0-9711-3a41f47278fb}</UniqueIdentifier>
+    <Filter Include="Engines\Swapping\CPU">
+      <UniqueIdentifier>{878f92bb-c03e-498e-949b-bb62f72b78e5}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\Engines\Swapping\Metal">
-      <UniqueIdentifier>{44c4a019-aafb-4008-b4f9-e3c29837b09a}</UniqueIdentifier>
+    <Filter Include="Engines\Swapping\CUDA">
+      <UniqueIdentifier>{eb8236fb-094b-46f0-a235-1ffbd7b284e9}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\Engines\Swapping\Shared">
-      <UniqueIdentifier>{0f3bd999-9c8e-4f93-a735-745ed82e609d}</UniqueIdentifier>
+    <Filter Include="Engines\Swapping\Interface">
+      <UniqueIdentifier>{32967f3f-1030-46cd-a64d-dedceef2f6c1}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\Engines\Reconstruction\CPU">
-      <UniqueIdentifier>{289d7322-3d84-4973-8d44-a279ce40590a}</UniqueIdentifier>
+    <Filter Include="Engines\Swapping\Metal">
+      <UniqueIdentifier>{bb831280-7011-4cab-b07e-feed4cc72955}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\Engines\Reconstruction\CUDA">
-      <UniqueIdentifier>{7f301485-49db-44f9-a0f7-55aaeec36aba}</UniqueIdentifier>
+    <Filter Include="Engines\Swapping\Shared">
+      <UniqueIdentifier>{c773ac0b-3ca1-400d-b717-931c247e0b23}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\Engines\Reconstruction\Interface">
-      <UniqueIdentifier>{7aebe3de-207c-4a18-812a-51dc04c3f206}</UniqueIdentifier>
+    <Filter Include="Engines\Reconstruction\CPU">
+      <UniqueIdentifier>{2992a5fc-0529-4384-9dc5-4ca819972f8d}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\Engines\Reconstruction\Metal">
-      <UniqueIdentifier>{ca27c768-b311-472a-8282-1510e08f081d}</UniqueIdentifier>
+    <Filter Include="Engines\Reconstruction\CUDA">
+      <UniqueIdentifier>{10ceb0f3-b370-4716-8814-7f2907e0e74a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\Engines\Reconstruction\Shared">
-      <UniqueIdentifier>{3b96a81a-31be-4d47-b277-bfb642c54428}</UniqueIdentifier>
+    <Filter Include="Engines\Reconstruction\Interface">
+      <UniqueIdentifier>{2652623d-795c-46ef-bee0-cb407ff01229}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\Objects">
-      <UniqueIdentifier>{a77296e7-a577-4b96-869c-b19448593c49}</UniqueIdentifier>
+    <Filter Include="Engines\Reconstruction\Metal">
+      <UniqueIdentifier>{c9664f31-955b-4db7-afe2-6de4db1f22d3}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\Objects\Camera">
-      <UniqueIdentifier>{d2100feb-a958-4fef-a8d4-fb17997a5aca}</UniqueIdentifier>
+    <Filter Include="Engines\Reconstruction\Shared">
+      <UniqueIdentifier>{2bcd56ad-9cc3-453b-b371-c34f813aa923}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\Objects\Meshing">
-      <UniqueIdentifier>{af03f1ca-6a0a-45f7-88e2-67144c8aad52}</UniqueIdentifier>
+    <Filter Include="Objects\Camera">
+      <UniqueIdentifier>{c6b56ecc-3558-454e-99ae-422a0fbfc764}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\Objects\Misc">
-      <UniqueIdentifier>{35224147-02e0-4fb3-885b-e4a93943556b}</UniqueIdentifier>
+    <Filter Include="Objects\Meshing">
+      <UniqueIdentifier>{d7a3da8b-b61b-4165-8bf7-3313fe67fd16}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\Objects\RenderStates">
-      <UniqueIdentifier>{43a2b588-59ea-4992-8d8d-f2a16f13ab23}</UniqueIdentifier>
+    <Filter Include="Objects\Misc">
+      <UniqueIdentifier>{280010de-30e6-40d7-83e0-d9a04a98ae92}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\Objects\Scene">
-      <UniqueIdentifier>{f9269dce-a12b-40cc-a418-b82c33022bee}</UniqueIdentifier>
+    <Filter Include="Objects\RenderStates">
+      <UniqueIdentifier>{02b49f18-d578-4e37-aade-38cd83068b26}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\Objects\Tracking">
-      <UniqueIdentifier>{8a08255f-cbaf-4cb6-880b-9e73064296dd}</UniqueIdentifier>
+    <Filter Include="Objects\Scene">
+      <UniqueIdentifier>{ab8f6856-b4a2-4238-8b91-e4b6ae9adb20}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\Objects\Views">
-      <UniqueIdentifier>{91cdcaaa-c394-402f-8e0b-e90c36d4c24c}</UniqueIdentifier>
+    <Filter Include="Objects\Tracking">
+      <UniqueIdentifier>{1db68d6d-197c-41e9-b30a-1f7aabbb5ba3}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\Trackers">
-      <UniqueIdentifier>{eb3d400d-cfdd-4f68-a841-912a44dcb962}</UniqueIdentifier>
+    <Filter Include="Objects\Views">
+      <UniqueIdentifier>{97925d45-c294-4691-a643-68aba3a9a3b5}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\Trackers\CPU">
-      <UniqueIdentifier>{cb79f64e-3b56-464d-a085-39cab1294962}</UniqueIdentifier>
+    <Filter Include="Trackers\CPU">
+      <UniqueIdentifier>{d18f6c6e-2712-4451-b0fa-c1f301f60b2c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\Trackers\CUDA">
-      <UniqueIdentifier>{b5025329-85be-459f-9217-f784ea0c2df9}</UniqueIdentifier>
+    <Filter Include="Trackers\CUDA">
+      <UniqueIdentifier>{4cd969a5-9d38-4574-b19e-997831bca125}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\Trackers\Interface">
-      <UniqueIdentifier>{7f71f73d-cda9-4e2e-be31-f640d317392a}</UniqueIdentifier>
+    <Filter Include="Trackers\Interface">
+      <UniqueIdentifier>{7d5d651e-1a15-423b-83a4-cb7154387057}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\Trackers\Metal">
-      <UniqueIdentifier>{02fbaf46-4a7c-4d76-a2b0-b9424dd1a6a2}</UniqueIdentifier>
+    <Filter Include="Trackers\Metal">
+      <UniqueIdentifier>{094b8389-35b2-4654-b0f4-876a96f17ba5}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\Trackers\Shared">
-      <UniqueIdentifier>{bffbb048-bd48-4aba-a2ab-0b663eb05264}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="include\Utils">
-      <UniqueIdentifier>{eee4d48d-9270-4558-be0e-a7c81cce904d}</UniqueIdentifier>
+    <Filter Include="Trackers\Shared">
+      <UniqueIdentifier>{f04a49c6-f389-438a-8cfb-80e562a5bc06}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\Core\ITMBasicSurfelEngine.h">
-      <Filter>include\Core</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Core\ITMDenseMapper.h">
-      <Filter>include\Core</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Core\ITMDenseSurfelMapper.h">
-      <Filter>include\Core</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Core\ITMMainEngine.h">
-      <Filter>include\Core</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Core\ITMMultiEngine.h">
-      <Filter>include\Core</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Core\ITMTrackingController.h">
-      <Filter>include\Core</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Core\ITMBasicEngine.h">
-      <Filter>include\Core</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Engines\LowLevel\ITMLowLevelEngineFactory.h">
-      <Filter>include\Engines\LowLevel</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Engines\LowLevel\CPU\ITMLowLevelEngine_CPU.h">
-      <Filter>include\Engines\LowLevel\CPU</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Engines\LowLevel\CUDA\ITMLowLevelEngine_CUDA.h">
-      <Filter>include\Engines\LowLevel\CUDA</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Engines\LowLevel\Interface\ITMLowLevelEngine.h">
-      <Filter>include\Engines\LowLevel\Interface</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Engines\LowLevel\Shared\ITMLowLevelEngine_Shared.h">
-      <Filter>include\Engines\LowLevel\Shared</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Engines\Meshing\CPU\ITMMultiMeshingEngine_CPU.h">
-      <Filter>include\Engines\Meshing\CPU</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Engines\Meshing\CPU\ITMMeshingEngine_CPU.h">
-      <Filter>include\Engines\Meshing\CPU</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Engines\Meshing\CUDA\ITMMultiMeshingEngine_CUDA.h">
-      <Filter>include\Engines\Meshing\CUDA</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Engines\Meshing\CUDA\ITMMeshingEngine_CUDA.h">
-      <Filter>include\Engines\Meshing\CUDA</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Engines\Meshing\Interface\ITMMeshingEngine.h">
-      <Filter>include\Engines\Meshing\Interface</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Engines\Meshing\Interface\ITMMultiMeshingEngine.h">
-      <Filter>include\Engines\Meshing\Interface</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Engines\Meshing\Shared\ITMMultiMeshingEngine_Shared.h">
-      <Filter>include\Engines\Meshing\Shared</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Engines\Meshing\Shared\ITMMeshingEngine_Shared.h">
-      <Filter>include\Engines\Meshing\Shared</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Engines\Meshing\ITMMeshingEngineFactory.h">
-      <Filter>include\Engines\Meshing</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Engines\Meshing\ITMMultiMeshingEngineFactory.h">
-      <Filter>include\Engines\Meshing</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Engines\MultiScene\ITMGlobalAdjustmentEngine.h">
-      <Filter>include\Engines\MultiScene</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Engines\MultiScene\ITMMapGraphManager.h">
-      <Filter>include\Engines\MultiScene</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Engines\MultiScene\ITMActiveMapManager.h">
-      <Filter>include\Engines\MultiScene</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Engines\Visualisation\CPU\ITMSurfelVisualisationEngine_CPU.h">
-      <Filter>include\Engines\Visualisation\CPU</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Engines\Visualisation\CPU\ITMVisualisationEngine_CPU.h">
-      <Filter>include\Engines\Visualisation\CPU</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Engines\Visualisation\CPU\ITMMultiVisualisationEngine_CPU.h">
-      <Filter>include\Engines\Visualisation\CPU</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Engines\Visualisation\CUDA\ITMVisualisationEngine_CUDA.h">
-      <Filter>include\Engines\Visualisation\CUDA</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Engines\Visualisation\CUDA\ITMVisualisationHelpers_CUDA.h">
-      <Filter>include\Engines\Visualisation\CUDA</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Engines\Visualisation\CUDA\ITMMultiVisualisationEngine_CUDA.h">
-      <Filter>include\Engines\Visualisation\CUDA</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Engines\Visualisation\CUDA\ITMSurfelVisualisationEngine_CUDA.h">
-      <Filter>include\Engines\Visualisation\CUDA</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Engines\Visualisation\Interface\ITMVisualisationEngine.h">
-      <Filter>include\Engines\Visualisation\Interface</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Engines\Visualisation\Interface\ITMMultiVisualisationEngine.h">
-      <Filter>include\Engines\Visualisation\Interface</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Engines\Visualisation\Interface\ITMSurfelVisualisationEngine.h">
-      <Filter>include\Engines\Visualisation\Interface</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Engines\Visualisation\Metal\ITMVisualisationEngine_Metal.h">
-      <Filter>include\Engines\Visualisation\Metal</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Engines\Visualisation\Shared\ITMSurfelVisualisationEngine_Shared.h">
-      <Filter>include\Engines\Visualisation\Shared</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Engines\Visualisation\Shared\ITMVisualisationEngine_Shared.h">
-      <Filter>include\Engines\Visualisation\Shared</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Engines\Visualisation\Shared\ITMSurfelVisualisationEngine_Settings.h">
-      <Filter>include\Engines\Visualisation\Shared</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Engines\Visualisation\ITMSurfelVisualisationEngineFactory.h">
-      <Filter>include\Engines\Visualisation</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Engines\Visualisation\ITMVisualisationEngineFactory.h">
-      <Filter>include\Engines\Visualisation</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Engines\Visualisation\ITMMultiVisualisationEngineFactory.h">
-      <Filter>include\Engines\Visualisation</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Engines\ViewBuilding\CPU\ITMViewBuilder_CPU.h">
-      <Filter>include\Engines\ViewBuilding\CPU</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Engines\ViewBuilding\ITMViewBuilderFactory.h">
-      <Filter>include\Engines\ViewBuilding</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Engines\ViewBuilding\CUDA\ITMViewBuilder_CUDA.h">
-      <Filter>include\Engines\ViewBuilding\CUDA</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Engines\ViewBuilding\Interface\ITMViewBuilder.h">
-      <Filter>include\Engines\ViewBuilding\Interface</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Engines\ViewBuilding\Shared\ITMViewBuilder_Shared.h">
-      <Filter>include\Engines\ViewBuilding\Shared</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Engines\Swapping\ITMSwappingEngineFactory.h">
-      <Filter>include\Engines\Swapping</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Engines\Swapping\CPU\ITMSwappingEngine_CPU.h">
-      <Filter>include\Engines\Swapping\CPU</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Engines\Swapping\Interface\ITMSwappingEngine.h">
-      <Filter>include\Engines\Swapping\Interface</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Engines\Swapping\CUDA\ITMSwappingEngine_CUDA.h">
-      <Filter>include\Engines\Swapping\CUDA</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Engines\Swapping\Metal\ITMSwappingEngine_Metal.h">
-      <Filter>include\Engines\Swapping\Metal</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Engines\Swapping\Shared\ITMSwappingEngine_Shared.h">
-      <Filter>include\Engines\Swapping\Shared</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Engines\Reconstruction\ITMSceneReconstructionEngineFactory.h">
-      <Filter>include\Engines\Reconstruction</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Engines\Reconstruction\ITMSurfelSceneReconstructionEngineFactory.h">
-      <Filter>include\Engines\Reconstruction</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Engines\Reconstruction\CPU\ITMSceneReconstructionEngine_CPU.h">
-      <Filter>include\Engines\Reconstruction\CPU</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Engines\Reconstruction\CPU\ITMSurfelSceneReconstructionEngine_CPU.h">
-      <Filter>include\Engines\Reconstruction\CPU</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Engines\Reconstruction\CUDA\ITMSceneReconstructionEngine_CUDA.h">
-      <Filter>include\Engines\Reconstruction\CUDA</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Engines\Reconstruction\CUDA\ITMSurfelSceneReconstructionEngine_CUDA.h">
-      <Filter>include\Engines\Reconstruction\CUDA</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Engines\Reconstruction\Interface\ITMSurfelSceneReconstructionEngine.h">
-      <Filter>include\Engines\Reconstruction\Interface</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Engines\Reconstruction\Interface\ITMSceneReconstructionEngine.h">
-      <Filter>include\Engines\Reconstruction\Interface</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Engines\Reconstruction\Metal\ITMSceneReconstructionEngine_Metal.h">
-      <Filter>include\Engines\Reconstruction\Metal</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Engines\Reconstruction\Shared\ITMSceneReconstructionEngine_Shared.h">
-      <Filter>include\Engines\Reconstruction\Shared</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Engines\Reconstruction\Shared\ITMSurfelSceneReconstructionEngine_Shared.h">
-      <Filter>include\Engines\Reconstruction\Shared</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Objects\Camera\ITMDisparityCalib.h">
-      <Filter>include\Objects\Camera</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Objects\Camera\ITMExtrinsics.h">
-      <Filter>include\Objects\Camera</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Objects\Camera\ITMIntrinsics.h">
-      <Filter>include\Objects\Camera</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Objects\Camera\ITMRGBDCalib.h">
-      <Filter>include\Objects\Camera</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Objects\Camera\ITMCalibIO.h">
-      <Filter>include\Objects\Camera</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Objects\Meshing\ITMMesh.h">
-      <Filter>include\Objects\Meshing</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Objects\Misc\ITMIMUMeasurement.h">
-      <Filter>include\Objects\Misc</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Objects\Misc\ITMPointCloud.h">
-      <Filter>include\Objects\Misc</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Objects\Misc\ITMIMUCalibrator.h">
-      <Filter>include\Objects\Misc</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Objects\RenderStates\ITMRenderState_VH.h">
-      <Filter>include\Objects\RenderStates</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Objects\RenderStates\ITMRenderStateFactory.h">
-      <Filter>include\Objects\RenderStates</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Objects\RenderStates\ITMRenderStateMultiScene.h">
-      <Filter>include\Objects\RenderStates</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Objects\RenderStates\ITMSurfelRenderState.h">
-      <Filter>include\Objects\RenderStates</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Objects\RenderStates\ITMRenderState.h">
-      <Filter>include\Objects\RenderStates</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Objects\Scene\ITMLocalScene.h">
-      <Filter>include\Objects\Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Objects\Scene\ITMLocalVBA.h">
-      <Filter>include\Objects\Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Objects\Scene\ITMMultiSceneAccess.h">
-      <Filter>include\Objects\Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Objects\Scene\ITMPlainVoxelArray.h">
-      <Filter>include\Objects\Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Objects\Scene\ITMRepresentationAccess.h">
-      <Filter>include\Objects\Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Objects\Scene\ITMScene.h">
-      <Filter>include\Objects\Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Objects\Scene\ITMSurfelScene.h">
-      <Filter>include\Objects\Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Objects\Scene\ITMSurfelTypes.h">
-      <Filter>include\Objects\Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Objects\Scene\ITMVoxelBlockHash.h">
-      <Filter>include\Objects\Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Objects\Scene\ITMVoxelTypes.h">
-      <Filter>include\Objects\Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Objects\Scene\ITMGlobalCache.h">
-      <Filter>include\Objects\Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Objects\Scene\ITMLocalMap.h">
-      <Filter>include\Objects\Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Objects\Tracking\ITMRGBHierarchyLevel.h">
-      <Filter>include\Objects\Tracking</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Objects\Tracking\ITMSceneHierarchyLevel.h">
-      <Filter>include\Objects\Tracking</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Objects\Tracking\ITMTemplatedHierarchyLevel.h">
-      <Filter>include\Objects\Tracking</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Objects\Tracking\ITMTrackingState.h">
-      <Filter>include\Objects\Tracking</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Objects\Tracking\ITMViewHierarchyLevel.h">
-      <Filter>include\Objects\Tracking</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Objects\Tracking\TrackerIterationType.h">
-      <Filter>include\Objects\Tracking</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Objects\Tracking\ITMDepthHierarchyLevel.h">
-      <Filter>include\Objects\Tracking</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Objects\Tracking\ITMImageHierarchy.h">
-      <Filter>include\Objects\Tracking</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Objects\Tracking\ITMIntensityHierarchyLevel.h">
-      <Filter>include\Objects\Tracking</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Objects\Views\ITMViewIMU.h">
-      <Filter>include\Objects\Views</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Objects\Views\ITMView.h">
-      <Filter>include\Objects\Views</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Trackers\ITMTrackerFactory.h">
-      <Filter>include\Trackers</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Trackers\Shared\ITMColorTracker_Shared.h">
-      <Filter>include\Trackers\Shared</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Trackers\Shared\ITMDepthTracker_Shared.h">
-      <Filter>include\Trackers\Shared</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Trackers\Shared\ITMExtendedTracker_Shared.h">
-      <Filter>include\Trackers\Shared</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Trackers\Metal\ITMExtendedTracker_Metal.h">
-      <Filter>include\Trackers\Metal</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Trackers\Interface\ITMFileBasedTracker.h">
-      <Filter>include\Trackers\Interface</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Trackers\Interface\ITMForceFailTracker.h">
-      <Filter>include\Trackers\Interface</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Trackers\Interface\ITMIMUTracker.h">
-      <Filter>include\Trackers\Interface</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Trackers\Interface\ITMTracker.h">
-      <Filter>include\Trackers\Interface</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Trackers\Interface\ITMColorTracker.h">
-      <Filter>include\Trackers\Interface</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Trackers\Interface\ITMCompositeTracker.h">
-      <Filter>include\Trackers\Interface</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Trackers\Interface\ITMDepthTracker.h">
-      <Filter>include\Trackers\Interface</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Trackers\Interface\ITMExtendedTracker.h">
-      <Filter>include\Trackers\Interface</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Trackers\CUDA\ITMColorTracker_CUDA.h">
-      <Filter>include\Trackers\CUDA</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Trackers\CUDA\ITMDepthTracker_CUDA.h">
-      <Filter>include\Trackers\CUDA</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Trackers\CUDA\ITMExtendedTracker_CUDA.h">
-      <Filter>include\Trackers\CUDA</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Trackers\CPU\ITMColorTracker_CPU.h">
-      <Filter>include\Trackers\CPU</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Trackers\CPU\ITMDepthTracker_CPU.h">
-      <Filter>include\Trackers\CPU</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Trackers\CPU\ITMExtendedTracker_CPU.h">
-      <Filter>include\Trackers\CPU</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Utils\ITMLibSettings.h">
-      <Filter>include\Utils</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Utils\ITMMath.h">
-      <Filter>include\Utils</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Utils\ITMMemoryBlockTypes.h">
-      <Filter>include\Utils</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Utils\ITMPixelUtils.h">
-      <Filter>include\Utils</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Utils\ITMProjectionUtils.h">
-      <Filter>include\Utils</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Utils\ITMSceneParams.h">
-      <Filter>include\Utils</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Utils\ITMSurfelSceneParams.h">
-      <Filter>include\Utils</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Utils\ITMCUDAUtils.h">
-      <Filter>include\Utils</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Utils\ITMImageTypes.h">
-      <Filter>include\Utils</Filter>
-    </ClInclude>
-    <ClInclude Include="include\ITMLibDefines.h">
-      <Filter>include</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="include\Core\ITMBasicSurfelEngine.tpp">
-      <Filter>include\Core</Filter>
-    </None>
-    <None Include="include\Core\ITMDenseMapper.tpp">
-      <Filter>include\Core</Filter>
-    </None>
-    <None Include="include\Core\ITMDenseSurfelMapper.tpp">
-      <Filter>include\Core</Filter>
-    </None>
-    <None Include="include\Core\ITMMultiEngine.tpp">
-      <Filter>include\Core</Filter>
-    </None>
-    <None Include="include\Core\ITMBasicEngine.tpp">
-      <Filter>include\Core</Filter>
-    </None>
-    <None Include="include\Engines\LowLevel\CUDA\ITMLowLevelEngine_CUDA.cu">
-      <Filter>include\Engines\LowLevel\CUDA</Filter>
-    </None>
-    <None Include="include\Engines\Meshing\CPU\ITMMeshingEngine_CPU.tpp">
-      <Filter>include\Engines\Meshing\CPU</Filter>
-    </None>
-    <None Include="include\Engines\Meshing\CPU\ITMMultiMeshingEngine_CPU.tpp">
-      <Filter>include\Engines\Meshing\CPU</Filter>
-    </None>
-    <None Include="include\Engines\Meshing\CUDA\ITMMeshingEngine_CUDA.tcu">
-      <Filter>include\Engines\Meshing\CUDA</Filter>
-    </None>
-    <None Include="include\Engines\Meshing\CUDA\ITMMultiMeshingEngine_CUDA.tcu">
-      <Filter>include\Engines\Meshing\CUDA</Filter>
-    </None>
-    <None Include="include\Engines\MultiScene\ITMMapGraphManager.tpp">
-      <Filter>include\Engines\MultiScene</Filter>
-    </None>
-    <None Include="include\Engines\Visualisation\CPU\ITMMultiVisualisationEngine_CPU.tpp">
-      <Filter>include\Engines\Visualisation\CPU</Filter>
-    </None>
-    <None Include="include\Engines\Visualisation\CPU\ITMSurfelVisualisationEngine_CPU.tpp">
-      <Filter>include\Engines\Visualisation\CPU</Filter>
-    </None>
-    <None Include="include\Engines\Visualisation\CPU\ITMVisualisationEngine_CPU.tpp">
-      <Filter>include\Engines\Visualisation\CPU</Filter>
-    </None>
-    <None Include="include\Engines\Visualisation\CUDA\ITMSurfelVisualisationEngine_CUDA.tcu">
-      <Filter>include\Engines\Visualisation\CUDA</Filter>
-    </None>
-    <None Include="include\Engines\Visualisation\CUDA\ITMVisualisationEngine_CUDA.tcu">
-      <Filter>include\Engines\Visualisation\CUDA</Filter>
-    </None>
-    <None Include="include\Engines\Visualisation\CUDA\ITMVisualisationHelpers_CUDA.cu">
-      <Filter>include\Engines\Visualisation\CUDA</Filter>
-    </None>
-    <None Include="include\Engines\Visualisation\CUDA\ITMMultiVisualisationEngine_CUDA.tcu">
-      <Filter>include\Engines\Visualisation\CUDA</Filter>
-    </None>
-    <None Include="include\Engines\Visualisation\Interface\ITMSurfelVisualisationEngine.tpp">
-      <Filter>include\Engines\Visualisation\Interface</Filter>
-    </None>
-    <None Include="include\Engines\Visualisation\Metal\ITMVisualisationEngine.metal">
-      <Filter>include\Engines\Visualisation\Metal</Filter>
-    </None>
-    <None Include="include\Engines\Visualisation\Metal\ITMVisualisationEngine_Metal.mm">
-      <Filter>include\Engines\Visualisation\Metal</Filter>
-    </None>
-    <None Include="include\Engines\Visualisation\ITMSurfelVisualisationEngineFactory.tpp">
-      <Filter>include\Engines\Visualisation</Filter>
-    </None>
-    <None Include="include\Engines\ViewBuilding\CUDA\ITMViewBuilder_CUDA.cu">
-      <Filter>include\Engines\ViewBuilding\CUDA</Filter>
-    </None>
-    <None Include="include\Engines\Swapping\CPU\ITMSwappingEngine_CPU.tpp">
-      <Filter>include\Engines\Swapping\CPU</Filter>
-    </None>
-    <None Include="include\Engines\Swapping\CUDA\ITMSwappingEngine_CUDA.tcu">
-      <Filter>include\Engines\Swapping\CUDA</Filter>
-    </None>
-    <None Include="include\Engines\Swapping\Metal\ITMSwappingEngine_Metal.mm">
-      <Filter>include\Engines\Swapping\Metal</Filter>
-    </None>
-    <None Include="include\Engines\Swapping\Metal\ITMSwappingEngine.metal">
-      <Filter>include\Engines\Swapping\Metal</Filter>
-    </None>
-    <None Include="include\Engines\Reconstruction\ITMSurfelSceneReconstructionEngineFactory.tpp">
-      <Filter>include\Engines\Reconstruction</Filter>
-    </None>
-    <None Include="include\Engines\Reconstruction\CPU\ITMSceneReconstructionEngine_CPU.tpp">
-      <Filter>include\Engines\Reconstruction\CPU</Filter>
-    </None>
-    <None Include="include\Engines\Reconstruction\CPU\ITMSurfelSceneReconstructionEngine_CPU.tpp">
-      <Filter>include\Engines\Reconstruction\CPU</Filter>
-    </None>
-    <None Include="include\Engines\Reconstruction\CUDA\ITMSceneReconstructionEngine_CUDA.tcu">
-      <Filter>include\Engines\Reconstruction\CUDA</Filter>
-    </None>
-    <None Include="include\Engines\Reconstruction\CUDA\ITMSurfelSceneReconstructionEngine_CUDA.tcu">
-      <Filter>include\Engines\Reconstruction\CUDA</Filter>
-    </None>
-    <None Include="include\Engines\Reconstruction\Interface\ITMSurfelSceneReconstructionEngine.tpp">
-      <Filter>include\Engines\Reconstruction\Interface</Filter>
-    </None>
-    <None Include="include\Engines\Reconstruction\Metal\ITMSceneReconstructionEngine_Metal.mm">
-      <Filter>include\Engines\Reconstruction\Metal</Filter>
-    </None>
-    <None Include="include\Engines\Reconstruction\Metal\ITMSceneReconstructionEngine.metal">
-      <Filter>include\Engines\Reconstruction\Metal</Filter>
-    </None>
-    <None Include="include\Trackers\Metal\ITMExtendedTracker_Metal.mm">
-      <Filter>include\Trackers\Metal</Filter>
-    </None>
-    <None Include="include\Trackers\Metal\ITMExtendedTracker.metal">
-      <Filter>include\Trackers\Metal</Filter>
-    </None>
-    <None Include="include\Trackers\CUDA\ITMDepthTracker_CUDA.cu">
-      <Filter>include\Trackers\CUDA</Filter>
-    </None>
-    <None Include="include\Trackers\CUDA\ITMExtendedTracker_CUDA.cu">
-      <Filter>include\Trackers\CUDA</Filter>
-    </None>
-    <None Include="include\Trackers\CUDA\ITMColorTracker_CUDA.cu">
-      <Filter>include\Trackers\CUDA</Filter>
-    </None>
-    <None Include="include\CUDAInstantiations.cu">
-      <Filter>include</Filter>
-    </None>
-    <None Include="include\MetalInstantiations.mm">
-      <Filter>include</Filter>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
+    <ClCompile Include="include\CPUInstantiations.cpp" />
     <ClCompile Include="include\Engines\LowLevel\ITMLowLevelEngineFactory.cpp">
-      <Filter>include\Engines\LowLevel</Filter>
+      <Filter>Engines\LowLevel</Filter>
     </ClCompile>
     <ClCompile Include="include\Engines\LowLevel\CPU\ITMLowLevelEngine_CPU.cpp">
-      <Filter>include\Engines\LowLevel\CPU</Filter>
+      <Filter>Engines\LowLevel\CPU</Filter>
     </ClCompile>
     <ClCompile Include="include\Engines\MultiScene\ITMGlobalAdjustmentEngine.cpp">
-      <Filter>include\Engines\MultiScene</Filter>
+      <Filter>Engines\MultiScene</Filter>
     </ClCompile>
     <ClCompile Include="include\Engines\MultiScene\ITMActiveMapManager.cpp">
-      <Filter>include\Engines\MultiScene</Filter>
+      <Filter>Engines\MultiScene</Filter>
     </ClCompile>
     <ClCompile Include="include\Engines\Visualisation\Interface\ITMVisualisationEngine.cpp">
-      <Filter>include\Engines\Visualisation\Interface</Filter>
-    </ClCompile>
-    <ClCompile Include="include\Engines\ViewBuilding\CPU\ITMViewBuilder_CPU.cpp">
-      <Filter>include\Engines\ViewBuilding\CPU</Filter>
+      <Filter>Engines\Visualisation\Interface</Filter>
     </ClCompile>
     <ClCompile Include="include\Engines\ViewBuilding\ITMViewBuilderFactory.cpp">
-      <Filter>include\Engines\ViewBuilding</Filter>
+      <Filter>Engines\ViewBuilding</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Engines\ViewBuilding\CPU\ITMViewBuilder_CPU.cpp">
+      <Filter>Engines\ViewBuilding\CPU</Filter>
     </ClCompile>
     <ClCompile Include="include\Objects\Camera\ITMCalibIO.cpp">
-      <Filter>include\Objects\Camera</Filter>
+      <Filter>Objects\Camera</Filter>
     </ClCompile>
     <ClCompile Include="include\Objects\RenderStates\ITMSurfelRenderState.cpp">
-      <Filter>include\Objects\RenderStates</Filter>
-    </ClCompile>
-    <ClCompile Include="include\Trackers\Interface\ITMForceFailTracker.cpp">
-      <Filter>include\Trackers\Interface</Filter>
-    </ClCompile>
-    <ClCompile Include="include\Trackers\Interface\ITMIMUTracker.cpp">
-      <Filter>include\Trackers\Interface</Filter>
-    </ClCompile>
-    <ClCompile Include="include\Trackers\Interface\ITMColorTracker.cpp">
-      <Filter>include\Trackers\Interface</Filter>
-    </ClCompile>
-    <ClCompile Include="include\Trackers\Interface\ITMDepthTracker.cpp">
-      <Filter>include\Trackers\Interface</Filter>
-    </ClCompile>
-    <ClCompile Include="include\Trackers\Interface\ITMExtendedTracker.cpp">
-      <Filter>include\Trackers\Interface</Filter>
-    </ClCompile>
-    <ClCompile Include="include\Trackers\Interface\ITMFileBasedTracker.cpp">
-      <Filter>include\Trackers\Interface</Filter>
+      <Filter>Objects\RenderStates</Filter>
     </ClCompile>
     <ClCompile Include="include\Trackers\CPU\ITMDepthTracker_CPU.cpp">
-      <Filter>include\Trackers\CPU</Filter>
+      <Filter>Trackers\CPU</Filter>
     </ClCompile>
     <ClCompile Include="include\Trackers\CPU\ITMExtendedTracker_CPU.cpp">
-      <Filter>include\Trackers\CPU</Filter>
+      <Filter>Trackers\CPU</Filter>
     </ClCompile>
     <ClCompile Include="include\Trackers\CPU\ITMColorTracker_CPU.cpp">
-      <Filter>include\Trackers\CPU</Filter>
+      <Filter>Trackers\CPU</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Trackers\Interface\ITMFileBasedTracker.cpp">
+      <Filter>Trackers\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Trackers\Interface\ITMForceFailTracker.cpp">
+      <Filter>Trackers\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Trackers\Interface\ITMIMUTracker.cpp">
+      <Filter>Trackers\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Trackers\Interface\ITMColorTracker.cpp">
+      <Filter>Trackers\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Trackers\Interface\ITMDepthTracker.cpp">
+      <Filter>Trackers\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Trackers\Interface\ITMExtendedTracker.cpp">
+      <Filter>Trackers\Interface</Filter>
     </ClCompile>
     <ClCompile Include="include\Utils\ITMLibSettings.cpp">
-      <Filter>include\Utils</Filter>
+      <Filter>Utils</Filter>
     </ClCompile>
-    <ClCompile Include="include\CPUInstantiations.cpp">
-      <Filter>include</Filter>
-    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="include\CUDAInstantiations.cu" />
+    <None Include="include\MetalInstantiations.mm" />
+    <None Include="include\Core\ITMBasicEngine.tpp">
+      <Filter>Core</Filter>
+    </None>
+    <None Include="include\Core\ITMBasicSurfelEngine.tpp">
+      <Filter>Core</Filter>
+    </None>
+    <None Include="include\Core\ITMDenseMapper.tpp">
+      <Filter>Core</Filter>
+    </None>
+    <None Include="include\Core\ITMDenseSurfelMapper.tpp">
+      <Filter>Core</Filter>
+    </None>
+    <None Include="include\Core\ITMMultiEngine.tpp">
+      <Filter>Core</Filter>
+    </None>
+    <None Include="include\Engines\LowLevel\CUDA\ITMLowLevelEngine_CUDA.cu">
+      <Filter>Engines\LowLevel\CUDA</Filter>
+    </None>
+    <None Include="include\Engines\Meshing\CPU\ITMMeshingEngine_CPU.tpp">
+      <Filter>Engines\Meshing\CPU</Filter>
+    </None>
+    <None Include="include\Engines\Meshing\CPU\ITMMultiMeshingEngine_CPU.tpp">
+      <Filter>Engines\Meshing\CPU</Filter>
+    </None>
+    <None Include="include\Engines\Meshing\CUDA\ITMMeshingEngine_CUDA.tcu">
+      <Filter>Engines\Meshing\CUDA</Filter>
+    </None>
+    <None Include="include\Engines\Meshing\CUDA\ITMMultiMeshingEngine_CUDA.tcu">
+      <Filter>Engines\Meshing\CUDA</Filter>
+    </None>
+    <None Include="include\Engines\MultiScene\ITMMapGraphManager.tpp">
+      <Filter>Engines\MultiScene</Filter>
+    </None>
+    <None Include="include\Engines\Visualisation\ITMSurfelVisualisationEngineFactory.tpp">
+      <Filter>Engines\Visualisation</Filter>
+    </None>
+    <None Include="include\Engines\Visualisation\CPU\ITMMultiVisualisationEngine_CPU.tpp">
+      <Filter>Engines\Visualisation\CPU</Filter>
+    </None>
+    <None Include="include\Engines\Visualisation\CPU\ITMSurfelVisualisationEngine_CPU.tpp">
+      <Filter>Engines\Visualisation\CPU</Filter>
+    </None>
+    <None Include="include\Engines\Visualisation\CPU\ITMVisualisationEngine_CPU.tpp">
+      <Filter>Engines\Visualisation\CPU</Filter>
+    </None>
+    <None Include="include\Engines\Visualisation\CUDA\ITMSurfelVisualisationEngine_CUDA.tcu">
+      <Filter>Engines\Visualisation\CUDA</Filter>
+    </None>
+    <None Include="include\Engines\Visualisation\CUDA\ITMVisualisationEngine_CUDA.tcu">
+      <Filter>Engines\Visualisation\CUDA</Filter>
+    </None>
+    <None Include="include\Engines\Visualisation\CUDA\ITMVisualisationHelpers_CUDA.cu">
+      <Filter>Engines\Visualisation\CUDA</Filter>
+    </None>
+    <None Include="include\Engines\Visualisation\CUDA\ITMMultiVisualisationEngine_CUDA.tcu">
+      <Filter>Engines\Visualisation\CUDA</Filter>
+    </None>
+    <None Include="include\Engines\Visualisation\Interface\ITMSurfelVisualisationEngine.tpp">
+      <Filter>Engines\Visualisation\Interface</Filter>
+    </None>
+    <None Include="include\Engines\Visualisation\Metal\ITMVisualisationEngine.metal">
+      <Filter>Engines\Visualisation\Metal</Filter>
+    </None>
+    <None Include="include\Engines\Visualisation\Metal\ITMVisualisationEngine_Metal.mm">
+      <Filter>Engines\Visualisation\Metal</Filter>
+    </None>
+    <None Include="include\Engines\ViewBuilding\CUDA\ITMViewBuilder_CUDA.cu">
+      <Filter>Engines\ViewBuilding\CUDA</Filter>
+    </None>
+    <None Include="include\Engines\Swapping\CPU\ITMSwappingEngine_CPU.tpp">
+      <Filter>Engines\Swapping\CPU</Filter>
+    </None>
+    <None Include="include\Engines\Swapping\CUDA\ITMSwappingEngine_CUDA.tcu">
+      <Filter>Engines\Swapping\CUDA</Filter>
+    </None>
+    <None Include="include\Engines\Swapping\Metal\ITMSwappingEngine_Metal.mm">
+      <Filter>Engines\Swapping\Metal</Filter>
+    </None>
+    <None Include="include\Engines\Swapping\Metal\ITMSwappingEngine.metal">
+      <Filter>Engines\Swapping\Metal</Filter>
+    </None>
+    <None Include="include\Engines\Reconstruction\ITMSurfelSceneReconstructionEngineFactory.tpp">
+      <Filter>Engines\Reconstruction</Filter>
+    </None>
+    <None Include="include\Engines\Reconstruction\CPU\ITMSceneReconstructionEngine_CPU.tpp">
+      <Filter>Engines\Reconstruction\CPU</Filter>
+    </None>
+    <None Include="include\Engines\Reconstruction\CPU\ITMSurfelSceneReconstructionEngine_CPU.tpp">
+      <Filter>Engines\Reconstruction\CPU</Filter>
+    </None>
+    <None Include="include\Engines\Reconstruction\CUDA\ITMSceneReconstructionEngine_CUDA.tcu">
+      <Filter>Engines\Reconstruction\CUDA</Filter>
+    </None>
+    <None Include="include\Engines\Reconstruction\CUDA\ITMSurfelSceneReconstructionEngine_CUDA.tcu">
+      <Filter>Engines\Reconstruction\CUDA</Filter>
+    </None>
+    <None Include="include\Engines\Reconstruction\Interface\ITMSurfelSceneReconstructionEngine.tpp">
+      <Filter>Engines\Reconstruction\Interface</Filter>
+    </None>
+    <None Include="include\Engines\Reconstruction\Metal\ITMSceneReconstructionEngine.metal">
+      <Filter>Engines\Reconstruction\Metal</Filter>
+    </None>
+    <None Include="include\Engines\Reconstruction\Metal\ITMSceneReconstructionEngine_Metal.mm">
+      <Filter>Engines\Reconstruction\Metal</Filter>
+    </None>
+    <None Include="include\Trackers\CUDA\ITMDepthTracker_CUDA.cu">
+      <Filter>Trackers\CUDA</Filter>
+    </None>
+    <None Include="include\Trackers\CUDA\ITMExtendedTracker_CUDA.cu">
+      <Filter>Trackers\CUDA</Filter>
+    </None>
+    <None Include="include\Trackers\CUDA\ITMColorTracker_CUDA.cu">
+      <Filter>Trackers\CUDA</Filter>
+    </None>
+    <None Include="include\Trackers\Metal\ITMExtendedTracker_Metal.mm">
+      <Filter>Trackers\Metal</Filter>
+    </None>
+    <None Include="include\Trackers\Metal\ITMExtendedTracker.metal">
+      <Filter>Trackers\Metal</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\ITMLibDefines.h" />
+    <ClInclude Include="include\Core\ITMBasicEngine.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Core\ITMBasicSurfelEngine.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Core\ITMDenseMapper.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Core\ITMDenseSurfelMapper.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Core\ITMMainEngine.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Core\ITMMultiEngine.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Core\ITMTrackingController.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engines\LowLevel\ITMLowLevelEngineFactory.h">
+      <Filter>Engines\LowLevel</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engines\LowLevel\CPU\ITMLowLevelEngine_CPU.h">
+      <Filter>Engines\LowLevel\CPU</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engines\LowLevel\CUDA\ITMLowLevelEngine_CUDA.h">
+      <Filter>Engines\LowLevel\CUDA</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engines\LowLevel\Interface\ITMLowLevelEngine.h">
+      <Filter>Engines\LowLevel\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engines\LowLevel\Shared\ITMLowLevelEngine_Shared.h">
+      <Filter>Engines\LowLevel\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engines\Meshing\CPU\ITMMultiMeshingEngine_CPU.h">
+      <Filter>Engines\Meshing\CPU</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engines\Meshing\CPU\ITMMeshingEngine_CPU.h">
+      <Filter>Engines\Meshing\CPU</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engines\Meshing\CUDA\ITMMultiMeshingEngine_CUDA.h">
+      <Filter>Engines\Meshing\CUDA</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engines\Meshing\CUDA\ITMMeshingEngine_CUDA.h">
+      <Filter>Engines\Meshing\CUDA</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engines\Meshing\Interface\ITMMeshingEngine.h">
+      <Filter>Engines\Meshing\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engines\Meshing\Interface\ITMMultiMeshingEngine.h">
+      <Filter>Engines\Meshing\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engines\Meshing\Shared\ITMMeshingEngine_Shared.h">
+      <Filter>Engines\Meshing\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engines\Meshing\Shared\ITMMultiMeshingEngine_Shared.h">
+      <Filter>Engines\Meshing\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engines\Meshing\ITMMeshingEngineFactory.h">
+      <Filter>Engines\Meshing</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engines\Meshing\ITMMultiMeshingEngineFactory.h">
+      <Filter>Engines\Meshing</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engines\MultiScene\ITMGlobalAdjustmentEngine.h">
+      <Filter>Engines\MultiScene</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engines\MultiScene\ITMMapGraphManager.h">
+      <Filter>Engines\MultiScene</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engines\MultiScene\ITMActiveMapManager.h">
+      <Filter>Engines\MultiScene</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engines\Visualisation\ITMSurfelVisualisationEngineFactory.h">
+      <Filter>Engines\Visualisation</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engines\Visualisation\ITMVisualisationEngineFactory.h">
+      <Filter>Engines\Visualisation</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engines\Visualisation\ITMMultiVisualisationEngineFactory.h">
+      <Filter>Engines\Visualisation</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engines\Visualisation\CPU\ITMSurfelVisualisationEngine_CPU.h">
+      <Filter>Engines\Visualisation\CPU</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engines\Visualisation\CPU\ITMVisualisationEngine_CPU.h">
+      <Filter>Engines\Visualisation\CPU</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engines\Visualisation\CPU\ITMMultiVisualisationEngine_CPU.h">
+      <Filter>Engines\Visualisation\CPU</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engines\Visualisation\CUDA\ITMSurfelVisualisationEngine_CUDA.h">
+      <Filter>Engines\Visualisation\CUDA</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engines\Visualisation\CUDA\ITMVisualisationEngine_CUDA.h">
+      <Filter>Engines\Visualisation\CUDA</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engines\Visualisation\CUDA\ITMVisualisationHelpers_CUDA.h">
+      <Filter>Engines\Visualisation\CUDA</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engines\Visualisation\CUDA\ITMMultiVisualisationEngine_CUDA.h">
+      <Filter>Engines\Visualisation\CUDA</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engines\Visualisation\Interface\ITMVisualisationEngine.h">
+      <Filter>Engines\Visualisation\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engines\Visualisation\Interface\ITMMultiVisualisationEngine.h">
+      <Filter>Engines\Visualisation\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engines\Visualisation\Interface\ITMSurfelVisualisationEngine.h">
+      <Filter>Engines\Visualisation\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engines\Visualisation\Metal\ITMVisualisationEngine_Metal.h">
+      <Filter>Engines\Visualisation\Metal</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engines\Visualisation\Shared\ITMSurfelVisualisationEngine_Shared.h">
+      <Filter>Engines\Visualisation\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engines\Visualisation\Shared\ITMVisualisationEngine_Shared.h">
+      <Filter>Engines\Visualisation\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engines\Visualisation\Shared\ITMSurfelVisualisationEngine_Settings.h">
+      <Filter>Engines\Visualisation\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engines\ViewBuilding\ITMViewBuilderFactory.h">
+      <Filter>Engines\ViewBuilding</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engines\ViewBuilding\CPU\ITMViewBuilder_CPU.h">
+      <Filter>Engines\ViewBuilding\CPU</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engines\ViewBuilding\CUDA\ITMViewBuilder_CUDA.h">
+      <Filter>Engines\ViewBuilding\CUDA</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engines\ViewBuilding\Interface\ITMViewBuilder.h">
+      <Filter>Engines\ViewBuilding\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engines\ViewBuilding\Shared\ITMViewBuilder_Shared.h">
+      <Filter>Engines\ViewBuilding\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engines\Swapping\ITMSwappingEngineFactory.h">
+      <Filter>Engines\Swapping</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engines\Swapping\CPU\ITMSwappingEngine_CPU.h">
+      <Filter>Engines\Swapping\CPU</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engines\Swapping\CUDA\ITMSwappingEngine_CUDA.h">
+      <Filter>Engines\Swapping\CUDA</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engines\Swapping\Interface\ITMSwappingEngine.h">
+      <Filter>Engines\Swapping\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engines\Swapping\Metal\ITMSwappingEngine_Metal.h">
+      <Filter>Engines\Swapping\Metal</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engines\Swapping\Shared\ITMSwappingEngine_Shared.h">
+      <Filter>Engines\Swapping\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engines\Reconstruction\ITMSurfelSceneReconstructionEngineFactory.h">
+      <Filter>Engines\Reconstruction</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engines\Reconstruction\ITMSceneReconstructionEngineFactory.h">
+      <Filter>Engines\Reconstruction</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engines\Reconstruction\CPU\ITMSurfelSceneReconstructionEngine_CPU.h">
+      <Filter>Engines\Reconstruction\CPU</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engines\Reconstruction\CPU\ITMSceneReconstructionEngine_CPU.h">
+      <Filter>Engines\Reconstruction\CPU</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engines\Reconstruction\CUDA\ITMSurfelSceneReconstructionEngine_CUDA.h">
+      <Filter>Engines\Reconstruction\CUDA</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engines\Reconstruction\CUDA\ITMSceneReconstructionEngine_CUDA.h">
+      <Filter>Engines\Reconstruction\CUDA</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engines\Reconstruction\Interface\ITMSurfelSceneReconstructionEngine.h">
+      <Filter>Engines\Reconstruction\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engines\Reconstruction\Interface\ITMSceneReconstructionEngine.h">
+      <Filter>Engines\Reconstruction\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engines\Reconstruction\Metal\ITMSceneReconstructionEngine_Metal.h">
+      <Filter>Engines\Reconstruction\Metal</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engines\Reconstruction\Shared\ITMSceneReconstructionEngine_Shared.h">
+      <Filter>Engines\Reconstruction\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engines\Reconstruction\Shared\ITMSurfelSceneReconstructionEngine_Shared.h">
+      <Filter>Engines\Reconstruction\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Objects\Camera\ITMCalibIO.h">
+      <Filter>Objects\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Objects\Camera\ITMDisparityCalib.h">
+      <Filter>Objects\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Objects\Camera\ITMExtrinsics.h">
+      <Filter>Objects\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Objects\Camera\ITMIntrinsics.h">
+      <Filter>Objects\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Objects\Camera\ITMRGBDCalib.h">
+      <Filter>Objects\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Objects\Meshing\ITMMesh.h">
+      <Filter>Objects\Meshing</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Objects\Misc\ITMIMUMeasurement.h">
+      <Filter>Objects\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Objects\Misc\ITMPointCloud.h">
+      <Filter>Objects\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Objects\Misc\ITMIMUCalibrator.h">
+      <Filter>Objects\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Objects\Views\ITMView.h">
+      <Filter>Objects\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Objects\Views\ITMViewIMU.h">
+      <Filter>Objects\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Objects\Tracking\ITMRGBHierarchyLevel.h">
+      <Filter>Objects\Tracking</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Objects\Tracking\ITMSceneHierarchyLevel.h">
+      <Filter>Objects\Tracking</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Objects\Tracking\ITMTemplatedHierarchyLevel.h">
+      <Filter>Objects\Tracking</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Objects\Tracking\ITMTrackingState.h">
+      <Filter>Objects\Tracking</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Objects\Tracking\ITMViewHierarchyLevel.h">
+      <Filter>Objects\Tracking</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Objects\Tracking\TrackerIterationType.h">
+      <Filter>Objects\Tracking</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Objects\Tracking\ITMDepthHierarchyLevel.h">
+      <Filter>Objects\Tracking</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Objects\Tracking\ITMImageHierarchy.h">
+      <Filter>Objects\Tracking</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Objects\Tracking\ITMIntensityHierarchyLevel.h">
+      <Filter>Objects\Tracking</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Objects\Scene\ITMLocalScene.h">
+      <Filter>Objects\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Objects\Scene\ITMLocalVBA.h">
+      <Filter>Objects\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Objects\Scene\ITMMultiSceneAccess.h">
+      <Filter>Objects\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Objects\Scene\ITMPlainVoxelArray.h">
+      <Filter>Objects\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Objects\Scene\ITMRepresentationAccess.h">
+      <Filter>Objects\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Objects\Scene\ITMScene.h">
+      <Filter>Objects\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Objects\Scene\ITMSurfelScene.h">
+      <Filter>Objects\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Objects\Scene\ITMSurfelTypes.h">
+      <Filter>Objects\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Objects\Scene\ITMVoxelBlockHash.h">
+      <Filter>Objects\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Objects\Scene\ITMVoxelTypes.h">
+      <Filter>Objects\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Objects\Scene\ITMGlobalCache.h">
+      <Filter>Objects\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Objects\Scene\ITMLocalMap.h">
+      <Filter>Objects\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Objects\RenderStates\ITMRenderStateMultiScene.h">
+      <Filter>Objects\RenderStates</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Objects\RenderStates\ITMSurfelRenderState.h">
+      <Filter>Objects\RenderStates</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Objects\RenderStates\ITMRenderState.h">
+      <Filter>Objects\RenderStates</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Objects\RenderStates\ITMRenderState_VH.h">
+      <Filter>Objects\RenderStates</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Objects\RenderStates\ITMRenderStateFactory.h">
+      <Filter>Objects\RenderStates</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Trackers\ITMTrackerFactory.h">
+      <Filter>Trackers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Trackers\CPU\ITMColorTracker_CPU.h">
+      <Filter>Trackers\CPU</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Trackers\CPU\ITMDepthTracker_CPU.h">
+      <Filter>Trackers\CPU</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Trackers\CPU\ITMExtendedTracker_CPU.h">
+      <Filter>Trackers\CPU</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Trackers\CUDA\ITMDepthTracker_CUDA.h">
+      <Filter>Trackers\CUDA</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Trackers\CUDA\ITMExtendedTracker_CUDA.h">
+      <Filter>Trackers\CUDA</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Trackers\CUDA\ITMColorTracker_CUDA.h">
+      <Filter>Trackers\CUDA</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Trackers\Interface\ITMExtendedTracker.h">
+      <Filter>Trackers\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Trackers\Interface\ITMFileBasedTracker.h">
+      <Filter>Trackers\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Trackers\Interface\ITMForceFailTracker.h">
+      <Filter>Trackers\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Trackers\Interface\ITMIMUTracker.h">
+      <Filter>Trackers\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Trackers\Interface\ITMTracker.h">
+      <Filter>Trackers\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Trackers\Interface\ITMColorTracker.h">
+      <Filter>Trackers\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Trackers\Interface\ITMCompositeTracker.h">
+      <Filter>Trackers\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Trackers\Interface\ITMDepthTracker.h">
+      <Filter>Trackers\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Trackers\Metal\ITMExtendedTracker_Metal.h">
+      <Filter>Trackers\Metal</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Trackers\Shared\ITMDepthTracker_Shared.h">
+      <Filter>Trackers\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Trackers\Shared\ITMExtendedTracker_Shared.h">
+      <Filter>Trackers\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Trackers\Shared\ITMColorTracker_Shared.h">
+      <Filter>Trackers\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Utils\ITMLibSettings.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Utils\ITMMath.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Utils\ITMMemoryBlockTypes.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Utils\ITMPixelUtils.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Utils\ITMProjectionUtils.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Utils\ITMSceneParams.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Utils\ITMSurfelSceneParams.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Utils\ITMCUDAUtils.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Utils\ITMImageTypes.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -4,7 +4,7 @@
 
 #include "ITMSceneParams.h"
 #include "ITMSurfelSceneParams.h"
-#include "../../../ORUtils/include/MemoryDeviceType.h"
+#include "../../ORUtils/include/MemoryDeviceType.h"
 
 namespace ITMLib
 {

@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "../../../../MiniSlamGraphLib/include/PoseGraph.h"
+#include "../../MiniSlamGraphLib/include/PoseGraph.h"
 #include "ITMMapGraphManager.h"
 
 namespace ITMLib {

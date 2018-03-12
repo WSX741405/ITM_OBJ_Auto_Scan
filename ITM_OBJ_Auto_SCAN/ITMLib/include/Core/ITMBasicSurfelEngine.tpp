@@ -7,8 +7,8 @@
 #include "../Engines/Visualisation/ITMSurfelVisualisationEngineFactory.h"
 #include "../Trackers/ITMTrackerFactory.h"
 
-#include "../../../ORUtils/include/NVTimer.h"
-#include "../../../ORUtils/include/FileUtils.h"
+#include "../../ORUtils/include/NVTimer.h"
+#include "../../ORUtils/include/FileUtils.h"
 
 //#define OUTPUT_TRAJECTORY_QUATERNIONS
 

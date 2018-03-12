@@ -9,199 +9,452 @@
       <Configuration>Release</Configuration>
       <Platform>x64</Platform>
     </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{B12702AD-ABFB-343A-A199-8E24837244A3}</ProjectGuid>
-    <Keyword>Qt4VSv1.0</Keyword>
-    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+    <ProjectGuid>{A462A788-B89F-398C-BC1C-E73ACCEA7E39}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ITM_OBJ_Auto_Scan</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v140</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v140</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
-  <ItemDefinitionGroup>
-    <ClCompile>
-      <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">UNICODE;WIN32;WIN64;QT_DLL;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
-      <RuntimeLibrary Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MultiThreadedDLL</RuntimeLibrary>
-      <TreatWChar_tAsBuiltInType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</TreatWChar_tAsBuiltInType>
-    </ClCompile>
-    <Link>
-      <SubSystem Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Windows</SubSystem>
-      <OutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)\$(ProjectName).exe</OutputFile>
-      <AdditionalLibraryDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <GenerateDebugInformation Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</GenerateDebugInformation>
-      <AdditionalDependencies Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qtmain.lib;Qt5Core.lib;Qt5Gui.lib;Qt5Widgets.lib;%(AdditionalDependencies)</AdditionalDependencies>
-    </Link>
-    <QtMoc>
-      <InputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(FullPath)</InputFile>
-      <OutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</OutputFile>
-      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">output</DynamicSource>
-      <ExecutionDescription Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc'ing %(Identity)...</ExecutionDescription>
-      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName)\.;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets</IncludePath>
-      <Define Condition="'$(Configuration)|$(Platform)'=='Release|x64'">UNICODE;WIN32;WIN64;QT_DLL;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB</Define>
-      <QTDIR Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)</QTDIR>
-    </QtMoc>
-    <QtUic>
-      <ExecutionDescription Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Uic'ing %(Identity)...</ExecutionDescription>
-      <OutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\ui_%(Filename).h</OutputFile>
-    </QtUic>
-    <QtRcc>
-      <ExecutionDescription Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Rcc'ing %(Identity)...</ExecutionDescription>
-      <OutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\qrc_%(Filename).cpp</OutputFile>
-    </QtRcc>
-  </ItemDefinitionGroup>
-  <PropertyGroup Condition="'$(QtMsBuild)'=='' or !Exists('$(QtMsBuild)\qt.targets')">
-    <QtMsBuild>$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
-  </PropertyGroup>
-  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
-    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
-  </Target>
-  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
-    <Import Project="$(QtMsBuild)\qt.props" />
+  <ImportGroup Label="ExtensionSettings">
   </ImportGroup>
-  <ImportGroup Label="ExtensionSettings" />
-  <ImportGroup Label="Shared" />
-  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-  </ImportGroup>
-  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+  <ImportGroup Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ITM_OBJ_Auto_Scan.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ITM_OBJ_Auto_Scan</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Code\InfiniTAM-master\cmake_build\Apps\InfiniTAM\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">InfiniTAM.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">InfiniTAM</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Code\InfiniTAM-master\cmake_build\Apps\InfiniTAM\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">InfiniTAM.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">InfiniTAM</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Code\InfiniTAM-master\cmake_build\Apps\InfiniTAM\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">InfiniTAM.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">InfiniTAM</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <PreprocessorDefinitions>UNICODE;WIN32;WIN64;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.;.\include;.\GeneratedFiles;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);D:\Software\QT5.9.1\5.9.1\msvc2015_64\include\QtCore;D:\Software\QT5.9.1\5.9.1\msvc2015_64\include\QtGui;D:\Software\QT5.9.1\5.9.1\msvc2015_64\include\QtANGLE;D:\Software\QT5.9.1\5.9.1\msvc2015_64\include\QtWidgets;D:\Code\freeglut-3.0.0\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\include\pcl-1.8;D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\VTK\include\vtk-7.0;D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61;D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Eigen\eigen3;D:\Software\OpenNI2\Include;D:\Software\Royale3.11.0.42\include;D:\Code\librealsense-master\include;C:\Program Files\Microsoft SDKs\Kinect\v2.0_1409\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.;include;GeneratedFiles;D:\Code\freeglut-3.0.0\include;D:\Software\Royale3.11.0.42\include;D:\Software\OpenNI2\Include;D:\Code\librealsense-master\include;C:\Program Files\Microsoft SDKs\Kinect\v2.0_1409\inc;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;D:\Software\QT5.9.1\5.9.1\msvc2015_64\include\;D:\Software\QT5.9.1\5.9.1\msvc2015_64\include\QtCore;D:\Software\QT5.9.1\5.9.1\msvc2015_64\include\QtGui;D:\Software\QT5.9.1\5.9.1\msvc2015_64\include\QtANGLE;D:\Software\QT5.9.1\5.9.1\msvc2015_64\include\QtWidgets;D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\include\pcl-1.8;D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\VTK\include\vtk-7.0;D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61;D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Eigen\eigen3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
-      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;USING_CMAKE=1;COMPILE_WITH_LibRoyale;COMPILE_WITH_RealSense;_CRT_SECURE_NO_WARNINGS;NOMINMAX;_USE_MATH_DEFINES;_WIN32_WINNT=0x0501;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;USING_CMAKE=1;COMPILE_WITH_LibRoyale;COMPILE_WITH_RealSense;_CRT_SECURE_NO_WARNINGS;NOMINMAX;_USE_MATH_DEFINES;_WIN32_WINNT=0x0501;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Code\freeglut-3.0.0\include;D:\Software\Royale3.11.0.42\include;D:\Software\OpenNI2\Include;D:\Code\librealsense-master\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Code\freeglut-3.0.0\include;D:\Software\Royale3.11.0.42\include;D:\Software\OpenNI2\Include;D:\Code\librealsense-master\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>
+      </Command>
+    </PostBuildEvent>
     <Link>
-      <SubSystem>Windows</SubSystem>
-      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
-      <AdditionalLibraryDirectories>D:\Software\QT5.9.1\5.9.1\msvc2015_64\lib;..\FernRelocLib\Debug;..\ITMLib\Debug;..\MiniSlamGraphLib\Debug;..\ORUtils\Debug;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\lib\x64;D:\Code\freeglut-3.0.0\Build-vs2015\lib\Debug;D:\Software\OpenNI2\Lib;C:\Program Files (x86)\Intel\RSSDK\lib\x64;D:\Software\Royale3.11.0.42\lib;C:\Program Files\Microsoft SDKs\Kinect\v2.0_1409\Lib\x64;D:\Code\librealsense-master\bin\x64;D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\lib;D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\VTK\lib;D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glu32.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;cudart_static.lib;InputSource.lib;ITMLib.lib;MiniSlamGraphLib.lib;ORUtils.lib;FernRelocLib.lib;freeglutd.lib;royale.lib;OpenNI2.lib;realsense-d.lib;Kinect20.lib;qtmaind.lib;Qt5Cored.lib;Qt5Guid.lib;Qt5Widgetsd.lib;pcl_io_debug.lib;pcl_common_debug.lib;pcl_visualization_debug.lib;libboost_thread-vc140-mt-gd-1_61.lib;vtkGUISupportQt-7.0-gd.lib;vtkCommonCore-7.0-gd.lib;vtkCommonDataModel-7.0-gd.lib;vtkCommonMath-7.0-gd.lib;vtkRenderingCore-7.0-gd.lib;vtkRenderingOpenGL-7.0-gd.lib;vtkInteractionStyle-7.0-gd.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\FernRelocLib\Debug\;..\InputSource\Debug\;..\ITMLib\Debug\;..\MiniSlamGraphLib\Debug\;..\ORUtils\Debug\;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\lib\x64\;D:\Code\freeglut-3.0.0\Build-vs2015\lib\Debug\;D:\Software\Royale3.11.0.42\lib\;D:\Software\OpenNI2\Lib\;D:\Code\librealsense-master\bin\x64\;C:\Program Files\Microsoft SDKs\Kinect\v2.0_1409\Lib\x64;D:\Software\QT5.9.1\5.9.1\msvc2015_64\lib;D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\lib;D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\VTK\lib;D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>FernRelocLib.lib;ITMLib.lib;MiniSlamGraphLib.lib;qtmaind.lib;ORUtils.lib;Qt5Cored.lib;Qt5Guid.lib;Qt5Widgetsd.lib;cuda.lib;freeglutd.lib;OpenNI2.lib;libpxcmd_d.lib;royale.lib;realsense-d.lib;Kinect20.lib;pcl_io_debug.lib;pcl_common_debug.lib;pcl_visualization_debug.lib;libboost_thread-vc140-mt-gd-1_61.lib;vtkGUISupportQt-7.0-gd.lib;vtkCommonCore-7.0-gd.lib;vtkCommonDataModel-7.0-gd.lib;vtkCommonMath-7.0-gd.lib;vtkRenderingCore-7.0-gd.lib;vtkRenderingOpenGL-7.0-gd.lib;vtkInteractionStyle-7.0-gd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>Debug/ITM_OBJ_Auto_Scan.lib</ImportLibrary>
+      <ProgramDataBaseFile>Debug/InfiniTAM.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+      <Version>
+      </Version>
     </Link>
-    <QtMoc>
-      <OutputFile>.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</OutputFile>
-      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
-      <IncludePath>.;.\include;.\GeneratedFiles;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName)\.;D:\Software\QT5.9.1\5.9.1\msvc2015_64\include\QtCore;D:\Software\QT5.9.1\5.9.1\msvc2015_64\include\QtGui;D:\Software\QT5.9.1\5.9.1\msvc2015_64\include\QtANGLE;D:\Software\QT5.9.1\5.9.1\msvc2015_64\include\QtWidgets;D:\Code\freeglut-3.0.0\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\include\pcl-1.8;D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\VTK\include\vtk-7.0;D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61;D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Eigen\eigen3;D:\Software\OpenNI2\Include;D:\Software\Royale3.11.0.42\include;D:\Code\librealsense-master\include;C:\Program Files\Microsoft SDKs\Kinect\v2.0_1409\inc</IncludePath>
-      <Define>UNICODE;WIN32;WIN64;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB</Define>
-    </QtMoc>
-    <QtUic>
-      <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
-      <OutputFile>.\GeneratedFiles\ui_%(Filename).h</OutputFile>
-    </QtUic>
-    <QtRcc>
-      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
-      <OutputFile>.\GeneratedFiles\qrc_%(Filename).cpp</OutputFile>
-    </QtRcc>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Code\freeglut-3.0.0\include;D:\Software\Royale3.11.0.42\include;D:\Software\OpenNI2\Include;D:\Code\librealsense-master\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;USING_CMAKE=1;COMPILE_WITH_LibRoyale;COMPILE_WITH_RealSense;_CRT_SECURE_NO_WARNINGS;NOMINMAX;_USE_MATH_DEFINES;_WIN32_WINNT=0x0501;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;USING_CMAKE=1;COMPILE_WITH_LibRoyale;COMPILE_WITH_RealSense;_CRT_SECURE_NO_WARNINGS;NOMINMAX;_USE_MATH_DEFINES;_WIN32_WINNT=0x0501;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Code\freeglut-3.0.0\include;D:\Software\Royale3.11.0.42\include;D:\Software\OpenNI2\Include;D:\Code\librealsense-master\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Code\freeglut-3.0.0\include;D:\Software\Royale3.11.0.42\include;D:\Software\OpenNI2\Include;D:\Code\librealsense-master\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+D:\Software\CMake\bin\cmake.exe -E copy_if_different D:/Code/freeglut-3.0.0/bin/x64/freeglut.dll D:/Code/InfiniTAM-master/cmake_build/Apps/InfiniTAM/Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\Software\CMake\bin\cmake.exe -E copy_if_different D:/Software/Royale3.11.0.42/bin/royale.dll D:/Code/InfiniTAM-master/cmake_build/Apps/InfiniTAM/Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\Software\CMake\bin\cmake.exe -E copy_if_different D:/Software/OpenNI2/Redist/OpenNI2.dll D:/Code/InfiniTAM-master/cmake_build/Apps/InfiniTAM/Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\Software\CMake\bin\cmake.exe -E copy_directory D:/Software/OpenNI2/Redist/OpenNI2 D:/Code/InfiniTAM-master/cmake_build/Apps/InfiniTAM/Release/OpenNI2
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\lib\x64\cudart_static.lib;..\..\InputSource\Release\InputSource.lib;..\..\ITMLib\Release\ITMLib.lib;..\..\MiniSlamGraphLib\Release\MiniSlamGraphLib.lib;..\..\ORUtils\Release\ORUtils.lib;..\..\FernRelocLib\Release\FernRelocLib.lib;D:\Code\freeglut-3.0.0\Build-vs2015\lib\Debug\freeglutd.lib;D:\Software\Royale3.11.0.42\lib\royale.lib;glu32.lib;opengl32.lib;D:\Software\OpenNI2\Lib\OpenNI2.lib;D:\Code\librealsense-master\bin\x64\realsense-d.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\lib\x64\cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Code/InfiniTAM-master/cmake_build/Apps/InfiniTAM/Release/InfiniTAM.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Code/InfiniTAM-master/cmake_build/Apps/InfiniTAM/Release/InfiniTAM.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Code\freeglut-3.0.0\include;D:\Software\Royale3.11.0.42\include;D:\Software\OpenNI2\Include;D:\Code\librealsense-master\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;USING_CMAKE=1;COMPILE_WITH_LibRoyale;COMPILE_WITH_RealSense;_CRT_SECURE_NO_WARNINGS;NOMINMAX;_USE_MATH_DEFINES;_WIN32_WINNT=0x0501;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;USING_CMAKE=1;COMPILE_WITH_LibRoyale;COMPILE_WITH_RealSense;_CRT_SECURE_NO_WARNINGS;NOMINMAX;_USE_MATH_DEFINES;_WIN32_WINNT=0x0501;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Code\freeglut-3.0.0\include;D:\Software\Royale3.11.0.42\include;D:\Software\OpenNI2\Include;D:\Code\librealsense-master\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Code\freeglut-3.0.0\include;D:\Software\Royale3.11.0.42\include;D:\Software\OpenNI2\Include;D:\Code\librealsense-master\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+D:\Software\CMake\bin\cmake.exe -E copy_if_different D:/Code/freeglut-3.0.0/bin/x64/freeglut.dll D:/Code/InfiniTAM-master/cmake_build/Apps/InfiniTAM/MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\Software\CMake\bin\cmake.exe -E copy_if_different D:/Software/Royale3.11.0.42/bin/royale.dll D:/Code/InfiniTAM-master/cmake_build/Apps/InfiniTAM/MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\Software\CMake\bin\cmake.exe -E copy_if_different D:/Software/OpenNI2/Redist/OpenNI2.dll D:/Code/InfiniTAM-master/cmake_build/Apps/InfiniTAM/MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\Software\CMake\bin\cmake.exe -E copy_directory D:/Software/OpenNI2/Redist/OpenNI2 D:/Code/InfiniTAM-master/cmake_build/Apps/InfiniTAM/MinSizeRel/OpenNI2
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\lib\x64\cudart_static.lib;..\..\InputSource\MinSizeRel\InputSource.lib;..\..\ITMLib\MinSizeRel\ITMLib.lib;..\..\MiniSlamGraphLib\MinSizeRel\MiniSlamGraphLib.lib;..\..\ORUtils\MinSizeRel\ORUtils.lib;..\..\FernRelocLib\MinSizeRel\FernRelocLib.lib;D:\Code\freeglut-3.0.0\Build-vs2015\lib\Debug\freeglutd.lib;D:\Software\Royale3.11.0.42\lib\royale.lib;glu32.lib;opengl32.lib;D:\Software\OpenNI2\Lib\OpenNI2.lib;D:\Code\librealsense-master\bin\x64\realsense-d.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\lib\x64\cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Code/InfiniTAM-master/cmake_build/Apps/InfiniTAM/MinSizeRel/InfiniTAM.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Code/InfiniTAM-master/cmake_build/Apps/InfiniTAM/MinSizeRel/InfiniTAM.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Code\freeglut-3.0.0\include;D:\Software\Royale3.11.0.42\include;D:\Software\OpenNI2\Include;D:\Code\librealsense-master\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;USING_CMAKE=1;COMPILE_WITH_LibRoyale;COMPILE_WITH_RealSense;_CRT_SECURE_NO_WARNINGS;NOMINMAX;_USE_MATH_DEFINES;_WIN32_WINNT=0x0501;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;USING_CMAKE=1;COMPILE_WITH_LibRoyale;COMPILE_WITH_RealSense;_CRT_SECURE_NO_WARNINGS;NOMINMAX;_USE_MATH_DEFINES;_WIN32_WINNT=0x0501;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Code\freeglut-3.0.0\include;D:\Software\Royale3.11.0.42\include;D:\Software\OpenNI2\Include;D:\Code\librealsense-master\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Code\freeglut-3.0.0\include;D:\Software\Royale3.11.0.42\include;D:\Software\OpenNI2\Include;D:\Code\librealsense-master\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+D:\Software\CMake\bin\cmake.exe -E copy_if_different D:/Code/freeglut-3.0.0/bin/x64/freeglut.dll D:/Code/InfiniTAM-master/cmake_build/Apps/InfiniTAM/RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\Software\CMake\bin\cmake.exe -E copy_if_different D:/Software/Royale3.11.0.42/bin/royale.dll D:/Code/InfiniTAM-master/cmake_build/Apps/InfiniTAM/RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\Software\CMake\bin\cmake.exe -E copy_if_different D:/Software/OpenNI2/Redist/OpenNI2.dll D:/Code/InfiniTAM-master/cmake_build/Apps/InfiniTAM/RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\Software\CMake\bin\cmake.exe -E copy_directory D:/Software/OpenNI2/Redist/OpenNI2 D:/Code/InfiniTAM-master/cmake_build/Apps/InfiniTAM/RelWithDebInfo/OpenNI2
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\lib\x64\cudart_static.lib;..\..\InputSource\RelWithDebInfo\InputSource.lib;..\..\ITMLib\RelWithDebInfo\ITMLib.lib;..\..\MiniSlamGraphLib\RelWithDebInfo\MiniSlamGraphLib.lib;..\..\ORUtils\RelWithDebInfo\ORUtils.lib;..\..\FernRelocLib\RelWithDebInfo\FernRelocLib.lib;D:\Code\freeglut-3.0.0\Build-vs2015\lib\Debug\freeglutd.lib;D:\Software\Royale3.11.0.42\lib\royale.lib;glu32.lib;opengl32.lib;D:\Software\OpenNI2\Lib\OpenNI2.lib;D:\Code\librealsense-master\bin\x64\realsense-d.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\lib\x64\cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Code/InfiniTAM-master/cmake_build/Apps/InfiniTAM/RelWithDebInfo/InfiniTAM.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Code/InfiniTAM-master/cmake_build/Apps/InfiniTAM/RelWithDebInfo/InfiniTAM.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="GeneratedFiles\qrc_ITM_OBJ_Auto_SCAN.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-      </PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-      </PrecompiledHeader>
-    </ClCompile>
-    <ClCompile Include="include\InputSource\CompositeImageSourceEngine.cpp" />
-    <ClCompile Include="include\InputSource\FFMPEGReader.cpp" />
-    <ClCompile Include="include\InputSource\FFMPEGWriter.cpp" />
-    <ClCompile Include="include\InputSource\IdleImageSourceEngine.cpp" />
-    <ClCompile Include="include\InputSource\ImageSourceEngine.cpp" />
-    <ClCompile Include="include\InputSource\IMUSourceEngine.cpp" />
-    <ClCompile Include="include\InputSource\Kinect2Engine.cpp" />
-    <ClCompile Include="include\InputSource\LibUVCEngine.cpp" />
-    <ClCompile Include="include\InputSource\OpenNIEngine.cpp" />
-    <ClCompile Include="include\InputSource\PicoFlexxEngine.cpp" />
-    <ClCompile Include="include\InputSource\RealSenseEngine.cpp" />
+    <ProjectReference Include="D:\Code\InfiniTAM-master\cmake_build\ZERO_CHECK.vcxproj">
+      <Project>{08C5AE8B-4A08-33FB-97F7-0723C72D17E4}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Code\InfiniTAM-master\cmake_build\FernRelocLib\FernRelocLib.vcxproj">
+      <Project>{F3D78CBC-580F-32AF-9AA5-A116CA836853}</Project>
+      <Name>FernRelocLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Code\InfiniTAM-master\cmake_build\ITMLib\ITMLib.vcxproj">
+      <Project>{C493779C-5390-348F-9529-8B414EEF1228}</Project>
+      <Name>ITMLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Code\InfiniTAM-master\cmake_build\MiniSlamGraphLib\MiniSlamGraphLib.vcxproj">
+      <Project>{9190296F-3352-361E-9075-24846E78CD96}</Project>
+      <Name>MiniSlamGraphLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Code\InfiniTAM-master\cmake_build\ORUtils\ORUtils.vcxproj">
+      <Project>{91DCB176-9021-39AC-BAA0-8B34FA196F70}</Project>
+      <Name>ORUtils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\InputSource\include\CompositeImageSourceEngine.cpp" />
+    <ClCompile Include="..\InputSource\include\FFMPEGReader.cpp" />
+    <ClCompile Include="..\InputSource\include\FFMPEGWriter.cpp" />
+    <ClCompile Include="..\InputSource\include\IdleImageSourceEngine.cpp" />
+    <ClCompile Include="..\InputSource\include\ImageSourceEngine.cpp" />
+    <ClCompile Include="..\InputSource\include\IMUSourceEngine.cpp" />
+    <ClCompile Include="..\InputSource\include\Kinect2Engine.cpp" />
+    <ClCompile Include="..\InputSource\include\LibUVCEngine.cpp" />
+    <ClCompile Include="..\InputSource\include\OpenNIEngine.cpp" />
+    <ClCompile Include="..\InputSource\include\PicoFlexxEngine.cpp" />
+    <ClCompile Include="..\InputSource\include\RealSenseEngine.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_MainWindow.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_Observer.cpp" />
+    <ClCompile Include="GeneratedFiles\qrc_ITM_OBJ_Auto_SCAN.cpp" />
+    <ClCompile Include="include\ITM\ITMEngine.cpp" />
     <ClCompile Include="include\ITM\UIEngine.cpp" />
     <ClCompile Include="include\main.cpp" />
     <ClCompile Include="include\Observer\Observer.cpp" />
     <ClCompile Include="include\Observer\ObserverFactory.cpp" />
     <ClCompile Include="include\UI\MainWindow.cpp" />
-    <ClCompile Include="ITMEngine.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="ITM_OBJ_Auto_SCAN.ui">
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Uic%27ing %(Identity)...</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Uic%27ing %(Identity)...</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
-    </CustomBuild>
-  </ItemGroup>
-  <ItemGroup>
+    <ClInclude Include="..\InputSource\include\CompositeImageSourceEngine.h" />
+    <ClInclude Include="..\InputSource\include\FFMPEGReader.h" />
+    <ClInclude Include="..\InputSource\include\FFMPEGWriter.h" />
+    <ClInclude Include="..\InputSource\include\IdleImageSourceEngine.h" />
+    <ClInclude Include="..\InputSource\include\ImageSourceEngine.h" />
+    <ClInclude Include="..\InputSource\include\IMUSourceEngine.h" />
+    <ClInclude Include="..\InputSource\include\Kinect2Engine.h" />
+    <ClInclude Include="..\InputSource\include\LibUVCEngine.h" />
+    <ClInclude Include="..\InputSource\include\OpenNIEngine.h" />
+    <ClInclude Include="..\InputSource\include\PicoFlexxEngine.h" />
+    <ClInclude Include="..\InputSource\include\RealSenseEngine.h" />
     <ClInclude Include="GeneratedFiles\ui_ITM_OBJ_Auto_SCAN.h" />
-    <ClInclude Include="include\InputSource\CompositeImageSourceEngine.h" />
-    <ClInclude Include="include\InputSource\FFMPEGReader.h" />
-    <ClInclude Include="include\InputSource\FFMPEGWriter.h" />
-    <ClInclude Include="include\InputSource\IdleImageSourceEngine.h" />
-    <ClInclude Include="include\InputSource\ImageSourceEngine.h" />
-    <ClInclude Include="include\InputSource\IMUSourceEngine.h" />
-    <ClInclude Include="include\InputSource\Kinect2Engine.h" />
-    <ClInclude Include="include\InputSource\LibUVCEngine.h" />
-    <ClInclude Include="include\InputSource\OpenNIEngine.h" />
-    <ClInclude Include="include\InputSource\PicoFlexxEngine.h" />
-    <ClInclude Include="include\InputSource\RealSenseEngine.h" />
     <ClInclude Include="include\ITM\ITMMain.h" />
     <ClInclude Include="include\ITM\UIEngine.h" />
-    <QtMoc Include="include\Observer\Observer.h" />
+    <ClInclude Include="include\Observer\Observer.h" />
     <ClInclude Include="include\Observer\ObserverFactory.h" />
     <ClInclude Include="include\UI\ITMEngine.h" />
+    <ClInclude Include="include\UI\MainWindow.h" />
     <ClInclude Include="include\UI\Viewer.h" />
-    <QtMoc Include="include\UI\MainWindow.h">
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing ITM_OBJ_Auto_SCAN.h...</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB  "-I." "-I.\include" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-ID:\Software\QT5.9.1\5.9.1\msvc2015_64\include\QtCore" "-ID:\Software\QT5.9.1\5.9.1\msvc2015_64\include\QtGui" "-ID:\Software\QT5.9.1\5.9.1\msvc2015_64\include\QtANGLE" "-ID:\Software\QT5.9.1\5.9.1\msvc2015_64\include\QtWidgets" "-ID:\Code\freeglut-3.0.0\include" "-IC:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" "-ID:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\include\pcl-1.8" "-ID:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\VTK\include\vtk-7.0" "-ID:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61" "-ID:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Eigen\eigen3"</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing ITM_OBJ_Auto_SCAN.h...</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtWidgets"</Command>
-    </QtMoc>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="ITM_OBJ_Auto_SCAN.qrc">
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(FullPath);%(AdditionalInputs)</AdditionalInputs>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Rcc%27ing %(Identity)...</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(FullPath);%(AdditionalInputs)</AdditionalInputs>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Rcc%27ing %(Identity)...</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp</Command>
-    </CustomBuild>
+    <None Include="ITM_OBJ_Auto_SCAN.ui" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
-  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
-    <Import Project="$(QtMsBuild)\qt.targets" />
-  </ImportGroup>
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
-  <ProjectExtensions>
-    <VisualStudio>
-      <UserProperties MocDir=".\GeneratedFiles\$(ConfigurationName)" UicDir=".\GeneratedFiles" RccDir=".\GeneratedFiles" lupdateOptions="" lupdateOnBuild="0" lreleaseOptions="" Qt5Version_x0020_x64="QT5.9.1" MocOptions="" />
-    </VisualStudio>
-  </ProjectExtensions>
 </Project>

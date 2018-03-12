@@ -11,8 +11,8 @@
 #include "../../Objects/Tracking/ITMTemplatedHierarchyLevel.h"
 #include "../../Objects/Tracking/TrackerIterationType.h"
 
-#include "../../../../ORUtils/include/HomkerMap.h"
-#include "../../../../ORUtils/include/SVMClassifier.h"
+#include "../../ORUtils/include/HomkerMap.h"
+#include "../../ORUtils/include/SVMClassifier.h"
 
 namespace ITMLib
 {

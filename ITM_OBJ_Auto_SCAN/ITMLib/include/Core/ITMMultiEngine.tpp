@@ -8,7 +8,7 @@
 #include "../Engines/Visualisation/ITMMultiVisualisationEngineFactory.h"
 #include "../Trackers/ITMTrackerFactory.h"
 
-#include "../../../MiniSlamGraphLib/include/QuaternionHelpers.h"
+#include "../../MiniSlamGraphLib/include/QuaternionHelpers.h"
 
 using namespace ITMLib;
 

@@ -4,7 +4,7 @@
 
 #include "TrackerIterationType.h"
 #include "../../Utils/ITMMath.h"
-#include "../../../../ORUtils/include/MemoryBlock.h"
+#include "../../ORUtils/include/MemoryBlock.h"
 
 namespace ITMLib
 {

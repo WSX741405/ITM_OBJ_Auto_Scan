@@ -2,9 +2,9 @@
 
 #pragma once
 
-#include "InputSource/ImageSourceEngine.h"
-#include "InputSource/IMUSourceEngine.h"
-#include "InputSource/FFMPEGWriter.h"
+#include "../InputSource/include/ImageSourceEngine.h"
+#include "../InputSource/include/IMUSourceEngine.h"
+#include "../InputSource/include/FFMPEGWriter.h"
 #include "../../../ITMLib/include/Core/ITMMainEngine.h"
 #include "../../../ITMLib/include/Utils/ITMLibSettings.h"
 #include "../../../ORUtils/include/FileUtils.h"

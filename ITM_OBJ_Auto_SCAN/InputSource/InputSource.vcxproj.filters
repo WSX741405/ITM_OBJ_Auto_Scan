@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\InfiniTAM\InputSource\CompositeImageSourceEngine.cpp" />
+    <ClCompile Include="..\..\InfiniTAM\InputSource\FFMPEGReader.cpp" />
+    <ClCompile Include="..\..\InfiniTAM\InputSource\FFMPEGWriter.cpp" />
+    <ClCompile Include="..\..\InfiniTAM\InputSource\IdleImageSourceEngine.cpp" />
+    <ClCompile Include="..\..\InfiniTAM\InputSource\ImageSourceEngine.cpp" />
+    <ClCompile Include="..\..\InfiniTAM\InputSource\IMUSourceEngine.cpp" />
+    <ClCompile Include="..\..\InfiniTAM\InputSource\Kinect2Engine.cpp" />
+    <ClCompile Include="..\..\InfiniTAM\InputSource\LibUVCEngine.cpp" />
+    <ClCompile Include="..\..\InfiniTAM\InputSource\OpenNIEngine.cpp" />
+    <ClCompile Include="..\..\InfiniTAM\InputSource\PicoFlexxEngine.cpp" />
+    <ClCompile Include="..\..\InfiniTAM\InputSource\RealSenseEngine.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\InfiniTAM\InputSource\CompositeImageSourceEngine.h" />
+    <ClInclude Include="..\..\InfiniTAM\InputSource\FFMPEGReader.h" />
+    <ClInclude Include="..\..\InfiniTAM\InputSource\FFMPEGWriter.h" />
+    <ClInclude Include="..\..\InfiniTAM\InputSource\IdleImageSourceEngine.h" />
+    <ClInclude Include="..\..\InfiniTAM\InputSource\ImageSourceEngine.h" />
+    <ClInclude Include="..\..\InfiniTAM\InputSource\IMUSourceEngine.h" />
+    <ClInclude Include="..\..\InfiniTAM\InputSource\Kinect2Engine.h" />
+    <ClInclude Include="..\..\InfiniTAM\InputSource\LibUVCEngine.h" />
+    <ClInclude Include="..\..\InfiniTAM\InputSource\OpenNIEngine.h" />
+    <ClInclude Include="..\..\InfiniTAM\InputSource\PicoFlexxEngine.h" />
+    <ClInclude Include="..\..\InfiniTAM\InputSource\RealSenseEngine.h" />
+  </ItemGroup>
+</Project>

@@ -26,7 +26,7 @@
 #include "Metal/ITMExtendedTracker_Metal.h"
 #endif
 
-#include "../../../ORUtils/include/KeyValueConfig.h"
+#include "../../ORUtils/include/KeyValueConfig.h"
 
 namespace ITMLib
 {

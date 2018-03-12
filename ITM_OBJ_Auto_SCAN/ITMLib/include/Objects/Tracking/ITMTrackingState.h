@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "../../../../ORUtils/include/SE3Pose.h"
+#include "../../ORUtils/include/SE3Pose.h"
 #include "../Misc/ITMPointCloud.h"
 
 namespace ITMLib

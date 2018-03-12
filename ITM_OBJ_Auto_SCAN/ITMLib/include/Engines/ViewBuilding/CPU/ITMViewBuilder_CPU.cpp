@@ -3,7 +3,7 @@
 #include "ITMViewBuilder_CPU.h"
 
 #include "../Shared/ITMViewBuilder_Shared.h"
-#include "../../../../../ORUtils/include/MetalContext.h"
+#include "../../ORUtils/include/MetalContext.h"
 
 using namespace ITMLib;
 using namespace ORUtils;

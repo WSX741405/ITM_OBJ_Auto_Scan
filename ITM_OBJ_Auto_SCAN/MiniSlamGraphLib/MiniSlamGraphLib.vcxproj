@@ -20,7 +20,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{9190296F-3352-361E-9075-24846E78CD96}</ProjectGuid>
-    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
     <ProjectName>MiniSlamGraphLib</ProjectName>
@@ -56,7 +56,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Code\InfiniTAM-master\cmake_build\MiniSlamGraphLib\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MiniSlamGraphLib.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MiniSlamGraphLib</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
@@ -75,7 +75,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
@@ -205,24 +205,10 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ProjectReference Include="D:\Code\InfiniTAM-master\cmake_build\ZERO_CHECK.vcxproj">
-      <Project>{08C5AE8B-4A08-33FB-97F7-0723C72D17E4}</Project>
-      <Name>ZERO_CHECK</Name>
-    </ProjectReference>
     <ProjectReference Include="D:\Code\InfiniTAM-master\cmake_build\ORUtils\ORUtils.vcxproj">
       <Project>{91DCB176-9021-39AC-BAA0-8B34FA196F70}</Project>
       <Name>ORUtils</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="include\GraphEdge.cpp" />
-    <ClCompile Include="include\GraphEdgeSE3.cpp" />
-    <ClCompile Include="include\LevenbergMarquardtMethod.cpp" />
-    <ClCompile Include="include\MatrixWrapper.cpp" />
-    <ClCompile Include="include\PoseGraph.cpp" />
-    <ClCompile Include="include\QuaternionHelpers.cpp" />
-    <ClCompile Include="include\SlamGraph.cpp" />
-    <ClCompile Include="include\SlamGraphErrorFunction.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\GraphEdge.h" />
@@ -240,6 +226,16 @@
     <ClInclude Include="include\SparseBlockMatrix.h" />
     <ClInclude Include="include\SparseRegularBlockMatrix.h" />
     <ClInclude Include="include\VariableLengthVector.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="include\GraphEdge.cpp" />
+    <ClCompile Include="include\GraphEdgeSE3.cpp" />
+    <ClCompile Include="include\LevenbergMarquardtMethod.cpp" />
+    <ClCompile Include="include\MatrixWrapper.cpp" />
+    <ClCompile Include="include\PoseGraph.cpp" />
+    <ClCompile Include="include\QuaternionHelpers.cpp" />
+    <ClCompile Include="include\SlamGraph.cpp" />
+    <ClCompile Include="include\SlamGraphErrorFunction.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
