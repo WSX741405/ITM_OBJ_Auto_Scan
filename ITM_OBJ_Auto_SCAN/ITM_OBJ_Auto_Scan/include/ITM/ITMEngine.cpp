@@ -1,6 +1,6 @@
 #include "UI/ITMEngine.h"
 
-ITMEngine::ITMEngine(char* calibFile, char* filename1, char* filename2 , char* imuFile)
+ITMEngine::ITMEngine(char* calibFile, char* filename1, char* filename2, char* imuFile)
 	: _calibFile(calibFile), _filename1(filename1), _filename2(filename2), _imuFile(imuFile)
 {
 }
@@ -14,17 +14,17 @@ void ITMEngine::StartProcessing()
 {
 	CreateImageSource();
 
-	ITMLibSettings *internalSettings = new ITMLibSettings();
-	switch (internalSettings->libMode)
+	_internalSettings = new ITMLibSettings();
+	switch (_internalSettings->libMode)
 	{
 	case ITMLibSettings::LIBMODE_BASIC:
-		_mainEngine = new ITMBasicEngine<ITMVoxel, ITMVoxelIndex>(internalSettings, _imageSource->getCalib(), _imageSource->getRGBImageSize(), _imageSource->getDepthImageSize());
+		_mainEngine = new ITMBasicEngine<ITMVoxel, ITMVoxelIndex>(_internalSettings, _imageSource->getCalib(), _imageSource->getRGBImageSize(), _imageSource->getDepthImageSize());
 		break;
 	case ITMLibSettings::LIBMODE_BASIC_SURFELS:
-		_mainEngine = new ITMBasicSurfelEngine<ITMSurfelT>(internalSettings, _imageSource->getCalib(), _imageSource->getRGBImageSize(), _imageSource->getDepthImageSize());
+		_mainEngine = new ITMBasicSurfelEngine<ITMSurfelT>(_internalSettings, _imageSource->getCalib(), _imageSource->getRGBImageSize(), _imageSource->getDepthImageSize());
 		break;
 	case ITMLibSettings::LIBMODE_LOOPCLOSURE:
-		_mainEngine = new ITMMultiEngine<ITMVoxel, ITMVoxelIndex>(internalSettings, _imageSource->getCalib(), _imageSource->getRGBImageSize(), _imageSource->getDepthImageSize());
+		_mainEngine = new ITMMultiEngine<ITMVoxel, ITMVoxelIndex>(_internalSettings, _imageSource->getCalib(), _imageSource->getRGBImageSize(), _imageSource->getDepthImageSize());
 		break;
 	default:
 		throw std::runtime_error("Unsupported library mode!");
@@ -42,7 +42,7 @@ void ITMEngine::StartProcessing()
 	_winReg[2] = Vector4f(0.665f, h1, 1.0f, h2);     // Side sub window 2
 
 	bool allocateGPU = false;
-	if (internalSettings->deviceType == ITMLibSettings::DEVICE_CUDA) allocateGPU = true;
+	if (_internalSettings->deviceType == ITMLibSettings::DEVICE_CUDA) allocateGPU = true;
 
 	for (int w = 0; w < NUM_WIN; w++)
 		_outImage[w] = new ITMUChar4Image(_imageSource->getDepthImageSize(), true, allocateGPU);
@@ -91,17 +91,34 @@ void ITMEngine::ProcessFrame()
 
 	//processedTime = sdkGetTimerValue(&timer_instant);
 	_processedTime = sdkGetAverageTimerValue(&_timer_average);
-
-	DisplayImage();
 }
 
 void ITMEngine::DisplayImage()
 {
-	_mainEngine->GetImage(_outImage[0], _outImageType[0]);
-	ITMUChar4Image** showImgs = _outImage;
-	Vector4f* winReg = _winReg;
-	Vector4u* cpuData = showImgs[0]->GetData(MEMORYDEVICE_CPU);
-	size_t size = showImgs[0]->dataSize;
+	switch (_internalSettings->libMode)
+	{
+	case ITMLibSettings::LIBMODE_BASIC:
+	{
+		ITMBasicEngine<ITMVoxel, ITMVoxelIndex>* engine = static_cast<ITMBasicEngine<ITMVoxel, ITMVoxelIndex>*>(_mainEngine);
+		ITMScene<ITMVoxel, ITMVoxelIndex>* scene = engine->GetScene();
+		break;
+	}
+	case ITMLibSettings::LIBMODE_BASIC_SURFELS:
+	{
+		_mainEngine = new ITMBasicSurfelEngine<ITMSurfelT>(_internalSettings, _imageSource->getCalib(), _imageSource->getRGBImageSize(), _imageSource->getDepthImageSize());
+		break;
+	}
+	case ITMLibSettings::LIBMODE_LOOPCLOSURE:
+	{
+		_mainEngine = new ITMMultiEngine<ITMVoxel, ITMVoxelIndex>(_internalSettings, _imageSource->getCalib(), _imageSource->getRGBImageSize(), _imageSource->getDepthImageSize());
+		break;
+	}
+	default:
+	{
+		throw std::runtime_error("Unsupported library mode!");
+		break;
+	}
+	}
 }
 
 void ITMEngine::CreateImageSource()

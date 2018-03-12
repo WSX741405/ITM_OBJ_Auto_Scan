@@ -42,7 +42,7 @@ public:
 private:
 	void CreateImageSource();
 
-
+	ITMLibSettings* _internalSettings;
 	ITMLib::ITMMainEngine* _mainEngine;
 	ImageSourceEngine* _imageSource = NULL;
 	IMUSourceEngine* _imuSource = NULL;

@@ -49,4 +49,5 @@ void MainWindow::ProcessFrameSlot()
 void MainWindow::UpdateViewerSlot()
 {
 	_engine->ProcessFrame();
+	_engine->DisplayImage();
 }
