@@ -100,7 +100,7 @@ void ITMEngine::DisplayImage()
 	case ITMLibSettings::LIBMODE_BASIC:
 	{
 		ITMBasicEngine<ITMVoxel, ITMVoxelIndex>* engine = static_cast<ITMBasicEngine<ITMVoxel, ITMVoxelIndex>*>(_mainEngine);
-		ITMScene<ITMVoxel, ITMVoxelIndex>* scene = engine->GetScene();
+		engine->GetMeshPointCloud();
 		break;
 	}
 	case ITMLibSettings::LIBMODE_BASIC_SURFELS:

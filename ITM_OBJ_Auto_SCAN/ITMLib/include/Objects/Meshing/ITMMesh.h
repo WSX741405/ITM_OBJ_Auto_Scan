@@ -2,6 +2,9 @@
 
 #pragma once
 
+#include <pcl/point_cloud.h>
+#include <pcl/point_types.h>
+
 #include "../Scene/ITMVoxelBlockHash.h"
 #include "../../ORUtils/include/Image.h"
 
@@ -12,15 +15,21 @@ namespace ITMLib
 	class ITMMesh
 	{
 	public:
+		typedef pcl::PointXYZ PointT;
+
 		struct Triangle { Vector3f p0, p1, p2; };
+		struct Point { Vector3f p; };
 
 		MemoryDeviceType memoryType;
 
 		uint noTotalTriangles;
-		static const uint noMaxTriangles_default = SDF_LOCAL_BLOCK_NUM * 32 * 16;
+		//	ur gpu memory size
+		//static const uint noMaxTriangles_default = SDF_LOCAL_BLOCK_NUM * 32 * 16;
+		static const uint noMaxTriangles_default = SDF_LOCAL_BLOCK_NUM * 1 * 1;
 		uint noMaxTriangles;
 
 		ORUtils::MemoryBlock<Triangle> *triangles;
+		ORUtils::MemoryBlock<Point> *points;
 
 		explicit ITMMesh(MemoryDeviceType memoryType, uint maxTriangles = noMaxTriangles_default)
 		{
@@ -29,6 +38,31 @@ namespace ITMLib
 			this->noMaxTriangles = maxTriangles;
 
 			triangles = new ORUtils::MemoryBlock<Triangle>(noMaxTriangles, memoryType);
+			points = new ORUtils::MemoryBlock<Point>(noMaxTriangles, memoryType);
+		}
+
+		//	Get point cloud used pcl type
+		boost::shared_ptr<pcl::PointCloud<PointT>> GetPointCloud()
+		{
+			boost::shared_ptr<pcl::PointCloud<PointT>> pointCloud;
+			pointCloud.reset(new pcl::PointCloud<PointT>());
+
+			ORUtils::MemoryBlock<Point> *cpu_point; bool shoulDelete = false;
+			if (memoryType == MEMORYDEVICE_CUDA)
+			{
+				cpu_point = new ORUtils::MemoryBlock<Point>(noMaxTriangles, MEMORYDEVICE_CPU);
+				cpu_point->SetFrom(points, ORUtils::MemoryBlock<Point>::CUDA_TO_CPU);
+				shoulDelete = true;
+			}
+			else cpu_point = points;
+
+			Point* pointArray = cpu_point->GetData(MEMORYDEVICE_CPU);
+			for (uint i = 0; i < noTotalTriangles; i++)
+			{
+				boost::shared_ptr<PointT> point(new PointT(pointArray[i].p.x, pointArray[i].p.y, pointArray[i].p.z));
+				pointCloud->push_back(*point);
+			}
+			return pointCloud;
 		}
 
 		void WriteOBJ(const char *fileName)

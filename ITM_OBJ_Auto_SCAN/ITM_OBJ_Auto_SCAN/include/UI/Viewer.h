@@ -6,11 +6,11 @@
 #include <pcl/visualization/cloud_viewer.h>
 #include <vtkRenderWindow.h>
 
-typedef pcl::PointXYZRGBA PointT;
-
 class Viewer
 {
 public:
+	typedef pcl::PointXYZ PointT;
+
 	Viewer(std::string title = "") : _title(title)
 	{
 		_viewer.reset(new pcl::visualization::PCLVisualizer(_title, false));

@@ -23,6 +23,9 @@
 #include "../../../ORUtils/include/FileUtils.h"
 #include "../../../ORUtils/include/NVTimer.h"
 
+#include <pcl/point_cloud.h>
+#include <pcl/point_types.h>
+
 #include "Observer/Observer.h"
 
 using namespace InputSource;
@@ -33,6 +36,8 @@ class ISubject;
 class ITMEngine
 {
 public:
+	typedef pcl::PointXYZ PointT;
+
 	ITMEngine(char* calibFile = "", char* filename1 = NULL, char* filename2 = NULL, char* imuFile = NULL);
 	void SetGrabberSubject(ISubject* subject);
 	void StartProcessing();

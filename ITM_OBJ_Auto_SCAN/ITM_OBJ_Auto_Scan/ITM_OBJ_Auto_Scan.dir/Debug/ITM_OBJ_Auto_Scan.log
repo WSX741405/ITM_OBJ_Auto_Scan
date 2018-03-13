@@ -1,4 +1,221 @@
-﻿  ITMEngine.cpp
+﻿  PicoFlexxEngine.cpp
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include\cuda_runtime_api.h(1946): warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include\cuda_runtime.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+c:\program files\nvidia gpu computing toolkit\cuda\v8.0\include\cuda_runtime_api.h(1946): warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+c:\program files\nvidia gpu computing toolkit\cuda\v8.0\include\cuda_runtime_api.h(1946): warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\include\pcl-1.8\pcl/pcl_macros.h(72): warning C4005: '_USE_MATH_DEFINES': 巨集重複定義
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\include\pcl-1.8\pcl/pcl_macros.h(72): note: 命令列引數: 請參閱 '_USE_MATH_DEFINES' 先前的定義
+D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\include\pcl-1.8\pcl/point_traits.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\include\pcl-1.8\pcl/visualization/interactor_style.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\include\pcl-1.8\pcl/visualization/pcl_visualizer.h(1618): warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+d:\code\librealsense-master\include\librealsense\rs.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+D:\Software\Royale3.11.0.42\include\royale/Variant.hpp(34): warning C4056: 在浮點常數算術中溢位
+D:\Software\Visual Studio Professional 2015\VC\include\xmemory(102): warning C4996: 'std::uninitialized_copy::_Unchecked_iterators::_Deprecate': Call to 'std::uninitialized_copy' with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+  D:\Software\Visual Studio Professional 2015\VC\include\xmemory(102): note: 請參閱 'std::uninitialized_copy::_Unchecked_iterators::_Deprecate' 的宣告
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/detail/auto_buffer.hpp(191): note: 請參閱所要編譯的函式 樣板 具現化 '_FwdIt *std::uninitialized_copy<I,boost::shared_ptr<void>*>(_InIt,_InIt,_FwdIt)' 之參考
+          with
+          [
+              _FwdIt=boost::shared_ptr<void> *,
+              I=boost::shared_ptr<void> *,
+              _InIt=boost::shared_ptr<void> *
+          ]
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/detail/auto_buffer.hpp(178): note: 請參閱所要編譯的函式 樣板 具現化 'void boost::signals2::detail::auto_buffer<boost::shared_ptr<void>,boost::signals2::detail::store_n_objects<10>,boost::signals2::detail::default_grow_policy,std::allocator<T>>::copy_rai<I,false>(I,I,boost::shared_ptr<void> *,const boost::integral_constant<bool,false> &)' 之參考
+          with
+          [
+              T=boost::shared_ptr<void>,
+              I=boost::shared_ptr<void> *
+          ]
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/detail/auto_buffer.hpp(178): note: 請參閱所要編譯的函式 樣板 具現化 'void boost::signals2::detail::auto_buffer<boost::shared_ptr<void>,boost::signals2::detail::store_n_objects<10>,boost::signals2::detail::default_grow_policy,std::allocator<T>>::copy_rai<I,false>(I,I,boost::shared_ptr<void> *,const boost::integral_constant<bool,false> &)' 之參考
+          with
+          [
+              T=boost::shared_ptr<void>,
+              I=boost::shared_ptr<void> *
+          ]
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/detail/auto_buffer.hpp(204): note: 請參閱所要編譯的函式 樣板 具現化 'void boost::signals2::detail::auto_buffer<boost::shared_ptr<void>,boost::signals2::detail::store_n_objects<10>,boost::signals2::detail::default_grow_policy,std::allocator<T>>::copy_impl<I>(I,I,boost::shared_ptr<void> *,std::random_access_iterator_tag)' 之參考
+          with
+          [
+              T=boost::shared_ptr<void>,
+              I=boost::shared_ptr<void> *
+          ]
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/detail/auto_buffer.hpp(203): note: 請參閱所要編譯的函式 樣板 具現化 'void boost::signals2::detail::auto_buffer<boost::shared_ptr<void>,boost::signals2::detail::store_n_objects<10>,boost::signals2::detail::default_grow_policy,std::allocator<T>>::copy_impl<I>(I,I,boost::shared_ptr<void> *,std::random_access_iterator_tag)' 之參考
+          with
+          [
+              T=boost::shared_ptr<void>,
+              I=boost::shared_ptr<void> *
+          ]
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/detail/auto_buffer.hpp(296): note: 請參閱所要編譯的函式 樣板 具現化 'void boost::signals2::detail::auto_buffer<boost::shared_ptr<void>,boost::signals2::detail::store_n_objects<10>,boost::signals2::detail::default_grow_policy,std::allocator<T>>::copy_impl<boost::shared_ptr<void>*>(I,I,boost::shared_ptr<void> *)' 之參考
+          with
+          [
+              T=boost::shared_ptr<void>,
+              I=boost::shared_ptr<void> *
+          ]
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/detail/auto_buffer.hpp(296): note: 請參閱所要編譯的函式 樣板 具現化 'void boost::signals2::detail::auto_buffer<boost::shared_ptr<void>,boost::signals2::detail::store_n_objects<10>,boost::signals2::detail::default_grow_policy,std::allocator<T>>::copy_impl<boost::shared_ptr<void>*>(I,I,boost::shared_ptr<void> *)' 之參考
+          with
+          [
+              T=boost::shared_ptr<void>,
+              I=boost::shared_ptr<void> *
+          ]
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/detail/auto_buffer.hpp(294): note: 編譯類別 樣板 成員函式 'boost::shared_ptr<void> *boost::signals2::detail::auto_buffer<boost::shared_ptr<void>,boost::signals2::detail::store_n_objects<10>,boost::signals2::detail::default_grow_policy,std::allocator<T>>::move_to_new_buffer(unsigned __int64,const boost::true_type &)' 時
+          with
+          [
+              T=boost::shared_ptr<void>
+          ]
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/detail/auto_buffer.hpp(302): note: 請參閱所要編譯的函式 樣板 具現化 'boost::shared_ptr<void> *boost::signals2::detail::auto_buffer<boost::shared_ptr<void>,boost::signals2::detail::store_n_objects<10>,boost::signals2::detail::default_grow_policy,std::allocator<T>>::move_to_new_buffer(unsigned __int64,const boost::true_type &)' 之參考
+          with
+          [
+              T=boost::shared_ptr<void>
+          ]
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/connection.hpp(53): note: 請參閱要編譯的類別 樣板 具現化 'boost::signals2::detail::auto_buffer<boost::shared_ptr<void>,boost::signals2::detail::store_n_objects<10>,boost::signals2::detail::default_grow_policy,std::allocator<T>>' 之參考
+          with
+          [
+              T=boost::shared_ptr<void>
+          ]
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/connection.hpp(55): note: 請參閱要編譯的類別 樣板 具現化 'boost::signals2::detail::garbage_collecting_lock<Mutex>' 之參考
+  moc_MainWindow.cpp
+D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\include\pcl-1.8\pcl/pcl_macros.h(72): warning C4005: '_USE_MATH_DEFINES': 巨集重複定義
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\include\pcl-1.8\pcl/pcl_macros.h(72): note: 命令列引數: 請參閱 '_USE_MATH_DEFINES' 先前的定義
+D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\include\pcl-1.8\pcl/point_traits.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\include\pcl-1.8\pcl/visualization/interactor_style.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\include\pcl-1.8\pcl/visualization/pcl_visualizer.h(1618): warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include\cuda_runtime_api.h(1946): warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include\cuda_runtime.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+c:\program files\nvidia gpu computing toolkit\cuda\v8.0\include\cuda_runtime_api.h(1946): warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+c:\program files\nvidia gpu computing toolkit\cuda\v8.0\include\cuda_runtime_api.h(1946): warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+d:\code\librealsense-master\include\librealsense\rs.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+D:\Software\Visual Studio Professional 2015\VC\include\xmemory(102): warning C4996: 'std::uninitialized_copy::_Unchecked_iterators::_Deprecate': Call to 'std::uninitialized_copy' with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+  D:\Software\Visual Studio Professional 2015\VC\include\xmemory(102): note: 請參閱 'std::uninitialized_copy::_Unchecked_iterators::_Deprecate' 的宣告
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/detail/auto_buffer.hpp(191): note: 請參閱所要編譯的函式 樣板 具現化 '_FwdIt *std::uninitialized_copy<I,boost::shared_ptr<void>*>(_InIt,_InIt,_FwdIt)' 之參考
+          with
+          [
+              _FwdIt=boost::shared_ptr<void> *,
+              I=boost::shared_ptr<void> *,
+              _InIt=boost::shared_ptr<void> *
+          ]
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/detail/auto_buffer.hpp(178): note: 請參閱所要編譯的函式 樣板 具現化 'void boost::signals2::detail::auto_buffer<boost::shared_ptr<void>,boost::signals2::detail::store_n_objects<10>,boost::signals2::detail::default_grow_policy,std::allocator<T>>::copy_rai<I,false>(I,I,boost::shared_ptr<void> *,const boost::integral_constant<bool,false> &)' 之參考
+          with
+          [
+              T=boost::shared_ptr<void>,
+              I=boost::shared_ptr<void> *
+          ]
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/detail/auto_buffer.hpp(178): note: 請參閱所要編譯的函式 樣板 具現化 'void boost::signals2::detail::auto_buffer<boost::shared_ptr<void>,boost::signals2::detail::store_n_objects<10>,boost::signals2::detail::default_grow_policy,std::allocator<T>>::copy_rai<I,false>(I,I,boost::shared_ptr<void> *,const boost::integral_constant<bool,false> &)' 之參考
+          with
+          [
+              T=boost::shared_ptr<void>,
+              I=boost::shared_ptr<void> *
+          ]
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/detail/auto_buffer.hpp(204): note: 請參閱所要編譯的函式 樣板 具現化 'void boost::signals2::detail::auto_buffer<boost::shared_ptr<void>,boost::signals2::detail::store_n_objects<10>,boost::signals2::detail::default_grow_policy,std::allocator<T>>::copy_impl<I>(I,I,boost::shared_ptr<void> *,std::random_access_iterator_tag)' 之參考
+          with
+          [
+              T=boost::shared_ptr<void>,
+              I=boost::shared_ptr<void> *
+          ]
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/detail/auto_buffer.hpp(203): note: 請參閱所要編譯的函式 樣板 具現化 'void boost::signals2::detail::auto_buffer<boost::shared_ptr<void>,boost::signals2::detail::store_n_objects<10>,boost::signals2::detail::default_grow_policy,std::allocator<T>>::copy_impl<I>(I,I,boost::shared_ptr<void> *,std::random_access_iterator_tag)' 之參考
+          with
+          [
+              T=boost::shared_ptr<void>,
+              I=boost::shared_ptr<void> *
+          ]
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/detail/auto_buffer.hpp(296): note: 請參閱所要編譯的函式 樣板 具現化 'void boost::signals2::detail::auto_buffer<boost::shared_ptr<void>,boost::signals2::detail::store_n_objects<10>,boost::signals2::detail::default_grow_policy,std::allocator<T>>::copy_impl<boost::shared_ptr<void>*>(I,I,boost::shared_ptr<void> *)' 之參考
+          with
+          [
+              T=boost::shared_ptr<void>,
+              I=boost::shared_ptr<void> *
+          ]
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/detail/auto_buffer.hpp(296): note: 請參閱所要編譯的函式 樣板 具現化 'void boost::signals2::detail::auto_buffer<boost::shared_ptr<void>,boost::signals2::detail::store_n_objects<10>,boost::signals2::detail::default_grow_policy,std::allocator<T>>::copy_impl<boost::shared_ptr<void>*>(I,I,boost::shared_ptr<void> *)' 之參考
+          with
+          [
+              T=boost::shared_ptr<void>,
+              I=boost::shared_ptr<void> *
+          ]
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/detail/auto_buffer.hpp(294): note: 編譯類別 樣板 成員函式 'boost::shared_ptr<void> *boost::signals2::detail::auto_buffer<boost::shared_ptr<void>,boost::signals2::detail::store_n_objects<10>,boost::signals2::detail::default_grow_policy,std::allocator<T>>::move_to_new_buffer(unsigned __int64,const boost::true_type &)' 時
+          with
+          [
+              T=boost::shared_ptr<void>
+          ]
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/detail/auto_buffer.hpp(302): note: 請參閱所要編譯的函式 樣板 具現化 'boost::shared_ptr<void> *boost::signals2::detail::auto_buffer<boost::shared_ptr<void>,boost::signals2::detail::store_n_objects<10>,boost::signals2::detail::default_grow_policy,std::allocator<T>>::move_to_new_buffer(unsigned __int64,const boost::true_type &)' 之參考
+          with
+          [
+              T=boost::shared_ptr<void>
+          ]
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/connection.hpp(53): note: 請參閱要編譯的類別 樣板 具現化 'boost::signals2::detail::auto_buffer<boost::shared_ptr<void>,boost::signals2::detail::store_n_objects<10>,boost::signals2::detail::default_grow_policy,std::allocator<T>>' 之參考
+          with
+          [
+              T=boost::shared_ptr<void>
+          ]
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/connection.hpp(55): note: 請參閱要編譯的類別 樣板 具現化 'boost::signals2::detail::garbage_collecting_lock<Mutex>' 之參考
+  moc_Observer.cpp
+D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\include\pcl-1.8\pcl/pcl_macros.h(72): warning C4005: '_USE_MATH_DEFINES': 巨集重複定義
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\include\pcl-1.8\pcl/pcl_macros.h(72): note: 命令列引數: 請參閱 '_USE_MATH_DEFINES' 先前的定義
+D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\include\pcl-1.8\pcl/point_traits.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\include\pcl-1.8\pcl/visualization/interactor_style.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\include\pcl-1.8\pcl/visualization/pcl_visualizer.h(1618): warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include\cuda_runtime_api.h(1946): warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include\cuda_runtime.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+c:\program files\nvidia gpu computing toolkit\cuda\v8.0\include\cuda_runtime_api.h(1946): warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+c:\program files\nvidia gpu computing toolkit\cuda\v8.0\include\cuda_runtime_api.h(1946): warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+d:\code\librealsense-master\include\librealsense\rs.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+D:\Software\Visual Studio Professional 2015\VC\include\xmemory(102): warning C4996: 'std::uninitialized_copy::_Unchecked_iterators::_Deprecate': Call to 'std::uninitialized_copy' with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+  D:\Software\Visual Studio Professional 2015\VC\include\xmemory(102): note: 請參閱 'std::uninitialized_copy::_Unchecked_iterators::_Deprecate' 的宣告
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/detail/auto_buffer.hpp(191): note: 請參閱所要編譯的函式 樣板 具現化 '_FwdIt *std::uninitialized_copy<I,boost::shared_ptr<void>*>(_InIt,_InIt,_FwdIt)' 之參考
+          with
+          [
+              _FwdIt=boost::shared_ptr<void> *,
+              I=boost::shared_ptr<void> *,
+              _InIt=boost::shared_ptr<void> *
+          ]
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/detail/auto_buffer.hpp(178): note: 請參閱所要編譯的函式 樣板 具現化 'void boost::signals2::detail::auto_buffer<boost::shared_ptr<void>,boost::signals2::detail::store_n_objects<10>,boost::signals2::detail::default_grow_policy,std::allocator<T>>::copy_rai<I,false>(I,I,boost::shared_ptr<void> *,const boost::integral_constant<bool,false> &)' 之參考
+          with
+          [
+              T=boost::shared_ptr<void>,
+              I=boost::shared_ptr<void> *
+          ]
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/detail/auto_buffer.hpp(178): note: 請參閱所要編譯的函式 樣板 具現化 'void boost::signals2::detail::auto_buffer<boost::shared_ptr<void>,boost::signals2::detail::store_n_objects<10>,boost::signals2::detail::default_grow_policy,std::allocator<T>>::copy_rai<I,false>(I,I,boost::shared_ptr<void> *,const boost::integral_constant<bool,false> &)' 之參考
+          with
+          [
+              T=boost::shared_ptr<void>,
+              I=boost::shared_ptr<void> *
+          ]
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/detail/auto_buffer.hpp(204): note: 請參閱所要編譯的函式 樣板 具現化 'void boost::signals2::detail::auto_buffer<boost::shared_ptr<void>,boost::signals2::detail::store_n_objects<10>,boost::signals2::detail::default_grow_policy,std::allocator<T>>::copy_impl<I>(I,I,boost::shared_ptr<void> *,std::random_access_iterator_tag)' 之參考
+          with
+          [
+              T=boost::shared_ptr<void>,
+              I=boost::shared_ptr<void> *
+          ]
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/detail/auto_buffer.hpp(203): note: 請參閱所要編譯的函式 樣板 具現化 'void boost::signals2::detail::auto_buffer<boost::shared_ptr<void>,boost::signals2::detail::store_n_objects<10>,boost::signals2::detail::default_grow_policy,std::allocator<T>>::copy_impl<I>(I,I,boost::shared_ptr<void> *,std::random_access_iterator_tag)' 之參考
+          with
+          [
+              T=boost::shared_ptr<void>,
+              I=boost::shared_ptr<void> *
+          ]
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/detail/auto_buffer.hpp(296): note: 請參閱所要編譯的函式 樣板 具現化 'void boost::signals2::detail::auto_buffer<boost::shared_ptr<void>,boost::signals2::detail::store_n_objects<10>,boost::signals2::detail::default_grow_policy,std::allocator<T>>::copy_impl<boost::shared_ptr<void>*>(I,I,boost::shared_ptr<void> *)' 之參考
+          with
+          [
+              T=boost::shared_ptr<void>,
+              I=boost::shared_ptr<void> *
+          ]
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/detail/auto_buffer.hpp(296): note: 請參閱所要編譯的函式 樣板 具現化 'void boost::signals2::detail::auto_buffer<boost::shared_ptr<void>,boost::signals2::detail::store_n_objects<10>,boost::signals2::detail::default_grow_policy,std::allocator<T>>::copy_impl<boost::shared_ptr<void>*>(I,I,boost::shared_ptr<void> *)' 之參考
+          with
+          [
+              T=boost::shared_ptr<void>,
+              I=boost::shared_ptr<void> *
+          ]
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/detail/auto_buffer.hpp(294): note: 編譯類別 樣板 成員函式 'boost::shared_ptr<void> *boost::signals2::detail::auto_buffer<boost::shared_ptr<void>,boost::signals2::detail::store_n_objects<10>,boost::signals2::detail::default_grow_policy,std::allocator<T>>::move_to_new_buffer(unsigned __int64,const boost::true_type &)' 時
+          with
+          [
+              T=boost::shared_ptr<void>
+          ]
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/detail/auto_buffer.hpp(302): note: 請參閱所要編譯的函式 樣板 具現化 'boost::shared_ptr<void> *boost::signals2::detail::auto_buffer<boost::shared_ptr<void>,boost::signals2::detail::store_n_objects<10>,boost::signals2::detail::default_grow_policy,std::allocator<T>>::move_to_new_buffer(unsigned __int64,const boost::true_type &)' 之參考
+          with
+          [
+              T=boost::shared_ptr<void>
+          ]
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/connection.hpp(53): note: 請參閱要編譯的類別 樣板 具現化 'boost::signals2::detail::auto_buffer<boost::shared_ptr<void>,boost::signals2::detail::store_n_objects<10>,boost::signals2::detail::default_grow_policy,std::allocator<T>>' 之參考
+          with
+          [
+              T=boost::shared_ptr<void>
+          ]
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/connection.hpp(55): note: 請參閱要編譯的類別 樣板 具現化 'boost::signals2::detail::garbage_collecting_lock<Mutex>' 之參考
+  ITMEngine.cpp
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include\cuda_runtime_api.h(1946): warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include\cuda_runtime.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
 c:\program files\nvidia gpu computing toolkit\cuda\v8.0\include\cuda_runtime_api.h(1946): warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
@@ -70,7 +287,231 @@ D:\Software\Visual Studio Professional 2015\VC\include\xmemory(102): warning C49
               T=boost::shared_ptr<void>
           ]
   D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/connection.hpp(55): note: 請參閱要編譯的類別 樣板 具現化 'boost::signals2::detail::garbage_collecting_lock<Mutex>' 之參考
+  UIEngine.cpp
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include\cuda_runtime_api.h(1946): warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include\cuda_runtime.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+c:\program files\nvidia gpu computing toolkit\cuda\v8.0\include\cuda_runtime_api.h(1946): warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+c:\program files\nvidia gpu computing toolkit\cuda\v8.0\include\cuda_runtime_api.h(1946): warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\include\pcl-1.8\pcl/pcl_macros.h(72): warning C4005: '_USE_MATH_DEFINES': 巨集重複定義
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\include\pcl-1.8\pcl/pcl_macros.h(72): note: 命令列引數: 請參閱 '_USE_MATH_DEFINES' 先前的定義
+D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\include\pcl-1.8\pcl/point_traits.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+  Observer.cpp
+D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\include\pcl-1.8\pcl/pcl_macros.h(72): warning C4005: '_USE_MATH_DEFINES': 巨集重複定義
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\include\pcl-1.8\pcl/pcl_macros.h(72): note: 命令列引數: 請參閱 '_USE_MATH_DEFINES' 先前的定義
+D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\include\pcl-1.8\pcl/point_traits.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\include\pcl-1.8\pcl/visualization/interactor_style.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\include\pcl-1.8\pcl/visualization/pcl_visualizer.h(1618): warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include\cuda_runtime_api.h(1946): warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include\cuda_runtime.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+c:\program files\nvidia gpu computing toolkit\cuda\v8.0\include\cuda_runtime_api.h(1946): warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+c:\program files\nvidia gpu computing toolkit\cuda\v8.0\include\cuda_runtime_api.h(1946): warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+d:\code\librealsense-master\include\librealsense\rs.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+D:\Software\Visual Studio Professional 2015\VC\include\xmemory(102): warning C4996: 'std::uninitialized_copy::_Unchecked_iterators::_Deprecate': Call to 'std::uninitialized_copy' with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+  D:\Software\Visual Studio Professional 2015\VC\include\xmemory(102): note: 請參閱 'std::uninitialized_copy::_Unchecked_iterators::_Deprecate' 的宣告
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/detail/auto_buffer.hpp(191): note: 請參閱所要編譯的函式 樣板 具現化 '_FwdIt *std::uninitialized_copy<I,boost::shared_ptr<void>*>(_InIt,_InIt,_FwdIt)' 之參考
+          with
+          [
+              _FwdIt=boost::shared_ptr<void> *,
+              I=boost::shared_ptr<void> *,
+              _InIt=boost::shared_ptr<void> *
+          ]
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/detail/auto_buffer.hpp(178): note: 請參閱所要編譯的函式 樣板 具現化 'void boost::signals2::detail::auto_buffer<boost::shared_ptr<void>,boost::signals2::detail::store_n_objects<10>,boost::signals2::detail::default_grow_policy,std::allocator<T>>::copy_rai<I,false>(I,I,boost::shared_ptr<void> *,const boost::integral_constant<bool,false> &)' 之參考
+          with
+          [
+              T=boost::shared_ptr<void>,
+              I=boost::shared_ptr<void> *
+          ]
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/detail/auto_buffer.hpp(178): note: 請參閱所要編譯的函式 樣板 具現化 'void boost::signals2::detail::auto_buffer<boost::shared_ptr<void>,boost::signals2::detail::store_n_objects<10>,boost::signals2::detail::default_grow_policy,std::allocator<T>>::copy_rai<I,false>(I,I,boost::shared_ptr<void> *,const boost::integral_constant<bool,false> &)' 之參考
+          with
+          [
+              T=boost::shared_ptr<void>,
+              I=boost::shared_ptr<void> *
+          ]
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/detail/auto_buffer.hpp(204): note: 請參閱所要編譯的函式 樣板 具現化 'void boost::signals2::detail::auto_buffer<boost::shared_ptr<void>,boost::signals2::detail::store_n_objects<10>,boost::signals2::detail::default_grow_policy,std::allocator<T>>::copy_impl<I>(I,I,boost::shared_ptr<void> *,std::random_access_iterator_tag)' 之參考
+          with
+          [
+              T=boost::shared_ptr<void>,
+              I=boost::shared_ptr<void> *
+          ]
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/detail/auto_buffer.hpp(203): note: 請參閱所要編譯的函式 樣板 具現化 'void boost::signals2::detail::auto_buffer<boost::shared_ptr<void>,boost::signals2::detail::store_n_objects<10>,boost::signals2::detail::default_grow_policy,std::allocator<T>>::copy_impl<I>(I,I,boost::shared_ptr<void> *,std::random_access_iterator_tag)' 之參考
+          with
+          [
+              T=boost::shared_ptr<void>,
+              I=boost::shared_ptr<void> *
+          ]
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/detail/auto_buffer.hpp(296): note: 請參閱所要編譯的函式 樣板 具現化 'void boost::signals2::detail::auto_buffer<boost::shared_ptr<void>,boost::signals2::detail::store_n_objects<10>,boost::signals2::detail::default_grow_policy,std::allocator<T>>::copy_impl<boost::shared_ptr<void>*>(I,I,boost::shared_ptr<void> *)' 之參考
+          with
+          [
+              T=boost::shared_ptr<void>,
+              I=boost::shared_ptr<void> *
+          ]
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/detail/auto_buffer.hpp(296): note: 請參閱所要編譯的函式 樣板 具現化 'void boost::signals2::detail::auto_buffer<boost::shared_ptr<void>,boost::signals2::detail::store_n_objects<10>,boost::signals2::detail::default_grow_policy,std::allocator<T>>::copy_impl<boost::shared_ptr<void>*>(I,I,boost::shared_ptr<void> *)' 之參考
+          with
+          [
+              T=boost::shared_ptr<void>,
+              I=boost::shared_ptr<void> *
+          ]
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/detail/auto_buffer.hpp(294): note: 編譯類別 樣板 成員函式 'boost::shared_ptr<void> *boost::signals2::detail::auto_buffer<boost::shared_ptr<void>,boost::signals2::detail::store_n_objects<10>,boost::signals2::detail::default_grow_policy,std::allocator<T>>::move_to_new_buffer(unsigned __int64,const boost::true_type &)' 時
+          with
+          [
+              T=boost::shared_ptr<void>
+          ]
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/detail/auto_buffer.hpp(302): note: 請參閱所要編譯的函式 樣板 具現化 'boost::shared_ptr<void> *boost::signals2::detail::auto_buffer<boost::shared_ptr<void>,boost::signals2::detail::store_n_objects<10>,boost::signals2::detail::default_grow_policy,std::allocator<T>>::move_to_new_buffer(unsigned __int64,const boost::true_type &)' 之參考
+          with
+          [
+              T=boost::shared_ptr<void>
+          ]
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/connection.hpp(53): note: 請參閱要編譯的類別 樣板 具現化 'boost::signals2::detail::auto_buffer<boost::shared_ptr<void>,boost::signals2::detail::store_n_objects<10>,boost::signals2::detail::default_grow_policy,std::allocator<T>>' 之參考
+          with
+          [
+              T=boost::shared_ptr<void>
+          ]
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/connection.hpp(55): note: 請參閱要編譯的類別 樣板 具現化 'boost::signals2::detail::garbage_collecting_lock<Mutex>' 之參考
+  ObserverFactory.cpp
+D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\include\pcl-1.8\pcl/pcl_macros.h(72): warning C4005: '_USE_MATH_DEFINES': 巨集重複定義
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\include\pcl-1.8\pcl/pcl_macros.h(72): note: 命令列引數: 請參閱 '_USE_MATH_DEFINES' 先前的定義
+D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\include\pcl-1.8\pcl/point_traits.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\include\pcl-1.8\pcl/visualization/interactor_style.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\include\pcl-1.8\pcl/visualization/pcl_visualizer.h(1618): warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include\cuda_runtime_api.h(1946): warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include\cuda_runtime.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+c:\program files\nvidia gpu computing toolkit\cuda\v8.0\include\cuda_runtime_api.h(1946): warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+c:\program files\nvidia gpu computing toolkit\cuda\v8.0\include\cuda_runtime_api.h(1946): warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+d:\code\librealsense-master\include\librealsense\rs.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+D:\Software\Visual Studio Professional 2015\VC\include\xmemory(102): warning C4996: 'std::uninitialized_copy::_Unchecked_iterators::_Deprecate': Call to 'std::uninitialized_copy' with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+  D:\Software\Visual Studio Professional 2015\VC\include\xmemory(102): note: 請參閱 'std::uninitialized_copy::_Unchecked_iterators::_Deprecate' 的宣告
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/detail/auto_buffer.hpp(191): note: 請參閱所要編譯的函式 樣板 具現化 '_FwdIt *std::uninitialized_copy<I,boost::shared_ptr<void>*>(_InIt,_InIt,_FwdIt)' 之參考
+          with
+          [
+              _FwdIt=boost::shared_ptr<void> *,
+              I=boost::shared_ptr<void> *,
+              _InIt=boost::shared_ptr<void> *
+          ]
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/detail/auto_buffer.hpp(178): note: 請參閱所要編譯的函式 樣板 具現化 'void boost::signals2::detail::auto_buffer<boost::shared_ptr<void>,boost::signals2::detail::store_n_objects<10>,boost::signals2::detail::default_grow_policy,std::allocator<T>>::copy_rai<I,false>(I,I,boost::shared_ptr<void> *,const boost::integral_constant<bool,false> &)' 之參考
+          with
+          [
+              T=boost::shared_ptr<void>,
+              I=boost::shared_ptr<void> *
+          ]
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/detail/auto_buffer.hpp(178): note: 請參閱所要編譯的函式 樣板 具現化 'void boost::signals2::detail::auto_buffer<boost::shared_ptr<void>,boost::signals2::detail::store_n_objects<10>,boost::signals2::detail::default_grow_policy,std::allocator<T>>::copy_rai<I,false>(I,I,boost::shared_ptr<void> *,const boost::integral_constant<bool,false> &)' 之參考
+          with
+          [
+              T=boost::shared_ptr<void>,
+              I=boost::shared_ptr<void> *
+          ]
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/detail/auto_buffer.hpp(204): note: 請參閱所要編譯的函式 樣板 具現化 'void boost::signals2::detail::auto_buffer<boost::shared_ptr<void>,boost::signals2::detail::store_n_objects<10>,boost::signals2::detail::default_grow_policy,std::allocator<T>>::copy_impl<I>(I,I,boost::shared_ptr<void> *,std::random_access_iterator_tag)' 之參考
+          with
+          [
+              T=boost::shared_ptr<void>,
+              I=boost::shared_ptr<void> *
+          ]
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/detail/auto_buffer.hpp(203): note: 請參閱所要編譯的函式 樣板 具現化 'void boost::signals2::detail::auto_buffer<boost::shared_ptr<void>,boost::signals2::detail::store_n_objects<10>,boost::signals2::detail::default_grow_policy,std::allocator<T>>::copy_impl<I>(I,I,boost::shared_ptr<void> *,std::random_access_iterator_tag)' 之參考
+          with
+          [
+              T=boost::shared_ptr<void>,
+              I=boost::shared_ptr<void> *
+          ]
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/detail/auto_buffer.hpp(296): note: 請參閱所要編譯的函式 樣板 具現化 'void boost::signals2::detail::auto_buffer<boost::shared_ptr<void>,boost::signals2::detail::store_n_objects<10>,boost::signals2::detail::default_grow_policy,std::allocator<T>>::copy_impl<boost::shared_ptr<void>*>(I,I,boost::shared_ptr<void> *)' 之參考
+          with
+          [
+              T=boost::shared_ptr<void>,
+              I=boost::shared_ptr<void> *
+          ]
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/detail/auto_buffer.hpp(296): note: 請參閱所要編譯的函式 樣板 具現化 'void boost::signals2::detail::auto_buffer<boost::shared_ptr<void>,boost::signals2::detail::store_n_objects<10>,boost::signals2::detail::default_grow_policy,std::allocator<T>>::copy_impl<boost::shared_ptr<void>*>(I,I,boost::shared_ptr<void> *)' 之參考
+          with
+          [
+              T=boost::shared_ptr<void>,
+              I=boost::shared_ptr<void> *
+          ]
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/detail/auto_buffer.hpp(294): note: 編譯類別 樣板 成員函式 'boost::shared_ptr<void> *boost::signals2::detail::auto_buffer<boost::shared_ptr<void>,boost::signals2::detail::store_n_objects<10>,boost::signals2::detail::default_grow_policy,std::allocator<T>>::move_to_new_buffer(unsigned __int64,const boost::true_type &)' 時
+          with
+          [
+              T=boost::shared_ptr<void>
+          ]
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/detail/auto_buffer.hpp(302): note: 請參閱所要編譯的函式 樣板 具現化 'boost::shared_ptr<void> *boost::signals2::detail::auto_buffer<boost::shared_ptr<void>,boost::signals2::detail::store_n_objects<10>,boost::signals2::detail::default_grow_policy,std::allocator<T>>::move_to_new_buffer(unsigned __int64,const boost::true_type &)' 之參考
+          with
+          [
+              T=boost::shared_ptr<void>
+          ]
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/connection.hpp(53): note: 請參閱要編譯的類別 樣板 具現化 'boost::signals2::detail::auto_buffer<boost::shared_ptr<void>,boost::signals2::detail::store_n_objects<10>,boost::signals2::detail::default_grow_policy,std::allocator<T>>' 之參考
+          with
+          [
+              T=boost::shared_ptr<void>
+          ]
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/connection.hpp(55): note: 請參閱要編譯的類別 樣板 具現化 'boost::signals2::detail::garbage_collecting_lock<Mutex>' 之參考
   MainWindow.cpp
+D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\include\pcl-1.8\pcl/pcl_macros.h(72): warning C4005: '_USE_MATH_DEFINES': 巨集重複定義
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\include\pcl-1.8\pcl/pcl_macros.h(72): note: 命令列引數: 請參閱 '_USE_MATH_DEFINES' 先前的定義
+D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\include\pcl-1.8\pcl/point_traits.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\include\pcl-1.8\pcl/visualization/interactor_style.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\include\pcl-1.8\pcl/visualization/pcl_visualizer.h(1618): warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include\cuda_runtime_api.h(1946): warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include\cuda_runtime.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+c:\program files\nvidia gpu computing toolkit\cuda\v8.0\include\cuda_runtime_api.h(1946): warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+c:\program files\nvidia gpu computing toolkit\cuda\v8.0\include\cuda_runtime_api.h(1946): warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+d:\code\librealsense-master\include\librealsense\rs.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+D:\Software\Visual Studio Professional 2015\VC\include\xmemory(102): warning C4996: 'std::uninitialized_copy::_Unchecked_iterators::_Deprecate': Call to 'std::uninitialized_copy' with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+  D:\Software\Visual Studio Professional 2015\VC\include\xmemory(102): note: 請參閱 'std::uninitialized_copy::_Unchecked_iterators::_Deprecate' 的宣告
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/detail/auto_buffer.hpp(191): note: 請參閱所要編譯的函式 樣板 具現化 '_FwdIt *std::uninitialized_copy<I,boost::shared_ptr<void>*>(_InIt,_InIt,_FwdIt)' 之參考
+          with
+          [
+              _FwdIt=boost::shared_ptr<void> *,
+              I=boost::shared_ptr<void> *,
+              _InIt=boost::shared_ptr<void> *
+          ]
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/detail/auto_buffer.hpp(178): note: 請參閱所要編譯的函式 樣板 具現化 'void boost::signals2::detail::auto_buffer<boost::shared_ptr<void>,boost::signals2::detail::store_n_objects<10>,boost::signals2::detail::default_grow_policy,std::allocator<T>>::copy_rai<I,false>(I,I,boost::shared_ptr<void> *,const boost::integral_constant<bool,false> &)' 之參考
+          with
+          [
+              T=boost::shared_ptr<void>,
+              I=boost::shared_ptr<void> *
+          ]
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/detail/auto_buffer.hpp(178): note: 請參閱所要編譯的函式 樣板 具現化 'void boost::signals2::detail::auto_buffer<boost::shared_ptr<void>,boost::signals2::detail::store_n_objects<10>,boost::signals2::detail::default_grow_policy,std::allocator<T>>::copy_rai<I,false>(I,I,boost::shared_ptr<void> *,const boost::integral_constant<bool,false> &)' 之參考
+          with
+          [
+              T=boost::shared_ptr<void>,
+              I=boost::shared_ptr<void> *
+          ]
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/detail/auto_buffer.hpp(204): note: 請參閱所要編譯的函式 樣板 具現化 'void boost::signals2::detail::auto_buffer<boost::shared_ptr<void>,boost::signals2::detail::store_n_objects<10>,boost::signals2::detail::default_grow_policy,std::allocator<T>>::copy_impl<I>(I,I,boost::shared_ptr<void> *,std::random_access_iterator_tag)' 之參考
+          with
+          [
+              T=boost::shared_ptr<void>,
+              I=boost::shared_ptr<void> *
+          ]
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/detail/auto_buffer.hpp(203): note: 請參閱所要編譯的函式 樣板 具現化 'void boost::signals2::detail::auto_buffer<boost::shared_ptr<void>,boost::signals2::detail::store_n_objects<10>,boost::signals2::detail::default_grow_policy,std::allocator<T>>::copy_impl<I>(I,I,boost::shared_ptr<void> *,std::random_access_iterator_tag)' 之參考
+          with
+          [
+              T=boost::shared_ptr<void>,
+              I=boost::shared_ptr<void> *
+          ]
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/detail/auto_buffer.hpp(296): note: 請參閱所要編譯的函式 樣板 具現化 'void boost::signals2::detail::auto_buffer<boost::shared_ptr<void>,boost::signals2::detail::store_n_objects<10>,boost::signals2::detail::default_grow_policy,std::allocator<T>>::copy_impl<boost::shared_ptr<void>*>(I,I,boost::shared_ptr<void> *)' 之參考
+          with
+          [
+              T=boost::shared_ptr<void>,
+              I=boost::shared_ptr<void> *
+          ]
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/detail/auto_buffer.hpp(296): note: 請參閱所要編譯的函式 樣板 具現化 'void boost::signals2::detail::auto_buffer<boost::shared_ptr<void>,boost::signals2::detail::store_n_objects<10>,boost::signals2::detail::default_grow_policy,std::allocator<T>>::copy_impl<boost::shared_ptr<void>*>(I,I,boost::shared_ptr<void> *)' 之參考
+          with
+          [
+              T=boost::shared_ptr<void>,
+              I=boost::shared_ptr<void> *
+          ]
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/detail/auto_buffer.hpp(294): note: 編譯類別 樣板 成員函式 'boost::shared_ptr<void> *boost::signals2::detail::auto_buffer<boost::shared_ptr<void>,boost::signals2::detail::store_n_objects<10>,boost::signals2::detail::default_grow_policy,std::allocator<T>>::move_to_new_buffer(unsigned __int64,const boost::true_type &)' 時
+          with
+          [
+              T=boost::shared_ptr<void>
+          ]
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/detail/auto_buffer.hpp(302): note: 請參閱所要編譯的函式 樣板 具現化 'boost::shared_ptr<void> *boost::signals2::detail::auto_buffer<boost::shared_ptr<void>,boost::signals2::detail::store_n_objects<10>,boost::signals2::detail::default_grow_policy,std::allocator<T>>::move_to_new_buffer(unsigned __int64,const boost::true_type &)' 之參考
+          with
+          [
+              T=boost::shared_ptr<void>
+          ]
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/connection.hpp(53): note: 請參閱要編譯的類別 樣板 具現化 'boost::signals2::detail::auto_buffer<boost::shared_ptr<void>,boost::signals2::detail::store_n_objects<10>,boost::signals2::detail::default_grow_policy,std::allocator<T>>' 之參考
+          with
+          [
+              T=boost::shared_ptr<void>
+          ]
+  D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\3rdParty\Boost\include\boost-1_61\boost/signals2/connection.hpp(55): note: 請參閱要編譯的類別 樣板 具現化 'boost::signals2::detail::garbage_collecting_lock<Mutex>' 之參考
+  main.cpp
 D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\include\pcl-1.8\pcl/pcl_macros.h(72): warning C4005: '_USE_MATH_DEFINES': 巨集重複定義
   D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\include\pcl-1.8\pcl/pcl_macros.h(72): note: 命令列引數: 請參閱 '_USE_MATH_DEFINES' 先前的定義
 D:\Software\PCL-1.8.0-vs2015\PCL 1.8.0\include\pcl-1.8\pcl/point_traits.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失

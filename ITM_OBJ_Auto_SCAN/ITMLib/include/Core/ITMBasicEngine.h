@@ -2,6 +2,9 @@
 
 #pragma once
 
+#include <pcl/point_cloud.h>
+#include <pcl/point_types.h>
+
 #include "ITMDenseMapper.h"
 #include "ITMMainEngine.h"
 #include "ITMTrackingController.h"
@@ -50,6 +53,8 @@ namespace ITMLib
 		ITMTrackingState *trackingState;
 
 	public:
+		typedef pcl::PointXYZ PointT;
+
 		ITMView* GetView(void) { return view; }
 		ITMTrackingState* GetTrackingState(void) { return trackingState; }
 
@@ -84,6 +89,18 @@ namespace ITMLib
 
 		/// resets the scene and the tracker
 		void resetAll();
+
+		//	get mesh point cloud used pcl type
+		boost::shared_ptr<pcl::PointCloud<PointT>> GetMeshPointCloud()
+		{
+			if (meshingEngine == NULL) return NULL;
+
+			ITMMesh *mesh = new ITMMesh(settings->GetMemoryType());
+
+			//meshingEngine->MeshScene(mesh, scene);
+
+			return mesh->GetPointCloud();
+		}
 
 		/** \brief Constructor
 			Omitting a separate image size for the depth images
